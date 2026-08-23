@@ -1611,7 +1611,7 @@
   <div class="promo" role="status" aria-live="off">
     <div class="promo-in">
       <span class="promo-txt">Offerta di lancio</span>
-      <span class="promo-time">Termina tra <span class="promo-clock" id="promoClock">24:00:00</span></span>
+      <span class="promo-time">Termina tra <span class="promo-clock" id="promoClock">15:00</span></span>
     </div>
   </div>
 
@@ -2201,8 +2201,8 @@
   <!-- Contador de la oferta -->
   <script>
     (function () {
-      // Cuanto dura la oferta para cada visitante, en horas. Cambiar aca.
-      var HORAS = 24;
+      // Cuanto dura la oferta para cada visitante, en minutos. Cambiar aca.
+      var MINUTOS = 15;
       var KEY = 'fi_offerta_fine';
 
       var el = document.getElementById('promoClock');
@@ -2214,7 +2214,7 @@
         var v = 0;
         try { v = parseInt(localStorage.getItem(KEY), 10) || 0; } catch (e) {}
         if (!v || v <= Date.now()) {
-          v = Date.now() + HORAS * 3600 * 1000;
+          v = Date.now() + MINUTOS * 60 * 1000;
           try { localStorage.setItem(KEY, v); } catch (e) {}
         }
         return v;
@@ -2227,7 +2227,9 @@
         var r = fin - Date.now();
         if (r <= 0) { fin = vencimiento(); r = fin - Date.now(); }
         var s = Math.floor(r / 1000);
-        el.textContent = dd(Math.floor(s / 3600)) + ':' + dd(Math.floor(s % 3600 / 60)) + ':' + dd(s % 60);
+        var h = Math.floor(s / 3600);
+        // por debajo de una hora se muestra MM:SS: un 00: delante solo resta fuerza
+        el.textContent = (h > 0 ? dd(h) + ':' : '') + dd(Math.floor(s % 3600 / 60)) + ':' + dd(s % 60);
       }
 
       tick();
