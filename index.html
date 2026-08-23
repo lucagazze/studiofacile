@@ -1377,6 +1377,60 @@
       html { scroll-behavior: auto; }
     }
 
+    /* === TESTIMONIANZE (tarjetas de texto: indexables y legibles, a diferencia
+       de las capturas, que ademas estaban en espanol) === */
+    .testimonials-scroll { align-items: stretch; }
+
+    .tst-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 20px 20px;
+      box-shadow: var(--shadow);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tst-card .stars {
+      color: var(--accent);
+      font-size: 15px;
+      letter-spacing: 2px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .tst-card p {
+      font-size: 15.5px;
+      line-height: 1.65;
+      color: var(--text);
+      margin: 0 0 16px;
+      flex: 1;
+    }
+
+    .tst-card .who {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.4;
+    }
+
+    .tst-card .who span {
+      display: block;
+      font-weight: 500;
+      color: var(--text-light);
+      font-size: 12.5px;
+      margin-top: 2px;
+    }
+
+    .tst-nota {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-light);
+      margin-top: 18px;
+      line-height: 1.6;
+    }
+
     /* === RESPONSIVE === */
     @media (min-width: 640px) {
       .stats-grid {
@@ -1470,7 +1524,7 @@
     <div class="hero-content">
       <div class="hero-mockup">
         <img src="./mockups/57.webp?v=2" alt="Kit Completo di Farmacologia Illustrata"
-             width="800" height="666" loading="eager" fetchpriority="high" decoding="async">
+             width="1200" height="886" loading="eager" fetchpriority="high" decoding="async">
       </div>
       <p class="hero-social">
         <span class="stars" aria-hidden="true">★★★★★</span>
@@ -1524,10 +1578,10 @@
         </button>
 
         <div class="testimonials-scroll" id="amostras-scroll" role="list" data-no-autoplay>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/23.webp?v=2" alt="Pagina di esempio: contenuto illustrato di farmacologia" width="565" height="800" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/29.webp?v=2" alt="Pagina di esempio: schema visivo del materiale" width="565" height="800" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/32.webp?v=2" alt="Pagina di esempio: mappa mentale illustrata" width="565" height="800" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/33.webp?v=2" alt="Pagina di esempio: riepilogo visivo di farmacologia" width="565" height="800" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/23.webp?v=2" alt="Pagina di esempio: contenuto illustrato di farmacologia" width="820" height="1098" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/29.webp?v=2" alt="Pagina di esempio: schema visivo del materiale" width="820" height="1098" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/32.webp?v=2" alt="Pagina di esempio: mappa mentale illustrata" width="820" height="1098" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/33.webp?v=2" alt="Pagina di esempio: riepilogo visivo di farmacologia" width="820" height="1098" loading="lazy" decoding="async"></article>
         </div>
 
         <div class="carousel-progress" aria-hidden="true">
@@ -1553,16 +1607,76 @@
         </button>
 
         <div class="testimonials-scroll" id="testimonials-scroll" role="list">
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/1.webp?v=2" alt="Opinione di uno studente su Farmacologia Illustrata" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/2.webp?v=2" alt="Testimonianza di uno studente di medicina sul materiale" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/3.webp?v=2" alt="Opinione di un futuro professionista della salute sul contenuto visivo" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/4.webp?v=2" alt="Testimonianza sull'efficacia del materiale illustrato" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/5.webp?v=2" alt="Opinione sull'apprendimento della farmacologia con mappe mentali" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/6.webp?v=2" alt="Testimonianza sul metodo visivo di Studio Facile" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/7.webp?v=2" alt="Opinione di uno studente soddisfatto del materiale" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/8.webp?v=2" alt="Testimonianza sulla chiarezza del contenuto di farmacologia" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/9.webp?v=2" alt="Opinione positiva sui moduli illustrati" width="600" height="600" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item" role="listitem"><img src="./depoimentos/10.webp?v=2" alt="Testimonianza finale su Farmacologia Illustrata" width="600" height="600" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Sono entusiasta di tutti gli appunti e i riassunti pratici degli argomenti: mi sono serviti moltissimo per gli esami e per i lavori. Rendono lo studio molto più piacevole.&rdquo;</p>
+              <div class="who">Julieta<span>Corso di Anatomia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Ad essere sincera l&rsquo;ho comprato con molti dubbi, ma il materiale è davvero pratico e mi aiuta tantissimo a studiare.&rdquo;</p>
+              <div class="who">Miriam<span>Corso di Anatomia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;È un materiale molto didattico, facile da capire e molto completo. Grazie mille.&rdquo;</p>
+              <div class="who">Laudid<span>Corso di Anatomia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Un materiale ottimo. Avrei voluto averlo io ai tempi del liceo.&rdquo;</p>
+              <div class="who">Sheila<span>Chimica Organica</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Mi è piaciuto tantissimo, è meraviglioso e i colori sono fantastici. Grazie.&rdquo;</p>
+              <div class="who">Claudia<span>Corso di Anatomia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Complimenti. Molto illustrativo e comprensibile. Grazie.&rdquo;</p>
+              <div class="who">Alfredo<span>Biochimica</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Grazie mille. La consegna è stata immediata. Ottimo materiale. Lo consiglio.&rdquo;</p>
+              <div class="who">Denise<span>Chimica Organica</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Eccellente, sono entusiasta. Grazie.&rdquo;</p>
+              <div class="who">Apolonia<span>Corso di Anatomia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Materiale bellissimo!&rdquo;</p>
+              <div class="who">Alejandra<span>Corso di Anatomia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-item" role="listitem">
+            <div class="tst-card">
+              <span class="stars" aria-label="5 stelle su 5">★★★★★</span>
+              <p>&ldquo;Il materiale mi è piaciuto molto.&rdquo;</p>
+              <div class="who">Francisco<span>Biochimica</span></div>
+            </div>
+          </article>
         </div>
 
         <div class="carousel-progress" aria-hidden="true">
@@ -1570,6 +1684,8 @@
         </div>
 
         <div class="carousel-dots" id="testimonials-dots" role="tablist" aria-label="Navigazione delle opinioni"></div>
+
+        <p class="tst-nota">Recensioni reali dei clienti di Studio Facile, tradotte dallo spagnolo.</p>
       </div>
     </div>
   </section>
@@ -1617,7 +1733,7 @@
         <p class="text-center">...apri <strong>1 mappa mentale illustrata</strong> che ti mostra l'ADME (assorbimento, distribuzione, metabolismo, escrezione) in 4 blocchi visivi.</p>
 
         <div class="solution-image">
-          <img src="./amostras/cinetica-x-dinamica.webp?v=2" alt="Esempio di mappa mentale illustrata" width="565" height="800" loading="lazy" decoding="async">
+          <img src="./amostras/cinetica-x-dinamica.webp?v=2" alt="Esempio di mappa mentale illustrata" width="820" height="1098" loading="lazy" decoding="async">
         </div>
 
         <p class="text-center">Il tuo cervello <strong>vede il flusso</strong>. I collegamenti si formano da soli. E finalmente capisci perché conta la via di somministrazione, perché alcuni farmaci passano dal metabolismo epatico e altri vengono escreti immodificati.</p>
@@ -1637,7 +1753,7 @@
       <h2 class="text-center">Ecco Cosa Riceverai Acquistando il Kit:</h2>
 
       <div style="margin: 20px auto 28px;">
-        <img src="./mockup-combo-amostras.webp?v=1" alt="Kit di Farmacologia Illustrata: mockup con pagine di esempio" width="446" height="800" loading="lazy" decoding="async" style="max-width: 480px; width: 100%; display: block; margin: 0 auto;">
+        <img src="./mockup-combo-amostras.webp?v=1" alt="Kit di Farmacologia Illustrata: mockup con pagine di esempio" width="900" height="1560" loading="lazy" decoding="async" style="max-width: 480px; width: 100%; display: block; margin: 0 auto;">
       </div>
 
       <div class="topics-grid">
@@ -1720,7 +1836,7 @@
       <div class="bonus-grid">
         <div class="bonus-item-with-image">
           <div class="bonus-mockup">
-            <img src="./mockup-bonus.webp?v=2" alt="Guida Dalla A alla Z" width="800" height="666" loading="lazy" decoding="async">
+            <img src="./mockup-bonus.webp?v=2" alt="Guida Dalla A alla Z" width="700" height="991" loading="lazy" decoding="async">
           </div>
           <div class="bonus-text">
             <h3>BONUS 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo;</h3>
@@ -1731,7 +1847,7 @@
 
         <div class="bonus-item-with-image">
           <div class="bonus-mockup">
-            <img src="./mockup-bonus-2.webp?v=2" alt="Schede di Ripasso Rapido" width="800" height="666" loading="lazy" decoding="async">
+            <img src="./mockup-bonus-2.webp?v=2" alt="Schede di Ripasso Rapido" width="700" height="992" loading="lazy" decoding="async">
           </div>
           <div class="bonus-text">
             <h3>BONUS 2: Schede di Ripasso Rapido, &ldquo;Le 5 Classi Che Escono Più Spesso all'Esame&rdquo;</h3>
@@ -1752,7 +1868,7 @@
       <div class="decision-box">
         <h3 class="db-title">Ecco tutto quello che ricevi oggi:</h3>
 
-        <img src="./mockup-combo-entregaveis.webp" alt="Kit completo: 8 Moduli + 2 Bonus" class="db-mockup" width="800" height="446" loading="lazy" decoding="async">
+        <img src="./mockup-combo-entregaveis.webp" alt="Kit completo: 8 Moduli + 2 Bonus" class="db-mockup" width="1100" height="723" loading="lazy" decoding="async">
 
         <ul class="db-checklist">
           <li>
@@ -1808,7 +1924,7 @@
 
       <div class="paraquem-grid">
         <div class="paraquem-card">
-          <img class="paraquem-foto" src="./personagens/estudante.webp" alt="Studente dell'area sanitaria con un libro di Farmacologia" loading="lazy" width="900" height="675">
+          <img class="paraquem-foto" src="./personagens/estudante.webp" alt="Studente dell'area sanitaria con un libro di Farmacologia" loading="lazy" width="900" height="672">
           <div class="paraquem-info">
             <h3>Studente dell'area sanitaria</h3>
             <p>Stai seguendo il corso adesso e sei stanco di provare a memorizzare solo per passare. Vuoi capire davvero, per portarti quelle basi per tutto il resto del percorso.</p>
@@ -1816,7 +1932,7 @@
         </div>
 
         <div class="paraquem-card">
-          <img class="paraquem-foto" src="./personagens/recem-formado.webp" alt="Neolaureato in farmacia ospedaliera" loading="lazy" width="900" height="675">
+          <img class="paraquem-foto" src="./personagens/recem-formado.webp" alt="Neolaureato in farmacia ospedaliera" loading="lazy" width="900" height="672">
           <div class="paraquem-info">
             <h3>Neolaureato</h3>
             <p>Hai già il titolo, ma senti di avere delle lacune. Ti serve ripassare le basi in fretta per stare al banco, in reparto o in ambulatorio con sicurezza.</p>
@@ -1824,7 +1940,7 @@
         </div>
 
         <div class="paraquem-card">
-          <img class="paraquem-foto" src="./personagens/profissional.webp" alt="Professionista della salute in aggiornamento" loading="lazy" width="900" height="675">
+          <img class="paraquem-foto" src="./personagens/profissional.webp" alt="Professionista della salute in aggiornamento" loading="lazy" width="900" height="672">
           <div class="paraquem-info">
             <h3>Professionista in aggiornamento</h3>
             <p>Lavori già nel settore, ma devi rinfrescare le conoscenze senza tornare ai manuali da 1.000 pagine né al linguaggio contorto dell'università.</p>
