@@ -1290,6 +1290,94 @@
       margin: 0;
     }
 
+    /* === CONTADOR DE LA OFERTA (barra fija arriba) ===
+       Discreta a proposito: franja fina, sin rojo ni parpadeos. Lo unico que
+       llama la atencion es el punto que late y los digitos en el amarillo de marca. */
+    .promo {
+      position: sticky;
+      top: 0;
+      z-index: 95;
+      background: linear-gradient(180deg, #2f55b5 0%, #2645a0 60%, #1f3c92 100%);
+      border-bottom: 1px solid rgba(247, 207, 73, 0.42);
+      box-shadow: 0 2px 14px rgba(8, 16, 34, 0.24);
+      padding: 9px 16px;
+    }
+
+    .promo-in {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px 16px;
+      flex-wrap: wrap;
+      line-height: 1.3;
+    }
+
+    .promo-txt {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .promo-txt::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: promoPulse 2.6s ease-out infinite;
+    }
+
+    @keyframes promoPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(247, 207, 73, 0.55); }
+      70%  { box-shadow: 0 0 0 9px rgba(247, 207, 73, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(247, 207, 73, 0); }
+    }
+
+    .promo-time {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.62);
+    }
+
+    .promo-clock {
+      font-variant-numeric: tabular-nums;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      line-height: 1;
+      color: var(--accent);
+      background: rgba(0, 0, 0, 0.26);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 7px;
+      padding: 5px 10px;
+    }
+
+    @media (max-width: 560px) {
+      .promo { padding: 8px 12px; }
+      .promo-in { gap: 4px 12px; }
+      .promo-txt { font-size: 11.5px; letter-spacing: 0.05em; }
+      .promo-time { font-size: 11.5px; }
+      .promo-clock { font-size: 16px; padding: 4px 9px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .promo-txt::before { animation: none; }
+    }
+
+    /* el ancla de las secciones no debe quedar bajo la barra fija */
+    section[id] { scroll-margin-top: 64px; }
+
     /* === BARRA DE COMPRA STICKY (lo que mas mueve la aguja en mobile) === */
     .buybar {
       position: fixed;
@@ -1519,6 +1607,14 @@
   </script>
 </head>
 <body>
+  <!-- CONTADOR DE LA OFERTA -->
+  <div class="promo" role="status" aria-live="off">
+    <div class="promo-in">
+      <span class="promo-txt">Offerta di lancio</span>
+      <span class="promo-time">Termina tra <span class="promo-clock" id="promoClock">24:00:00</span></span>
+    </div>
+  </div>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
@@ -2101,6 +2197,43 @@
       <p>© 2026 Studio Facile · Tutti i diritti riservati</p>
     </div>
   </footer>
+
+  <!-- Contador de la oferta -->
+  <script>
+    (function () {
+      // Cuanto dura la oferta para cada visitante, en horas. Cambiar aca.
+      var HORAS = 24;
+      var KEY = 'fi_offerta_fine';
+
+      var el = document.getElementById('promoClock');
+      if (!el) return;
+
+      // El plazo se guarda por visitante: si se recalculara en cada carga, el
+      // contador se reiniciaria al recargar y se notaria.
+      function vencimiento() {
+        var v = 0;
+        try { v = parseInt(localStorage.getItem(KEY), 10) || 0; } catch (e) {}
+        if (!v || v <= Date.now()) {
+          v = Date.now() + HORAS * 3600 * 1000;
+          try { localStorage.setItem(KEY, v); } catch (e) {}
+        }
+        return v;
+      }
+
+      var fin = vencimiento();
+      var dd = function (n) { return (n < 10 ? '0' : '') + n; };
+
+      function tick() {
+        var r = fin - Date.now();
+        if (r <= 0) { fin = vencimiento(); r = fin - Date.now(); }
+        var s = Math.floor(r / 1000);
+        el.textContent = dd(Math.floor(s / 3600)) + ':' + dd(Math.floor(s % 3600 / 60)) + ':' + dd(s % 60);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
 
   <!-- BARRA DE COMPRA STICKY -->
   <div class="buybar" id="buybar" aria-hidden="true">
