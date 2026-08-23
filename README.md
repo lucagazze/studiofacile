@@ -1,11 +1,12 @@
-# Farmacología Ilustrada — Estudia Sencillo
+# Farmacologia Illustrata — Studio Facile
 
-Landing page del Kit de Farmacología Ilustrada (8 módulos + 2 bonus, USD 13, checkout Hotmart).
+Landing page del Kit di Farmacologia Illustrata (8 moduli + 2 bonus, 13 USD, checkout Hotmart).
+Todos los textos en italiano.
 
 ## Estructura
 - `index.html` — la landing completa (CSS y JS inline, sin build)
 - `mockups/`, `amostras/`, `depoimentos/`, `personagens/` — imágenes WebP
-- `original.html` — versión previa en morado (ignorada por git, solo referencia local)
+- `original.html` — versión previa en español y morado (ignorada por git, solo referencia local)
 
 ## Paleta
 | Uso | Color |
@@ -17,11 +18,19 @@ Landing page del Kit de Farmacología Ilustrada (8 módulos + 2 bonus, USD 13, c
 | Fondo | `#FFFFFF` |
 
 ## Medición
-GTM (server-side vía Stape) + Microsoft Clarity ya instalados en el `<head>`.
+GTM (server-side vía Stape) + Microsoft Clarity en el `<head>`.
 La página empuja al `dataLayer`:
 - `view_item` al cargar
 - `begin_checkout` en cada clic al checkout, con `cta_id` para saber cuál de los 5 CTAs cierra
 
-## Notas
-- Todos los CTAs abren el checkout en la misma pestaña (mejor en mobile).
-- La barra de compra sticky aparece al pasar el CTA del hero y se oculta cuando otro CTA está a la vista.
+## PENDIENTE antes de publicar
+Estos datos siguen apuntando al proyecto en español y hay que reemplazarlos:
+
+- **Imágenes**: todos los mockups, páginas de muestra y testimonios están en español.
+  El texto dice "100% in italiano" pero las imágenes lo desmienten.
+- **Checkout**: `pay.hotmart.com/S95440624D` es el producto en español.
+- **GTM**: contenedor de `api.farmaciamapeada.com.br` (proyecto ES).
+- **Clarity**: project id `wcui1pae9q` (proyecto ES).
+- **canonical / og:url**: apuntan a `es.farmaciamapeada.com.br/farmacologia/`.
+- **Favicon**: `estudiasencillo.com.mx`.
+- **Claim "96,3%"**: sin fuente citada. Riesgo de rechazo en Meta.
