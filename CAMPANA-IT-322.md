@@ -69,7 +69,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 > ✅ 8 moduli illustrati: cinetica, dinamica, classi e desinenze
 > ✅ 2 bonus inclusi, tra cui le classi che escono più spesso all'esame
 > ✅ PDF in alta risoluzione: stampa, annota, porta in tirocinio
-> ✅ Pagamento unico di 13 USD, garanzia di 7 giorni
+> ✅ Pagamento unico di 13 USD, garanzia di 30 giorni
 >
 > 👇 Guarda com'è fatto il materiale dall'interno.
 
@@ -105,7 +105,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 > ✅ Questo è UN meccanismo. Nel kit ce ne sono decine, tutti illustrati
 > ✅ Farmacocinetica, farmacodinamica e le classi principali
 > ✅ 8 moduli + 2 bonus, pagamento unico di 13 USD
-> ✅ Garanzia di 7 giorni
+> ✅ Garanzia di 30 giorni
 >
 > 👉 Ogni meccanismo, pagina per pagina.
 
@@ -141,7 +141,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 > ✅ 8 moduli illustrati + 2 bonus
 > ✅ Terminologia italiana, non una traduzione automatica
 > ✅ Accesso immediato e per sempre, pagamento unico di 13 USD
-> ✅ Garanzia di 7 giorni: provi senza rischio
+> ✅ Garanzia di 30 giorni: provi senza rischio
 >
 > 👇 Guarda com'è fatto, prima di decidere.
 
@@ -172,7 +172,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
    fragmenta el aprendizaje.
 2. En cada conjunto, subir los 3 videos y cargar **los 2 textos y los 2 títulos
    de ese conjunto** en cada anuncio. Meta arma las combinaciones.
-3. Descripción del enlace, igual para todos: `8 moduli + 2 bonus · 13 USD · Garanzia 7 giorni`
+3. Descripción del enlace, igual para todos: `8 moduli + 2 bonus · 13 USD · Garanzia 30 giorni`
 4. CTA del botón: **Scopri di più**.
 5. Dejarlo correr 7 días sin tocar.
 

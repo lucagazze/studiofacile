@@ -70,7 +70,7 @@ Mappe mentali e schemi per arrivare all'esame capendo, non tirando a indovinare.
 👉 Tocca il pulsante qui sotto: 8 moduli illustrati e 2 bonus inclusi, tra cui le schede delle 5 classi che escono più spesso all'esame.
 
 **Titolo:** Padroneggia la Farmacologia senza memorizzare 🧠
-**Descrizione:** ⭐⭐⭐⭐⭐ +11.000 studenti · Garanzia di 7 giorni
+**Descrizione:** ⭐⭐⭐⭐⭐ +11.000 studenti · Garanzia di 30 giorni
 
 ---
 
@@ -87,7 +87,7 @@ Scopri il manuale illustrato che trasforma il caos dei libri enormi in schemi 10
 👉 Clicca sul pulsante qui sotto e guarda com'è fatto il materiale dall'interno.
 
 **Titolo:** Padroneggia la Farmacologia senza memorizzare 🧠
-**Descrizione:** ⭐⭐⭐⭐⭐ Unisciti a 11.978 studenti · Garanzia di 7 giorni
+**Descrizione:** ⭐⭐⭐⭐⭐ Unisciti a 11.978 studenti · Garanzia di 30 giorni
 
 ---
 
@@ -106,7 +106,7 @@ Migliaia di studenti e professionisti usano questi riassunti illustrati per capi
 👉 Tocca qui sotto e guarda il materiale dall'interno.
 
 **Titolo:** Il metodo visivo per capire la farmacologia
-**Descrizione:** 8 moduli illustrati + 2 bonus · Garanzia di 7 giorni
+**Descrizione:** 8 moduli illustrati + 2 bonus · Garanzia di 30 giorni
 
 ---
 
@@ -125,7 +125,7 @@ Farmacocinetica, farmacodinamica, le classi, le desinenze. Tutto illustrato in u
 👉 Non studiare di più: fai in modo che ti resti in testa il giorno dell'esame.
 
 **Titolo:** Non è la tua memoria. È il metodo. 🧠
-**Descrizione:** 8 moduli illustrati + 2 bonus · 13 USD · Garanzia di 7 giorni
+**Descrizione:** 8 moduli illustrati + 2 bonus · 13 USD · Garanzia di 30 giorni
 
 ---
 
@@ -192,7 +192,7 @@ Non è che uno sia migliore dell'altro. È che devi sapere quando serve ciascuno
 👉 Il metodo 100% visivo per capire la farmacologia, una volta per tutte.
 
 **Titolo:** Omeprazolo o pantoprazolo? Dipende dal fegato
-**Descrizione:** Il metodo visivo per capire la farmacologia · Garanzia 7 giorni
+**Descrizione:** Il metodo visivo per capire la farmacologia · Garanzia 30 giorni
 
 ---
 
@@ -216,7 +216,7 @@ Questo è un meccanismo. Te ne mancano decine, e memorizzarli uno per uno non fu
 👉 Ogni meccanismo con illustrazioni e schemi, pagina per pagina.
 
 **Titolo:** Capire la farmacologia. Non ripeterla.
-**Descrizione:** 8 moduli illustrati + 2 bonus · 13 USD · Garanzia di 7 giorni
+**Descrizione:** 8 moduli illustrati + 2 bonus · 13 USD · Garanzia di 30 giorni
 
 ---
 
@@ -239,7 +239,7 @@ Ma è per momenti così che abbiamo creato Farmacologia Illustrata: perché l'im
 👉 Tocca il pulsante qui sotto.
 
 **Titolo:** L'immagine giusta, nel momento giusto
-**Descrizione:** Farmacologia Illustrata · 8 moduli + 2 bonus · Garanzia 7 giorni
+**Descrizione:** Farmacologia Illustrata · 8 moduli + 2 bonus · Garanzia 30 giorni
 
 ---
 
@@ -255,7 +255,7 @@ Al posto di riassunti di testo infiniti, ti porti a casa 8 moduli di schemi 100%
 
 🎁 E se entri oggi, ti regalo le Schede di Ripasso Rapido con le 5 classi di farmaci che escono più spesso all'esame (antipertensivi, FANS, antibiotici, benzodiazepine e oppioidi).
 
-Tutto con un pagamento unico di 13 USD. Rischio zero, garanzia di 7 giorni.
+Tutto con un pagamento unico di 13 USD. Rischio zero, garanzia di 30 giorni.
 
 👉 Clicca su "Scopri di più" e scarica subito il materiale.
 
