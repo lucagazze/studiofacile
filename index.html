@@ -1629,7 +1629,7 @@
     "image":"https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/brand/og-image.jpg",
     "brand":{"@type":"Brand","name":"Studio Facile"},
     "offers":{"@type":"Offer","price":"13","priceCurrency":"USD","availability":"https://schema.org/InStock",
-              "url":"https://checkout.studiofacilebook.com/checkout",
+              "url":"https://checkout.studiofacilebook.com/",
               "hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":30,"applicableCountry":"IT"}}},
    {"@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"Come riceverò il materiale?","acceptedAnswer":{"@type":"Answer","text":"Subito dopo l'acquisto riceverai un'email automatica con il link di accesso. Sono PDF in alta risoluzione, pronti da scaricare, stampare o consultare da qualsiasi dispositivo."}},
@@ -1661,7 +1661,7 @@
       </p>
       <h1>Mentre i Tuoi Colleghi Combattono Con Goodman & Gilman, Tu Avrai Tutte le Basi <mark>Illustrate in Un Unico Posto</mark></h1>
       <p class="subheadline">Farmacocinetica, farmacodinamica, vie di somministrazione e classi di farmaci: tutto organizzato visivamente per superare l'esame al primo colpo. Senza caos, senza memorizzare a vuoto, senza impazzire per ricordare 500 nomi.</p>
-      <a href="https://checkout.studiofacilebook.com/checkout" data-checkout id="cta-hero" class="btn-cta">SÌ, VOGLIO IL KIT COMPLETO A 13 USD</a>
+      <a href="https://checkout.studiofacilebook.com/" data-checkout id="cta-hero" class="btn-cta">SÌ, VOGLIO IL KIT COMPLETO A 13 USD</a>
       <p class="cta-small-print">
         🔒 Pagamento sicuro · Accesso immediato · Garanzia 30 giorni senza domande<br>
         💳 Il prezzo viene convertito automaticamente nella valuta del tuo paese (euro, franchi, ecc.)
@@ -1952,7 +1952,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 48px;">
-        <a href="https://checkout.studiofacilebook.com/checkout" data-checkout class="btn-cta">SÌ, VOGLIO IL KIT COMPLETO A 13 USD</a>
+        <a href="https://checkout.studiofacilebook.com/" data-checkout class="btn-cta">SÌ, VOGLIO IL KIT COMPLETO A 13 USD</a>
       </div>
     </div>
   </section>
@@ -2024,7 +2024,7 @@
           <span class="db-discount-badge">86% DI SCONTO</span>
         </div>
 
-        <a href="https://checkout.studiofacilebook.com/checkout" data-checkout class="db-cta">SÌ, VOGLIO IL KIT COMPLETO A 13 USD</a>
+        <a href="https://checkout.studiofacilebook.com/" data-checkout class="db-cta">SÌ, VOGLIO IL KIT COMPLETO A 13 USD</a>
 
         <div class="db-trust">
           <span class="db-trust-item">
@@ -2120,7 +2120,7 @@
       </div>
 
       <div style="text-align: center;">
-        <a href="https://checkout.studiofacilebook.com/checkout" data-checkout class="btn-cta">SÌ, VOGLIO PADRONEGGIARE LA FARMACOLOGIA A 13 USD</a>
+        <a href="https://checkout.studiofacilebook.com/" data-checkout class="btn-cta">SÌ, VOGLIO PADRONEGGIARE LA FARMACOLOGIA A 13 USD</a>
       </div>
     </div>
   </section>
@@ -2215,7 +2215,7 @@
         </ul>
       </div>
 
-      <a href="https://checkout.studiofacilebook.com/checkout" data-checkout class="btn-cta">SÌ, VOGLIO PADRONEGGIARE LA FARMACOLOGIA A 13 USD</a>
+      <a href="https://checkout.studiofacilebook.com/" data-checkout class="btn-cta">SÌ, VOGLIO PADRONEGGIARE LA FARMACOLOGIA A 13 USD</a>
 
       <p class="cta-small-print" style="margin-top: 24px;">
         💳 Il prezzo viene convertito automaticamente nella valuta del tuo paese<br>
@@ -2274,7 +2274,7 @@
   <div class="buybar" id="buybar" aria-hidden="true">
     <div class="buybar-in">
       <span class="buybar-px"><s>91 USD</s><b>13 USD</b></span>
-      <a href="https://checkout.studiofacilebook.com/checkout" data-checkout class="buybar-btn" id="cta-sticky">Voglio il kit</a>
+      <a href="https://checkout.studiofacilebook.com/" data-checkout class="buybar-btn" id="cta-sticky">Voglio il kit</a>
     </div>
   </div>
 
@@ -2293,7 +2293,7 @@
       // Cada CTA al checkout dispara begin_checkout con el id del boton que lo origino,
       // asi se puede ver en GA4/Meta cual de los 5 CTAs de la pagina cierra.
       document.addEventListener('click', function (e) {
-        var a = e.target.closest('a[href="https://checkout.studiofacilebook.com/checkout"], [data-checkout], a[href*="checkout"]');
+        var a = e.target.closest('a[href="https://checkout.studiofacilebook.com/"], [data-checkout], a[href*="checkout"]');
         if (!a) return;
         dataLayer.push({ ecommerce: null });
         dataLayer.push({
