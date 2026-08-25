@@ -6,3 +6,4 @@ _gen_*.sh
 nano-gen-*
 .DS_Store
 Thumbs.db
+desktop.ini
