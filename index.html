@@ -1626,131 +1626,47 @@
       }
     }
 
-    /* === NOTIFICA SOCIAL PROOF (SOTTILE & ELEGANTE) === */
-    .sp-toast {
-      position: fixed;
-      left: 18px;
-      bottom: 20px;
-      z-index: 9995;
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      border-radius: 14px;
-      padding: 9px 28px 9px 10px;
-      max-width: 320px;
-      box-shadow: 0 10px 25px -4px rgba(15, 23, 42, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(12px) scale(0.96);
-      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
-      pointer-events: none;
+    /* cartel de compra reciente */
+    .sp-toast{
+      position:fixed;left:14px;top:14px;z-index:99999;
+      display:flex;align-items:center;gap:12px;
+      background:#fff;border:1px solid #e4e9ee;border-radius:12px;
+      padding:10px 14px 10px 10px;max-width:330px;
+      box-shadow:0 10px 30px rgba(18,25,31,.22);
+      opacity:0;visibility:hidden;transform:translateY(-16px) scale(.97);
+      transition:opacity .45s ease, transform .45s cubic-bezier(.2,.8,.3,1), visibility .45s;
     }
-    .sp-toast.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0) scale(1);
-      pointer-events: auto;
+    .sp-toast.show{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
+    .sp-mini{
+      position:relative;flex:0 0 auto;width:66px;height:42px;border-radius:6px;overflow:hidden;
+      background:#0f1516;box-shadow:0 2px 8px rgba(18,25,31,.22);
     }
-    .sp-thumb {
-      flex: 0 0 44px;
-      width: 44px;
-      height: 44px;
-      border-radius: 9px;
-      overflow: hidden;
-      background: #f1f5f9;
-      border: 1px solid #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .sp-mini img{width:100%;height:100%;object-fit:cover;border-radius:0;margin:0;display:block}
+    .sp-txt{min-width:0;line-height:1.4}
+    .sp-name{font-size:13.5px;font-weight:700;color:#12191f;display:block}
+    .sp-name b{font-weight:700}
+    .sp-prod{
+      font-size:12px;color:#5b6874;display:block;margin-top:1px;
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
     }
-    .sp-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    .sp-meta{
+      font-size:10.5px;color:#98a3ad;display:flex;align-items:center;gap:5px;margin-top:3px;
     }
-    .sp-info {
-      min-width: 0;
-      line-height: 1.35;
+    .sp-meta .ok{color:#28a745;font-weight:700}
+    .sp-close{
+      position:absolute;top:-10px;right:-10px;
+      width:26px;height:26px;padding:0;line-height:1;
+      display:flex;align-items:center;justify-content:center;
+      border:1px solid #e0e6eb;border-radius:50%;
+      background:#fff;color:#8a949e;font-size:16px;font-weight:600;
+      font-family:inherit;cursor:pointer;
+      box-shadow:0 2px 8px rgba(18,25,31,.14);
+      transition:background .18s ease, color .18s ease, transform .18s ease, border-color .18s ease;
     }
-    .sp-buyer {
-      font-size: 13px;
-      font-weight: 700;
-      color: #0f172a;
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .sp-item {
-      font-size: 11.5px;
-      color: #475569;
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .sp-time {
-      font-size: 10.5px;
-      color: #94a3b8;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      margin-top: 2px;
-    }
-    .sp-dot {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #10b981;
-    }
-    .sp-close {
-      position: absolute;
-      top: 6px;
-      right: 6px;
-      width: 20px;
-      height: 20px;
-      padding: 0;
-      line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      background: transparent;
-      color: #94a3b8;
-      font-size: 16px;
-      font-weight: 400;
-      cursor: pointer;
-      border-radius: 50%;
-      transition: color 0.15s ease, background 0.15s ease;
-    }
-    .sp-close:hover {
-      color: #0f172a;
-      background: #f1f5f9;
-    }
-    @media (max-width: 768px) {
-      .sp-toast {
-        left: 12px;
-        bottom: 74px; /* Libera la barra de compra sticky */
-        max-width: calc(100% - 24px);
-        padding: 8px 26px 8px 9px;
-      }
-      .sp-thumb {
-        flex: 0 0 40px;
-        width: 40px;
-        height: 40px;
-      }
-      .sp-buyer {
-        font-size: 12.5px;
-      }
-      .sp-item {
-        font-size: 11px;
-      }
+    .sp-close:hover{background:#ffffff;border-color:#cbd5e1;color:#12191f;transform:scale(1.08);box-shadow:0 4px 12px rgba(18,25,31,.2)}
+    .sp-close:active{transform:scale(.96)}
+    @media (max-width:560px){
+      .sp-toast{left:8px;right:8px;top:10px;max-width:none}
     }
   </style>
   <script type="application/ld+json">
@@ -1771,16 +1687,13 @@
   </script>
 </head>
 <body>
-  <!-- NOTIFICA SOCIAL PROOF SOTTILE -->
   <div class="sp-toast" id="spToast" role="status" aria-live="polite">
     <button class="sp-close" id="spClose" aria-label="Chiudi">×</button>
-    <div class="sp-thumb">
-      <img id="spThumb" src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/57.webp?v=2" alt="Farmacologia Illustrata" width="44" height="44" loading="lazy">
-    </div>
-    <div class="sp-info">
-      <span class="sp-buyer" id="spBuyer">Chiara da Milano</span>
-      <span class="sp-item" id="spItem">Ha acquistato il Kit Completo</span>
-      <span class="sp-time"><span class="sp-dot"></span><span id="spTime">3 min fa</span> · Accesso inviato</span>
+    <span class="sp-mini"><img id="spShot" src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/23.webp?v=2" alt=""></span>
+    <div class="sp-txt">
+      <span class="sp-name" id="spName">Chiara da Milano</span>
+      <span class="sp-prod" id="spProd">Kit Completo · 8 Moduli + 2 Bonus</span>
+      <span class="sp-meta"><span class="ok">✔ Accesso confermato</span> · <span id="spTime">fa 4 minuti</span></span>
     </div>
   </div>
   <!-- CONTADOR DE LA OFERTA -->
@@ -2729,59 +2642,55 @@
     });
   </script>
 
-  <!-- Social Proof Notifications (Sottile) -->
+  <!-- cartel de compra reciente (social proof toast) -->
   <script>
-    (function () {
+    (function(){
       var buyers = [
-        { name: "Chiara da Milano", item: "Ha acquistato il Kit Completo", time: "3 min fa" },
-        { name: "Marco da Roma", item: "Ha acquistato il Kit + 2 Bonus", time: "7 min fa" },
-        { name: "Martina da Bologna", item: "Ha acquistato il Kit Completo", time: "14 min fa" },
-        { name: "Lorenzo da Napoli", item: "Ha acquistato il Kit + 2 Bonus", time: "22 min fa" },
-        { name: "Sofia da Torino", item: "Ha acquistato il Kit Completo", time: "31 min fa" },
-        { name: "Matteo da Firenze", item: "Ha acquistato il Kit + 2 Bonus", time: "43 min fa" },
-        { name: "Federica da Padova", item: "Ha acquistato il Kit Completo", time: "52 min fa" },
-        { name: "Alessandro da Pisa", item: "Ha acquistato il Kit Completo", time: "1 ora fa" },
-        { name: "Elena da Bari", item: "Ha acquistato il Kit + 2 Bonus", time: "1 ora fa" }
+        { name: "Chiara da Milano", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 4 minuti", img: "amostras/23.webp?v=2" },
+        { name: "Marco da Roma", prod: "Ha sbloccato il Kit Completo", time: "fa 12 minuti", img: "mockups/57.webp?v=2" },
+        { name: "Martina da Bologna", prod: "Kit di Farmacologia Illustrata", time: "fa 18 minuti", img: "amostras/32.webp?v=2" },
+        { name: "Lorenzo da Napoli", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 25 minuti", img: "mockup-bonus.webp?v=2" },
+        { name: "Sofia da Torino", prod: "Ha sbloccato l'accesso immediato", time: "fa 31 minuti", img: "amostras/cinetica-x-dinamica.webp?v=2" },
+        { name: "Matteo da Firenze", prod: "Kit di Farmacologia Illustrata", time: "fa 39 minuti", img: "amostras/29.webp?v=2" },
+        { name: "Camilla da Padova", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 44 minuti", img: "mockup-bonus-2.webp?v=2" },
+        { name: "Alessandro da Pisa", prod: "Ha sbloccato il Kit Completo", time: "fa 52 minuti", img: "amostras/33.webp?v=2" }
       ];
-
+      var idx = 0;
       var toast = document.getElementById('spToast');
-      var spBuyer = document.getElementById('spBuyer');
-      var spItem = document.getElementById('spItem');
+      var spName = document.getElementById('spName');
+      var spProd = document.getElementById('spProd');
       var spTime = document.getElementById('spTime');
+      var spShot = document.getElementById('spShot');
       var spClose = document.getElementById('spClose');
+
       if (!toast) return;
 
-      var idx = 0;
-      var dismissed = false;
-
       function showNext() {
-        if (dismissed) return;
         var b = buyers[idx];
-        if (spBuyer) spBuyer.textContent = b.name;
-        if (spItem) spItem.textContent = b.item;
+        if (spName) spName.textContent = b.name;
+        if (spProd) spProd.textContent = b.prod;
         if (spTime) spTime.textContent = b.time;
+        if (spShot) spShot.src = "https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/" + b.img;
         toast.classList.add('show');
 
-        setTimeout(function () {
+        setTimeout(function() {
           toast.classList.remove('show');
-        }, 5000);
+        }, 6000);
 
         idx = (idx + 1) % buyers.length;
       }
 
       if (spClose) {
-        spClose.addEventListener('click', function (e) {
+        spClose.addEventListener('click', function(e) {
           e.stopPropagation();
-          dismissed = true;
           toast.classList.remove('show');
         });
       }
 
-      // Primera notificacion a los 7s, luego cada 22s
-      setTimeout(function () {
+      setTimeout(function() {
         showNext();
-        setInterval(showNext, 22000);
-      }, 7000);
+        setInterval(showNext, 18000);
+      }, 6000);
     })();
   </script>
 </body>
