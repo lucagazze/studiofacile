@@ -1,6 +1,6 @@
 # Farmacologia Illustrata — Studio Facile
 
-Landing page del Kit di Farmacologia Illustrata (8 moduli + 2 bonus, 13 USD, checkout Hotmart).
+Landing page del Kit di Farmacologia Illustrata (8 moduli + 2 bonus, 13€ / EUR, checkout Hotmart).
 Todos los textos en italiano.
 
 ## Estructura

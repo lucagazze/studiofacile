@@ -51,7 +51,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 | Objetivo | Ventas → Compra. Hasta tener 50 compras/semana, optimizar a `InitiateCheckout` |
 | Público | Broad. Sin intereses: el creativo es el targeting |
 | Ubicaciones | Advantage+ (todas automáticas) |
-| Presupuesto | 3× el CPA objetivo. Con el producto a 13 USD y CPA meta ~5 USD → **15-20 USD/día** para arrancar |
+| Presupuesto | 3× el CPA objetivo. Con el producto a 13€ y CPA meta ~5€ → **15-20€/día** para arrancar |
 | Aprendizaje | No tocar nada durante 7 días o hasta 50 conversiones. Nada de prender y apagar diario: rompe el Sequence Learning |
 
 ---
@@ -69,7 +69,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 > ✅ 8 moduli illustrati: cinetica, dinamica, classi e desinenze
 > ✅ 2 bonus inclusi, tra cui le classi che escono più spesso all'esame
 > ✅ PDF in alta risoluzione: stampa, annota, porta in tirocinio
-> ✅ Pagamento unico di 13 USD, garanzia di 30 giorni
+> ✅ Pagamento unico di 13€, garanzia di 30 giorni
 >
 > 👇 Guarda com'è fatto il materiale dall'interno.
 
@@ -104,7 +104,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 >
 > ✅ Questo è UN meccanismo. Nel kit ce ne sono decine, tutti illustrati
 > ✅ Farmacocinetica, farmacodinamica e le classi principali
-> ✅ 8 moduli + 2 bonus, pagamento unico di 13 USD
+> ✅ 8 moduli + 2 bonus, pagamento unico di 13€
 > ✅ Garanzia di 30 giorni
 >
 > 👉 Ogni meccanismo, pagina per pagina.
@@ -140,7 +140,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
 >
 > ✅ 8 moduli illustrati + 2 bonus
 > ✅ Terminologia italiana, non una traduzione automatica
-> ✅ Accesso immediato e per sempre, pagamento unico di 13 USD
+> ✅ Accesso immediato e per sempre, pagamento unico di 13€
 > ✅ Garanzia di 30 giorni: provi senza rischio
 >
 > 👇 Guarda com'è fatto, prima di decidere.
@@ -172,7 +172,7 @@ CAMPAÑA CBO — Farmacologia Illustrata IT | Broad | Advantage+ placements
    fragmenta el aprendizaje.
 2. En cada conjunto, subir los 3 videos y cargar **los 2 textos y los 2 títulos
    de ese conjunto** en cada anuncio. Meta arma las combinaciones.
-3. Descripción del enlace, igual para todos: `8 moduli + 2 bonus · 13 USD · Garanzia 30 giorni`
+3. Descripción del enlace, igual para todos: `8 moduli + 2 bonus · 13€ · Garanzia 30 giorni`
 4. CTA del botón: **Scopri di più**.
 5. Dejarlo correr 7 días sin tocar.
 

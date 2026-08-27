@@ -125,7 +125,7 @@ Farmacocinetica, farmacodinamica, le classi, le desinenze. Tutto illustrato in u
 👉 Non studiare di più: fai in modo che ti resti in testa il giorno dell'esame.
 
 **Titolo:** Non è la tua memoria. È il metodo. 🧠
-**Descrizione:** 8 moduli illustrati + 2 bonus · 13 USD · Garanzia di 30 giorni
+**Descrizione:** 8 moduli illustrati + 2 bonus · 13€ · Garanzia di 30 giorni
 
 ---
 
@@ -216,7 +216,7 @@ Questo è un meccanismo. Te ne mancano decine, e memorizzarli uno per uno non fu
 👉 Ogni meccanismo con illustrazioni e schemi, pagina per pagina.
 
 **Titolo:** Capire la farmacologia. Non ripeterla.
-**Descrizione:** 8 moduli illustrati + 2 bonus · 13 USD · Garanzia di 30 giorni
+**Descrizione:** 8 moduli illustrati + 2 bonus · 13€ · Garanzia di 30 giorni
 
 ---
 
@@ -255,7 +255,7 @@ Al posto di riassunti di testo infiniti, ti porti a casa 8 moduli di schemi 100%
 
 🎁 E se entri oggi, ti regalo le Schede di Ripasso Rapido con le 5 classi di farmaci che escono più spesso all'esame (antipertensivi, FANS, antibiotici, benzodiazepine e oppioidi).
 
-Tutto con un pagamento unico di 13 USD. Rischio zero, garanzia di 30 giorni.
+Tutto con un pagamento unico di 13€. Rischio zero, garanzia di 30 giorni.
 
 👉 Clicca su "Scopri di più" e scarica subito il materiale.
 
