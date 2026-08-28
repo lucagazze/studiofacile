@@ -155,11 +155,11 @@
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 14px;
     }
 
     .section {
-      padding: 60px 20px;
+      padding: 50px 14px;
     }
 
     .section-alt {
@@ -168,7 +168,7 @@
 
     /* Section colada na anterior (mesmo bg) — reduz padding-top pra eliminar vazio */
     .section-snug-top {
-      padding-top: 24px;
+      padding-top: 20px;
     }
 
     .text-center {
@@ -179,7 +179,7 @@
     .hero {
       background: linear-gradient(150deg, #2f55b5 0%, #2645a0 48%, #1f3c92 100%);
       color: #FFFFFF;
-      padding: 60px 20px 80px;
+      padding: 48px 14px 68px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -496,34 +496,47 @@
     /* === DECISION BOX === */
     .decision-box {
       background: #FFFFFF;
-      border-radius: 20px;
-      padding: 40px 28px 36px;
-      max-width: 580px;
-      margin: 48px auto 0;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 32px 20px 28px;
+      max-width: 540px;
+      margin: 36px auto 0;
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.1);
       position: relative;
+    }
+
+    .decision-box[id] {
+      scroll-margin-top: 64px;
+    }
+
+    @media (min-width: 640px) {
+      .decision-box {
+        border-radius: 28px;
+        padding: 44px 36px 36px;
+        margin: 48px auto 0;
+      }
     }
 
     .db-title {
       text-align: center;
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 800;
-      color: var(--text);
-      margin-bottom: 28px;
-      line-height: 1.3;
+      color: #111827;
+      margin: 18px 0 22px;
+      line-height: 1.25;
+      font-family: inherit;
     }
 
     .db-mockup {
       display: block;
       width: 100%;
-      max-width: 400px;
-      margin: 0 auto 24px;
-      filter: drop-shadow(0 12px 32px rgba(108,43,217,0.18));
+      max-width: 360px;
+      margin: 0 auto;
+      filter: drop-shadow(0 12px 32px rgba(108, 43, 217, 0.18));
     }
 
     .db-checklist {
       list-style: none;
-      margin: 0 0 28px;
+      margin: 0 0 24px;
       padding: 0;
     }
 
@@ -531,11 +544,11 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 13px 16px;
+      padding: 13px 4px;
       font-size: 15px;
       font-weight: 500;
       color: var(--text);
-      border-bottom: 1px solid #eef2f8;
+      border-bottom: 1px solid #f1f5f9;
       line-height: 1.4;
     }
 
@@ -547,7 +560,8 @@
       width: 22px;
       height: 22px;
       border-radius: 50%;
-      background: var(--success);
+      background: #f0fdf4;
+      border: 1.5px solid #22c55e;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -555,18 +569,18 @@
     }
 
     .db-check svg {
-      width: 13px;
-      height: 13px;
-      stroke: #fff;
-      stroke-width: 3;
+      width: 12px;
+      height: 12px;
+      stroke: #16a34a;
+      stroke-width: 2.5;
       fill: none;
     }
 
     .db-price-val {
       margin-left: auto;
-      font-size: 14px;
+      font-size: 14.5px;
       font-weight: 600;
-      color: var(--text-light);
+      color: #64748b;
       white-space: nowrap;
       font-variant-numeric: tabular-nums;
     }
@@ -574,44 +588,119 @@
     /* Anchoring block */
     .db-anchoring {
       text-align: center;
-      padding: 24px 0 28px;
-      border-top: 2px solid #eef2f8;
+      padding: 22px 0 20px;
+      border-top: 1px solid #f1f5f9;
     }
 
     .db-old-price {
-      font-size: 18px;
-      color: var(--text-light);
+      font-size: 16.5px;
+      color: #64748b;
       text-decoration: line-through;
       margin-bottom: 4px;
     }
 
     .db-new-price-label {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--primary);
-      margin-bottom: 4px;
+      color: #475569;
+      margin-bottom: 2px;
     }
 
     .db-new-price {
-      font-size: 52px;
+      font-size: 56px;
       font-weight: 900;
-      color: var(--primary);
+      color: #16a34a;
       line-height: 1;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
     }
 
     .db-discount-badge {
       display: inline-block;
-      background: var(--accent);
-      color: #101828;
-      font-size: 13px;
+      background: #fde68a;
+      color: #92400e;
+      font-size: 12.5px;
       font-weight: 800;
-      padding: 4px 14px;
-      border-radius: 20px;
-      margin-top: 8px;
-      letter-spacing: 0.02em;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* CTA inside decision box */
+    .db-cta {
+      display: block;
+      width: 100%;
+      background: var(--cta);
+      color: #FFFFFF;
+      font-size: 17px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 18px 24px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 22px rgba(249, 114, 22, 0.42);
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+
+    .db-cta:hover {
+      background: var(--cta-hover);
+      transform: scale(1.02);
+      box-shadow: 0 8px 28px rgba(249, 114, 22, 0.55);
+    }
+
+    .db-cta:active {
+      transform: scale(0.98);
+    }
+
+    /* Trust badges inside decision box */
+    .db-trust {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .db-trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .db-trust-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .db-trust-icon svg {
+      width: 15px;
+      height: 15px;
+      fill: #16a34a;
+    }
+
+    .db-small-print {
+      font-size: 12px;
+      color: #94a3b8;
+      text-align: center;
+      margin-top: 14px;
+      line-height: 1.5;
     }
 
     /* CTA inside decision box */
@@ -1118,14 +1207,22 @@
     /* === BONUS WITH IMAGES === */
     .bonus-item-with-image {
       background: rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 32px 28px;
+      border-radius: 14px;
+      padding: 24px 14px;
       border: 1px solid rgba(255, 255, 255, 0.15);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 24px;
+      gap: 20px;
       text-align: center;
+    }
+
+    @media (min-width: 640px) {
+      .bonus-item-with-image {
+        border-radius: 16px;
+        padding: 32px 28px;
+        gap: 24px;
+      }
     }
 
     .bonus-mockup {
@@ -1217,6 +1314,330 @@
     .amostra-item img {
       background: #FFFFFF;
       border: 1px solid #dbe6fa;
+    }
+
+    /* === COMPARISON SECTION === */
+    .comparison-section {
+      background: var(--bg-light);
+      padding: 60px 20px;
+    }
+
+    .comparison-section .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 36px;
+    }
+
+    .comparison-section .section-header h2 {
+      margin-top: 12px;
+      font-size: clamp(24px, 5vw, 36px);
+      line-height: 1.25;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      background: rgba(38, 69, 160, 0.1);
+      padding: 6px 16px;
+      border-radius: 999px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: stretch;
+      }
+    }
+
+    .comparison-card {
+      background: var(--bg-white);
+      border-radius: 16px;
+      padding: 28px 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 2px solid #e1e8f4;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .comparison-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(16, 24, 40, 0.12);
+    }
+
+    .comparison-card.bad-card {
+      border-color: #fecaca;
+      background: #fffafa;
+    }
+
+    .comparison-card.good-card {
+      border-color: #bbf7d0;
+      background: #fafdfa;
+      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
+    }
+
+    .comparison-label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 18px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .comparison-label.bad {
+      background: #fee2e2;
+      color: #dc2626;
+      border: 1px solid #fca5a5;
+    }
+
+    .comparison-label.good {
+      background: #dcfce7;
+      color: #15803d;
+      border: 1px solid #86efac;
+    }
+
+    .comparison-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 22px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .comparison-bullets li {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .bad-list li {
+      color: #991b1b;
+    }
+
+    .good-list li {
+      color: #166534;
+    }
+
+    .comparison-card img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #e1e8f4;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      margin-top: auto;
+      object-fit: cover;
+    }
+
+    /* === SUBJECTS ACCORDION SECTION === */
+    .subjects-section {
+      background: #FFFFFF;
+      padding: 50px 14px;
+    }
+
+    @media (min-width: 768px) {
+      .subjects-section {
+        padding: 80px 20px;
+      }
+    }
+
+    .subjects-section .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 36px;
+    }
+
+    .eyebrow-inverse {
+      background: rgba(38, 69, 160, 0.08);
+      color: var(--primary);
+    }
+
+    .subjects-subtitle {
+      font-size: 16.5px;
+      color: var(--text-light);
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .subjects-accordion {
+      max-width: 840px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .subject-item {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+
+    .subject-item[data-open="true"],
+    .subject-item.active {
+      border-color: #cbd5e1;
+      background: #FFFFFF;
+      box-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);
+    }
+
+    .subject-summary {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 18px;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: inherit;
+      cursor: pointer;
+      color: var(--text);
+      transition: background 0.15s;
+    }
+
+    .subject-summary:hover {
+      background: rgba(38, 69, 160, 0.03);
+    }
+
+    .subject-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 15px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .subject-title {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--text);
+      flex: 1;
+      line-height: 1.35;
+    }
+
+    .subject-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      position: relative;
+      transition: transform 0.25s ease;
+    }
+
+    .subject-icon::before,
+    .subject-icon::after {
+      content: '';
+      position: absolute;
+      background-color: var(--primary);
+      border-radius: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.25s ease;
+    }
+
+    .subject-icon::before {
+      width: 12px;
+      height: 2px;
+    }
+
+    .subject-icon::after {
+      width: 2px;
+      height: 12px;
+    }
+
+    .subject-item[data-open="true"] .subject-icon::after,
+    .subject-item.active .subject-icon::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+      opacity: 0;
+    }
+
+    .subject-item[data-open="true"] .subject-icon,
+    .subject-item.active .subject-icon {
+      transform: rotate(180deg);
+    }
+
+    .subject-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .subject-content-inner {
+      padding: 4px 18px 18px 64px;
+    }
+
+    @media (max-width: 560px) {
+      .subject-content-inner {
+        padding: 4px 14px 16px 14px;
+      }
+      .subject-summary {
+        padding: 14px 14px;
+        gap: 10px;
+      }
+      .subject-title {
+        font-size: 15px;
+      }
+    }
+
+    .subject-content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .subject-content-list li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .subject-content-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .subject-content-list li::before {
+      content: '•';
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 18px;
+      position: absolute;
+      left: 4px;
+      top: -2px;
     }
 
     /* === TOPICS COMPACT (tópicos do material, conciso e didático) === */
@@ -1414,92 +1835,7 @@
     /* el ancla de las secciones no debe quedar bajo la barra fija */
     section[id] { scroll-margin-top: 64px; }
 
-    /* === BARRA DE COMPRA STICKY (lo que mas mueve la aguja en mobile) === */
-    .buybar {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 90;
-      background: rgba(255, 255, 255, .97);
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      border-top: 1px solid var(--border);
-      box-shadow: 0 -4px 22px rgba(16, 24, 40, .10);
-      padding: 10px 14px;
-      padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-      transform: translateY(130%);
-      transition: transform .34s cubic-bezier(.2, .8, .3, 1);
-    }
-
-    .buybar.on { transform: none; }
-
-    .buybar-in {
-      max-width: 640px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .buybar-px {
-      flex: 0 0 auto;
-      line-height: 1.15;
-    }
-
-    .buybar-px s {
-      display: block;
-      font-size: 12px;
-      color: var(--text-light);
-    }
-
-    .buybar-px b {
-      display: block;
-      font-size: 23px;
-      font-weight: 800;
-      color: var(--primary);
-      letter-spacing: -.02em;
-    }
-
-    .buybar-btn {
-      flex: 1;
-      min-width: 0;
-      background: var(--cta);
-      color: #FFFFFF;
-      font-size: 14.5px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .4px;
-      padding: 15px 12px;
-      border-radius: 10px;
-      text-align: center;
-      line-height: 1.2;
-      box-shadow: 0 4px 14px rgba(249, 114, 22, .4);
-      transition: background .2s, transform .15s;
-    }
-
-    .buybar-btn:hover { background: var(--cta-hover); }
-    .buybar-btn:active { transform: scale(.98); }
-
-    .footer { padding-bottom: 120px; }
-
-    @media (min-width: 768px) {
-      .buybar {
-        left: auto;
-        right: 22px;
-        bottom: 22px;
-        max-width: 430px;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 12px 16px;
-      }
-      .footer { padding-bottom: 40px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .buybar { transition: none; }
-      html { scroll-behavior: auto; }
-    }
+    .footer { padding-bottom: 40px; }
 
     /* === TESTIMONIANZE (tarjetas de texto: indexables y legibles, a diferencia
        de las capturas, que ademas estaban en espanol) === */
@@ -1573,6 +1909,14 @@
 
       h2 {
         font-size: 36px;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      .hero {
+        padding: 60px 20px 80px;
       }
 
       .hero h1 {
@@ -1714,9 +2058,9 @@
         <span class="stars" aria-hidden="true">★★★★★</span>
         <span><strong>+11.978 studenti e professionisti</strong> della salute</span>
       </p>
-      <h1>Mentre i Tuoi Colleghi Combattono Con Goodman & Gilman, Tu Avrai Tutte le Basi <mark>Illustrate in Un Unico Posto</mark></h1>
-      <p class="subheadline">Farmacocinetica, farmacodinamica, vie di somministrazione e classi di farmaci: tutto organizzato visivamente per superare l'esame al primo colpo. Senza caos, senza memorizzare a vuoto, senza impazzire per ricordare 500 nomi.</p>
-      <a href="https://checkout.studiofacilebook.com/" data-checkout id="cta-hero" class="btn-cta">SÌ, VOGLIO IL KIT COMPLETO A 13€</a>
+      <h1>Il Modo Più Semplice per Imparare la FARMACOLOGIA <mark>Senza Giri di Parole!</mark></h1>
+      <p class="subheadline">Il materiale ideale per studenti e professionisti che devono capire la farmacologia in modo chiaro, visivo e applicabile nella pratica quotidiana.</p>
+      <a href="#offerta" id="cta-hero" class="btn-cta">VOGLIO STUDIARE SENZA COMPLICAZIONI</a>
       <p class="cta-small-print">
         🔒 Pagamento sicuro · Accesso immediato · Garanzia 30 giorni senza domande<br>
         💳 Il prezzo è in euro (EUR). Conversione automatica se risiedi all'estero.
@@ -1874,33 +2218,207 @@
     </div>
   </section>
 
-  <!-- PROBLEM -->
-  <section class="section">
+  <!-- COMPARISON SECTION -->
+  <section class="comparison-section fade-in visible" aria-label="Confronto del materiale con i metodi tradizionali">
     <div class="container">
-      <h2 class="text-center">Se Stai Studiando Farmacologia, Probabilmente Hai Già Pensato Questo:</h2>
-
-      <div class="problem-quotes">
-        <div class="quote-item">&ldquo;Impazzisco a cercare di ricordare così tanti farmaci&rdquo;</div>
-        <div class="quote-item">&ldquo;I meccanismi non hanno nessuna logica, mi confondo di continuo&rdquo;</div>
-        <div class="quote-item">&ldquo;Studio, ma non imparo niente&rdquo;</div>
+      <div class="section-header">
+        <span class="eyebrow">La Differenza È Visiva</span>
+        <h2>Migliaia di studenti hanno già semplificato i loro studi cambiando:</h2>
       </div>
 
-      <p class="text-center" style="max-width: 700px; margin: 32px auto; font-size: 22px; font-weight: 700;">Ma il problema NON sei tu.</p>
+      <div class="comparison-grid">
 
-      <p class="text-center" style="max-width: 700px; margin: 16px auto;">Il problema è che <strong>nessuno ti ha insegnato la farmacologia nel modo in cui il tuo cervello impara davvero</strong>. Ti hanno dato:</p>
+        <!-- QUESTO (malo) -->
+        <div class="comparison-card bad-card">
+          <div class="comparison-label bad">QUESTO</div>
+          <ul class="comparison-bullets bad-list">
+            <li>Faticoso ed estenuante</li>
+            <li>Noioso e pesante</li>
+            <li>Fa venire sonno</li>
+          </ul>
+          <img src="./esto.jpg?v=2" alt="Pagina di libro di farmacologia tradizionale in italiano: testo denso, senza illustrazioni, pesante" width="768" height="1024" loading="lazy" decoding="async">
+        </div>
 
-      <ul class="problem-list">
-        <li>Goodman & Gilman: 1.500 pagine dense e senza illustrazioni</li>
-        <li>Lezioni da 90 minuti con 200 slide di solo testo</li>
-        <li>PDF scansionati male che sembrano geroglifici</li>
-        <li>L'aspettativa che tu &ldquo;impari a memoria&rdquo; 500 farmaci senza capire le basi</li>
-      </ul>
+        <!-- PER QUESTO (bueno) -->
+        <div class="comparison-card good-card">
+          <div class="comparison-label good">PER QUESTO</div>
+          <ul class="comparison-bullets good-list">
+            <li>Veloce da memorizzare</li>
+            <li>Facile da capire subito</li>
+            <li>Visivo e intuitivo!</li>
+          </ul>
+          <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/cinetica-x-dinamica.webp?v=2" alt="Farmacologia Illustrata: mappa visiva di farmacocinetica e farmacodinamica, facile da memorizzare" width="820" height="1098" loading="lazy" decoding="async">
+        </div>
 
-      <div class="highlight-box">
-        <blockquote>&ldquo;Farmacologia superata, medicina in discesa.&rdquo;</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBJECTS ACCORDION SECTION -->
+  <section class="subjects-section fade-in visible" aria-label="Contenuto del materiale">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow eyebrow-inverse">Sommario</span>
+        <h2>Dai un'occhiata ai 9 capitoli</h2>
+        <p class="subjects-subtitle">Dai concetti di base alla tossicità: i fondamenti che escono a ogni esame, completamente illustrati</p>
       </div>
 
-      <p class="text-center" style="max-width: 700px; margin: 32px auto;">Non è un'esagerazione. <strong>La farmacologia è l'esame che decide chi va avanti e chi resta indietro</strong>. E la sessione si avvicina.</p>
+      <div class="subjects-accordion fade-in visible" role="list">
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-1">
+            <span class="subject-num" aria-hidden="true">1</span>
+            <span class="subject-title">Concetti di Base della Farmacologia</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-1" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Droga, rimedio, principio attivo e farmaco</li>
+                <li>Effetto placebo e nocebo</li>
+                <li>Potenza ed efficacia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-2">
+            <span class="subject-num" aria-hidden="true">2</span>
+            <span class="subject-title">Forme Farmaceutiche</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-2" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Introduzione alle forme farmaceutiche</li>
+                <li>Solide, semisolide, liquide e gassose</li>
+                <li>Cerotti transdermici</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-3">
+            <span class="subject-num" aria-hidden="true">3</span>
+            <span class="subject-title">Nomenclatura dei Farmaci</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-3" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Nome chimico</li>
+                <li>Farmaci generici ed equivalenti</li>
+                <li>Nomi commerciali: perché Paracetamolo = Acetaminofene = Tachipirina</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-4">
+            <span class="subject-num" aria-hidden="true">4</span>
+            <span class="subject-title">Approcci Terapeutici</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-4" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Omeopatici</li>
+                <li>Allopatici</li>
+                <li>Fitoterapici</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-5">
+            <span class="subject-num" aria-hidden="true">5</span>
+            <span class="subject-title">Vie di Somministrazione</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-5" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Orale, sublinguale, buccale, rettale</li>
+                <li>Parenterale, inalatoria, intranasale</li>
+                <li>Topica, oculare, otologica, epidurale</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-6">
+            <span class="subject-num" aria-hidden="true">6</span>
+            <span class="subject-title">Farmacocinetica</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-6" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Assorbimento, distribuzione, metabolismo</li>
+                <li>Escrezione (ADME)</li>
+                <li>Applicazioni cliniche pratiche</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-7">
+            <span class="subject-num" aria-hidden="true">7</span>
+            <span class="subject-title">Farmacodinamica</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-7" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Agonisti e antagonisti</li>
+                <li>Recettori accoppiati a proteine G</li>
+                <li>Selettività e relazione dose-risposta</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-8">
+            <span class="subject-num" aria-hidden="true">8</span>
+            <span class="subject-title">Farmacocinetica vs Farmacodinamica</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-8" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Schema comparativo illustrato</li>
+                <li>La differenziazione definitiva e immediata</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-item" data-open="false" role="listitem">
+          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-9">
+            <span class="subject-num" aria-hidden="true">9</span>
+            <span class="subject-title">Tossicità e Farmacogenomica</span>
+            <span class="subject-icon" aria-hidden="true"></span>
+          </button>
+          <div class="subject-content" id="subj-content-9" role="region">
+            <div class="subject-content-inner">
+              <ul class="subject-content-list">
+                <li>Meccanismi, tossicità acuta e cronica</li>
+                <li>Organo-specifica e ipersensibilità</li>
+                <li>Farmacogenomica e medicina personalizzata</li>
+                <li>Strategie per prevenire le intossicazioni</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -2007,7 +2525,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 48px;">
-        <a href="https://checkout.studiofacilebook.com/" data-checkout class="btn-cta">SÌ, VOGLIO IL KIT COMPLETO A 13€</a>
+        <a href="#offerta" class="btn-cta">VOGLIO VEDERE L'OFFERTA COMPLETA</a>
       </div>
     </div>
   </section>
@@ -2049,10 +2567,10 @@
       </div>
 
       <!-- DECISION BOX -->
-      <div class="decision-box">
-        <h3 class="db-title">Ecco tutto quello che ricevi oggi:</h3>
-
+      <div class="decision-box" id="offerta">
         <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockup-combo-entregaveis.webp" alt="Kit completo: 8 Moduli + 2 Bonus" class="db-mockup" width="1100" height="723" loading="lazy" decoding="async">
+
+        <h3 class="db-title">Kit Farmacologia Illustrata</h3>
 
         <ul class="db-checklist">
           <li>
@@ -2069,6 +2587,11 @@
             <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
             Bonus 2: Schede di Ripasso Rapido
             <span class="db-price-val">27€</span>
+          </li>
+          <li>
+            <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            PDF in alta risoluzione per stampare
+            <span class="db-price-val">Incluso</span>
           </li>
         </ul>
 
@@ -2141,11 +2664,11 @@
 
       <div class="author-content">
         <div class="author-image">
-          <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/foto-autor.webp?v=3" alt="Moisés Santos - Farmacista e CEO di Studio Facile" width="266" height="400" loading="lazy" decoding="async">
+          <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/foto-autor.webp?v=3" alt="Leandro Moretti - Farmacista e Fondatore di Studio Facile" width="266" height="400" loading="lazy" decoding="async">
         </div>
         <div class="author-bio">
-          <h3>Moisés Santos</h3>
-          <h4>Farmacista · CEO di Studio Facile</h4>
+          <h3>Leandro Moretti</h3>
+          <h4>Farmacista · Fondatore di Studio Facile</h4>
           <p>Farmacista e CEO di Studio Facile, una piattaforma che ha già aiutato <strong>oltre 11.978 studenti e professionisti della salute</strong> a semplificare materie complesse.</p>
           <p>Con un metodo costruito sulla <strong>chiarezza visiva e la memorizzazione efficace</strong>, trasformo contenuti densi in mappe mentali, illustrazioni e riepiloghi pratici, perché tu capisca finalmente quello che prima sembrava impossibile.</p>
           <p>Questo materiale non è nato &ldquo;per vendere&rdquo;. È nato <strong>perché anch'io sono passato dalla frustrazione di studiare farmacologia con metodi che non funzionano</strong>.</p>
@@ -2175,7 +2698,7 @@
       </div>
 
       <div style="text-align: center;">
-        <a href="https://checkout.studiofacilebook.com/" data-checkout class="btn-cta">SÌ, VOGLIO PADRONEGGIARE LA FARMACOLOGIA A 13€</a>
+        <a href="#offerta" class="btn-cta">VOGLIO VEDERE L'OFFERTA COMPLETA</a>
       </div>
     </div>
   </section>
@@ -2270,7 +2793,7 @@
         </ul>
       </div>
 
-      <a href="https://checkout.studiofacilebook.com/" data-checkout class="btn-cta">SÌ, VOGLIO PADRONEGGIARE LA FARMACOLOGIA A 13€</a>
+      <a href="#offerta" class="btn-cta">VOGLIO IL KIT COMPLETO A 13€</a>
 
       <p class="cta-small-print" style="margin-top: 24px;">
         💳 Pagamento in euro (EUR) con conversione automatica se risiedi all'estero<br>
@@ -2286,7 +2809,7 @@
     </div>
   </footer>
 
-  <!-- Fecha dinámica de la oferta -->
+  <!-- Fecha dinámica de la oferta (Zona horaria de Italia: Europe/Rome) -->
   <script>
     (function () {
       var el = document.getElementById('promoClock');
@@ -2295,6 +2818,7 @@
       try {
         var oggi = new Date();
         var dataStr = oggi.toLocaleDateString('it-IT', {
+          timeZone: 'Europe/Rome',
           weekday: 'long',
           day: 'numeric',
           month: 'long'
@@ -2309,15 +2833,7 @@
     })();
   </script>
 
-  <!-- BARRA DE COMPRA STICKY -->
-  <div class="buybar" id="buybar" aria-hidden="true">
-    <div class="buybar-in">
-      <span class="buybar-px"><s>91€</s><b>13€</b></span>
-      <a href="https://checkout.studiofacilebook.com/" data-checkout class="buybar-btn" id="cta-sticky">Voglio il kit</a>
-    </div>
-  </div>
-
-  <!-- Medicion (GTM ya esta instalado) + barra sticky -->
+  <!-- Medicion (GTM ya esta instalado) -->
   <script>
     (function () {
       var ITEM = { item_id: 'S95440624D', item_name: 'Kit Farmacologia Illustrata', price: 13, currency: 'EUR', quantity: 1 };
@@ -2329,8 +2845,7 @@
       dataLayer.push({ event: 'view_item', ecommerce: { currency: 'EUR', value: 13, items: [ITEM] } });
       if (typeof fbq === 'function') fbq('track', 'ViewContent', FB);
 
-      // Cada CTA al checkout dispara begin_checkout con el id del boton que lo origino,
-      // asi se puede ver en GA4/Meta cual de los 5 CTAs de la pagina cierra.
+      // Cada CTA al checkout dispara begin_checkout con el id del boton que lo origino
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href="https://checkout.studiofacilebook.com/"], [data-checkout], a[href*="checkout"]');
         if (!a) return;
@@ -2340,31 +2855,8 @@
           cta_id: a.id || a.className || 'sin-id',
           ecommerce: { currency: 'EUR', value: 13, items: [ITEM] }
         });
-        // El pixel recibe el mismo evento: InitiateCheckout es la conversion
-        // sobre la que se optimizan las campañas hasta que el checkout devuelva compras.
         if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', FB);
       }, true);
-
-      // La barra aparece recien despues de pasar el CTA del hero, y se esconde
-      // cuando cualquier boton grande ya esta a la vista (no compite consigo misma).
-      var bar = document.getElementById('buybar');
-      var ctas = [].slice.call(document.querySelectorAll('.btn-cta, .db-cta'));
-      if (!bar || !ctas.length || !('IntersectionObserver' in window)) return;
-
-      var vis = [], pasado = false;
-      var io = new IntersectionObserver(function (ens) {
-        ens.forEach(function (en) {
-          vis[ctas.indexOf(en.target)] = en.isIntersecting;
-          if (en.target === ctas[0]) {
-            if (en.isIntersecting) pasado = false;
-            else if (en.boundingClientRect.top < 0) pasado = true;
-          }
-        });
-        var mostrar = pasado && !vis.some(Boolean);
-        bar.classList.toggle('on', mostrar);
-        bar.setAttribute('aria-hidden', mostrar ? 'false' : 'true');
-      }, { threshold: 0 });
-      ctas.forEach(function (c) { io.observe(c); });
     })();
   </script>
 
@@ -2610,6 +3102,42 @@
         boot();
       }
     })();
+  </script>
+
+  <!-- Subjects Accordion Script -->
+  <script>
+    document.querySelectorAll('.subject-item').forEach(function(item) {
+      var btn = item.querySelector('.subject-summary');
+      var content = item.querySelector('.subject-content');
+      if (!btn || !content) return;
+
+      btn.addEventListener('click', function() {
+        var isOpen = item.getAttribute('data-open') === 'true';
+
+        document.querySelectorAll('.subject-item').forEach(function(other) {
+          if (other !== item && other.getAttribute('data-open') === 'true') {
+            other.setAttribute('data-open', 'false');
+            other.classList.remove('active');
+            var otherBtn = other.querySelector('.subject-summary');
+            var otherContent = other.querySelector('.subject-content');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherContent) otherContent.style.maxHeight = null;
+          }
+        });
+
+        if (isOpen) {
+          item.setAttribute('data-open', 'false');
+          item.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
+          content.style.maxHeight = null;
+        } else {
+          item.setAttribute('data-open', 'true');
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    });
   </script>
 
   <!-- FAQ Accordion Script -->
