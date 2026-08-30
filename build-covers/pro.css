@@ -1,0 +1,118 @@
+@font-face{font-family:'Poppins';src:url('fonts/Poppins-Medium.ttf');font-weight:500}
+@font-face{font-family:'Poppins';src:url('fonts/Poppins-SemiBold.ttf');font-weight:600}
+@font-face{font-family:'Poppins';src:url('fonts/Poppins-Bold.ttf');font-weight:700}
+@font-face{font-family:'Poppins';src:url('fonts/Poppins-ExtraBold.ttf');font-weight:800}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#0d1117}
+
+.page{position:relative;width:794px;height:1123px;overflow:hidden;
+  font-family:'Poppins',sans-serif;color:#fff}
+
+/* --------- fondos --------- */
+.bg{position:absolute;inset:0;z-index:0}
+.bg.blu{background:
+  radial-gradient(120% 70% at 50% 78%, #2f5fbd 0%, #1e408f 42%, #12295f 100%),
+  linear-gradient(180deg,#16306e 0%,#0e2050 100%)}
+.bg.mag{background:linear-gradient(168deg,#5a1a86 0%,#a01a7a 34%,#e5453f 68%,#f79a3c 100%)}
+
+/* trama hexagonal (bonus 1) */
+.hex{position:absolute;inset:0;z-index:1;opacity:.07;
+  background-image:
+    linear-gradient(60deg,transparent 47%,#fff 47%,#fff 48.4%,transparent 48.4%),
+    linear-gradient(-60deg,transparent 47%,#fff 47%,#fff 48.4%,transparent 48.4%),
+    linear-gradient(0deg,transparent 47%,#fff 47%,#fff 48.4%,transparent 48.4%);
+  background-size:120px 208px}
+
+/* ondas (bonus 2) */
+.wave{position:absolute;left:-8%;width:116%;z-index:1}
+.wave path{fill:rgba(255,255,255,.16)}
+.wave.w2 path{fill:rgba(255,255,255,.11)}
+
+.vig{position:absolute;inset:0;z-index:5;pointer-events:none;
+  box-shadow:inset 0 0 190px rgba(0,0,0,.42), inset 0 -70px 120px rgba(0,0,0,.28)}
+
+/* --------- hero --------- */
+.glow{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;z-index:2}
+.hero{position:absolute;left:50%;transform:translateX(-50%);z-index:3}
+.hero img{width:100%;display:block;
+  filter:drop-shadow(0 30px 48px rgba(0,0,0,.45))}
+.floor{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;z-index:2;
+  background:radial-gradient(closest-side,rgba(255,255,255,.34),rgba(255,255,255,0) 74%)}
+.spark{position:absolute;z-index:4;filter:drop-shadow(0 8px 16px rgba(0,0,0,.35))}
+.dot{position:absolute;z-index:4;border-radius:50%;background:#fff;
+  box-shadow:0 0 14px 4px rgba(255,255,255,.55)}
+.ray{position:absolute;z-index:2;border-radius:99px;transform-origin:50% 100%;
+  background:linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,.55))}
+
+/* --------- tipografia --------- */
+.top{position:absolute;left:0;right:0;top:52px;z-index:6;text-align:center;padding:0 44px}
+.mark{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:800;
+  letter-spacing:5.4px;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.mark b{width:6px;height:6px;border-radius:50%;background:#ffd166}
+.kicker{margin:14px auto 0;display:block;width:fit-content;padding:7px 22px;border-radius:999px;
+  background:#ffd166;color:#4a2a08;font-size:11.5px;font-weight:800;letter-spacing:2.6px;
+  text-transform:uppercase;box-shadow:0 10px 22px rgba(0,0,0,.30)}
+h1{margin-top:20px;font-size:50px;font-weight:800;line-height:1.02;letter-spacing:-.8px;
+  text-transform:uppercase;text-shadow:0 8px 22px rgba(0,0,0,.42)}
+.blu h1{font-size:44px}
+.plate{display:block;width:fit-content;margin:12px auto 0;padding:8px 26px 13px;
+  border-radius:20px;background:#fff;font-size:58px;line-height:1;letter-spacing:-1.8px;
+  box-shadow:0 18px 38px rgba(0,0,0,.34);text-shadow:none}
+.blu .plate{color:#1b3fa0;font-size:50px}
+.mag .plate{color:#b4237a}
+.plate.amber{background:#ffc46b;color:#4a2a08;font-size:26px;padding:12px 24px 14px;
+  line-height:1.22;letter-spacing:0}
+.sub{margin-top:18px;font-size:19px;font-weight:600;color:rgba(255,255,255,.94);
+  text-shadow:0 4px 14px rgba(0,0,0,.35)}
+
+.bottom{position:absolute;left:0;right:0;bottom:44px;z-index:6;text-align:center;padding:0 44px}
+.bottom .cls{font-size:21px;font-weight:800;line-height:1.34;
+  text-shadow:0 5px 16px rgba(0,0,0,.42)}
+.bottom .cls i{font-style:normal;color:rgba(255,255,255,.55);margin:0 6px}
+.pill{margin-top:16px;display:inline-block;padding:8px 24px;border-radius:999px;
+  border:2px solid rgba(255,255,255,.62);font-size:12.5px;font-weight:700;
+  letter-spacing:2.4px;text-transform:uppercase;color:rgba(255,255,255,.92)}
+
+/* discos de contexto clinico (bonus 1) */
+.chip3{position:absolute;z-index:4;border-radius:50%;background:#fff;display:flex;
+  align-items:center;justify-content:center;box-shadow:0 16px 30px rgba(0,0,0,.34)}
+.chip3 img{object-fit:contain}
+.chip3 .cap{position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);
+  padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.94);
+  font-size:10.5px;font-weight:800;letter-spacing:.4px;color:#12295f;white-space:nowrap;
+  box-shadow:0 6px 14px rgba(0,0,0,.28)}
+.az{display:block;width:fit-content;margin:16px auto 0;padding:11px 30px 13px;
+  border-radius:999px;background:#ffc46b;color:#4a2a08;font-size:27px;font-weight:800;
+  letter-spacing:2.6px;text-transform:uppercase;line-height:1;
+  box-shadow:0 16px 32px rgba(0,0,0,.32)}
+
+/* ---------- escena de farmacia (bonus 1) ---------- */
+.wall{position:absolute;z-index:2;left:40px;right:40px;top:428px;height:452px;
+  border-radius:34px;background:rgba(255,255,255,.075);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
+.shelf{position:absolute;z-index:3;left:70px;right:70px;height:9px;border-radius:6px;
+  background:rgba(255,255,255,.34);box-shadow:0 6px 14px rgba(0,0,0,.30)}
+.goods{position:absolute;z-index:3;left:70px;right:70px;display:flex;align-items:flex-end;
+  justify-content:space-between;padding:0 6px}
+.goods img{object-fit:contain;filter:brightness(.95) drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+.counter{position:absolute;z-index:6;left:0;right:0;bottom:0;height:110px;
+  background:linear-gradient(180deg,#eef3fb 0%,#dbe5f4 18%,#b9c9e2 100%);
+  box-shadow:0 -18px 40px rgba(0,0,0,.34), inset 0 2px 0 rgba(255,255,255,.9)}
+.counter:before{content:"";position:absolute;left:0;right:0;top:26px;height:2px;
+  background:rgba(255,255,255,.55)}
+
+.onc{position:absolute;z-index:7;object-fit:contain;
+  filter:drop-shadow(0 10px 12px rgba(0,0,0,.38))}
+
+/* disco A-Z central (bonus 1, opcion C) */
+.azdisc{position:absolute;z-index:5;left:50%;top:646px;transform:translate(-50%,-50%);
+  width:300px;height:300px;border-radius:50%;background:#fff;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;
+  box-shadow:0 26px 54px rgba(0,0,0,.42)}
+.azdisc .t{font-size:82px;font-weight:800;letter-spacing:-3px;color:#1b3fa0;line-height:1}
+.azdisc .t i{font-style:normal;color:#2f897d}
+.azdisc .s{margin-top:6px;font-size:15px;font-weight:800;letter-spacing:3px;
+  text-transform:uppercase;color:#9aa4bb}
+.azdisc .n{margin-top:10px;padding:6px 18px;border-radius:999px;background:#ffd166;
+  font-size:12.5px;font-weight:800;color:#4a2a08}
