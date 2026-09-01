@@ -21,7 +21,7 @@
   <meta name="theme-color" content="#2645a0">
   <!-- title ~57 y description ~148 caracteres: es lo que Google alcanza a mostrar -->
   <title>Farmacologia Illustrata: 28 capitoli visivi | Studio Facile</title>
-  <meta name="description" content="Farmacocinetica, farmacodinamica e classi di farmaci in 6 parti e 28 capitoli illustrati, più 2 bonus. Capire invece di memorizzare. 13€, garanzia 30 giorni.">
+  <meta name="description" content="Farmacocinetica, farmacodinamica e classi di farmaci in 4 parti e 28 capitoli illustrati, più 2 bonus. Capire invece di memorizzare. 13€, garanzia 30 giorni.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="Studio Facile">
   <link rel="alternate" hreflang="it" href="https://www.studiofacilebook.com/">
@@ -447,13 +447,6 @@
       margin: 40px auto;
     }
 
-
-    .bonus-sfoglia{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
-    .bonus-sfoglia figure{flex:1 1 140px;max-width:190px;margin:0}
-    .bonus-sfoglia img{width:100%;border-radius:10px;border:1px solid #e1e8f4;
-      box-shadow:0 2px 10px rgba(16,24,40,.10);display:block}
-    .bonus-sfoglia figcaption{font-size:11.5px;color:#6a7286;margin-top:5px;
-      line-height:1.35}
     .bonus-item {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 12px;
@@ -2063,7 +2056,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
    {"@type":"Product","name":"Kit di Farmacologia Illustrata",
-    "description":"Farmacologia illustrata in 6 parti e 28 capitoli: il linguaggio (vocabolario, nomenclatura, forme farmaceutiche, dose e potenza), il viaggio del farmaco (vie di somministrazione, farmacocinetica, farmacodinamica), le interazioni per apparato e la sicurezza (tossicità, ipersensibilità, farmacogenomica). Più 2 bonus, in italiano.",
+    "description":"Farmacologia illustrata in 4 parti e 28 capitoli: il linguaggio (vocabolario, nomenclatura, forme farmaceutiche, dose e potenza), il viaggio del farmaco (vie di somministrazione, farmacocinetica, farmacodinamica), le interazioni per apparato e la sicurezza (tossicità, ipersensibilità, farmacogenomica). Più 2 bonus, in italiano.",
     "image":"https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/brand/og-image.jpg?v=4",
     "brand":{"@type":"Brand","name":"Studio Facile"},
     "offers":{"@type":"Offer","price":"13","priceCurrency":"EUR","availability":"https://schema.org/InStock",
@@ -2357,7 +2350,7 @@
 
         <p class="text-center" style="font-size: 22px; font-weight: 700; margin-top: 40px;">È esattamente questo che fa il Kit di Farmacologia Illustrata.</p>
 
-        <p class="text-center">Non è &ldquo;l'ennesimo PDF&rdquo;. È il sistema che organizza tutto quello che già sai (e quello che ancora non sai) in <strong>6 parti e 28 capitoli illustrati</strong>, pensati perché il tuo cervello <strong>capisca invece di memorizzare</strong>.</p>
+        <p class="text-center">Non è &ldquo;l'ennesimo PDF&rdquo;. È il sistema che organizza tutto quello che già sai (e quello che ancora non sai) in <strong>4 parti e 28 capitoli illustrati</strong>, pensati perché il tuo cervello <strong>capisca invece di memorizzare</strong>.</p>
 
         <p class="text-center">Perché quando capisci le basi, <strong>tutto inizia ad avere senso</strong>.</p>
       </div>
@@ -2458,7 +2451,6 @@
             <h3>BONUS 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo;</h3>
             <p class="value">Valore singolo: 17€</p>
             <p>Un glossario completo dei termini che OGNI professionista della salute deve padroneggiare. Consultalo quando vuoi, portalo in tirocinio, usalo come riferimento rapido durante i turni.</p>
-            <div class="bonus-sfoglia"><figure><img src="./amostras/bonus1-voci-A.webp" alt="Pagina del glossario, lettera A" width="702" height="993" loading="lazy" decoding="async"><figcaption>Ogni voce con la definizione, il «perché conta» e il disegno</figcaption></figure><figure><img src="./amostras/bonus1-coppie.webp" alt="Le coppie che si confondono" width="702" height="993" loading="lazy" decoding="async"><figcaption>Dose, dosaggio e posologia messe a confronto</figcaption></figure></div>
           </div>
         </div>
 
@@ -2477,7 +2469,6 @@
               <li>Oppioidi (morfina, codeina, tramadolo)</li>
             </ul>
             <p style="margin-top: 16px;">Queste 5 classi coprono il 60-70% delle domande di farmacologia agli esami. Padroneggia questo e hai già metà esame in tasca.</p>
-            <div class="bonus-sfoglia"><figure><img src="./amostras/bonus2-meccanismo.webp" alt="Meccanismo degli antipertensivi" width="702" height="993" loading="lazy" decoding="async"><figcaption>Il meccanismo illustrato, classe per classe</figcaption></figure><figure><img src="./amostras/bonus2-ripasso.webp" alt="Pagina di ripasso lampo" width="702" height="993" loading="lazy" decoding="async"><figcaption>Dieci domande con la risposta da coprire</figcaption></figure><figure><img src="./amostras/bonus2-confronto.webp" alt="Le cinque classi a confronto" width="702" height="993" loading="lazy" decoding="async"><figcaption>La tabella che le mette tutte sotto gli occhi</figcaption></figure></div>
           </div>
         </div>
       </div>
@@ -2600,7 +2591,7 @@
       <h2 class="text-center">Ricapitolando: Ecco Cosa Ricevi Oggi</h2>
 
       <ul class="recap-list">
-        <li>28 Capitoli Illustrati di Farmacologia, in 6 parti: dal linguaggio di base alle interazioni e alla sicurezza, tutto visivo e organizzato</li>
+        <li>28 Capitoli Illustrati di Farmacologia, in 4 parti: dal linguaggio di base alle interazioni e alla sicurezza, tutto visivo e organizzato</li>
         <li>Bonus 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo; (valore 17€)</li>
         <li>Bonus 2: Schede di Ripasso Rapido, Le 5 Classi Che Escono Più Spesso (valore 27€)</li>
         <li>Accesso immediato: ricevi tutto via email automatica in meno di 2 minuti</li>
