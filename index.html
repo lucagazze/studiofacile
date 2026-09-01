@@ -20,8 +20,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#2645a0">
   <!-- title ~57 y description ~148 caracteres: es lo que Google alcanza a mostrar -->
-  <title>Farmacologia Illustrata: 8 moduli visivi | Studio Facile</title>
-  <meta name="description" content="Farmacocinetica, farmacodinamica e classi di farmaci in 8 moduli illustrati, più 2 bonus. Capire invece di memorizzare. 13€, garanzia 30 giorni.">
+  <title>Farmacologia Illustrata: 28 capitoli visivi | Studio Facile</title>
+  <meta name="description" content="Farmacocinetica, farmacodinamica e classi di farmaci in 4 parti e 28 capitoli illustrati, più 2 bonus. Capire invece di memorizzare. 13€, garanzia 30 giorni.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="Studio Facile">
   <link rel="alternate" hreflang="it" href="https://www.studiofacilebook.com/">
@@ -35,14 +35,14 @@
   <meta property="og:image" content="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/brand/og-image.jpg?v=4">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Farmacologia Illustrata — 8 moduli illustrati + 2 bonus, di Studio Facile">
+  <meta property="og:image:alt" content="Farmacologia Illustrata — 28 capitoli illustrati + 2 bonus, di Studio Facile">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Farmacologia Illustrata | Studio Facile">
-  <meta name="twitter:description" content="8 moduli illustrati + 2 bonus per capire la farmacologia invece di memorizzarla.">
+  <meta name="twitter:description" content="28 capitoli illustrati + 2 bonus per capire la farmacologia invece di memorizzarla.">
   <meta name="twitter:image" content="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/brand/og-image.jpg?v=4">
 
   <!-- Iconos -->
@@ -1696,6 +1696,43 @@
       margin: 0;
     }
 
+    .topic-pages {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-light);
+      border-radius: 999px;
+      padding: 2px 10px;
+      margin-bottom: 8px;
+    }
+
+    .topic-chapters {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    .topic-chapters li {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.5;
+      padding: 3px 0 3px 18px;
+      position: relative;
+    }
+
+    .topic-chapters li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      opacity: .55;
+    }
+
     /* === PARA QUEM (personas ilustradas) === */
     .paraquem-grid {
       display: grid;
@@ -2019,7 +2056,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
    {"@type":"Product","name":"Kit di Farmacologia Illustrata",
-    "description":"8 moduli illustrati di farmacologia (concetti di base, forme farmaceutiche, nomenclatura, approcci terapeutici, vie di somministrazione, farmacocinetica, farmacodinamica e tossicità) più 2 bonus, in italiano.",
+    "description":"Farmacologia illustrata in 4 parti e 28 capitoli: il linguaggio (vocabolario, nomenclatura, forme farmaceutiche, dose e potenza), il viaggio del farmaco (vie di somministrazione, farmacocinetica, farmacodinamica), le interazioni per apparato e la sicurezza (tossicità, ipersensibilità, farmacogenomica). Più 2 bonus, in italiano.",
     "image":"https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/brand/og-image.jpg?v=4",
     "brand":{"@type":"Brand","name":"Studio Facile"},
     "offers":{"@type":"Offer","price":"13","priceCurrency":"EUR","availability":"https://schema.org/InStock",
@@ -2036,10 +2073,10 @@
 <body>
   <div class="sp-toast" id="spToast" role="status" aria-live="polite">
     <button class="sp-close" id="spClose" aria-label="Chiudi">×</button>
-    <span class="sp-mini"><img id="spShot" src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/hero-kit.webp?v=9" alt=""></span>
+    <span class="sp-mini"><img id="spShot" src="./mockups/hero-kit-v2.webp" alt=""></span>
     <div class="sp-txt">
       <span class="sp-name" id="spName">Chiara da Milano</span>
-      <span class="sp-prod" id="spProd">Kit Completo · 8 Moduli + 2 Bonus</span>
+      <span class="sp-prod" id="spProd">Kit Completo · 28 Capitoli + 2 Bonus</span>
       <span class="sp-meta"><span class="ok">✔ Accesso confermato</span> · <span id="spTime">fa 4 minuti</span></span>
     </div>
   </div>
@@ -2055,8 +2092,8 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-mockup">
-        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/hero-kit.webp?v=9" alt="Kit Completo di Farmacologia Illustrata"
-             width="1200" height="886" loading="eager" fetchpriority="high" decoding="async">
+        <img src="./mockups/hero-kit-v2.webp" alt="Kit Completo di Farmacologia Illustrata"
+             width="1200" height="892" loading="eager" fetchpriority="high" decoding="async">
       </div>
       <p class="hero-social">
         <span class="stars" aria-hidden="true">★★★★★</span>
@@ -2110,11 +2147,11 @@
         </button>
 
         <div class="testimonials-scroll" id="amostras-scroll" role="list" data-no-autoplay>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/pag-42.webp?v=7" alt="Pagina di esempio: contenuto illustrato di farmacologia" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/pag-39.webp?v=7" alt="Pagina di esempio: schema visivo del materiale" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/pag-35.webp?v=7" alt="Pagina di esempio: mappa mentale illustrata" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/pag-37.webp?v=7" alt="Pagina di esempio: riepilogo visivo di farmacologia" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/pag-21.webp?v=7" alt="Pagina di esempio: farmacocinetica illustrata" width="1405" height="1874" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p57-warfarin.webp" alt="Pagina 57: le interazioni del warfarin, con rischio, meccanismo e condotta" width="1405" height="1874" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p37-recettori.webp" alt="Pagina 37: recettori, chiave e serratura, illustrato" width="1405" height="1874" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p47-ipersensibilita.webp" alt="Pagina 47: come nasce una reazione da ipersensibilità" width="1405" height="1874" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p48-metabolizzatori.webp" alt="Pagina 48: perché la stessa dose non fa lo stesso effetto" width="1405" height="1874" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p52-interazione.webp" alt="Pagina 52: come nasce un'interazione fra due farmaci" width="1405" height="1874" loading="lazy" decoding="async"></article>
         </div>
 
         <div class="carousel-progress" aria-hidden="true">
@@ -2189,7 +2226,7 @@
             <li>Facile da capire subito</li>
             <li>Visivo e intuitivo!</li>
           </ul>
-          <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/cinetica-x-dinamica.webp?v=7" alt="Farmacologia Illustrata: mappa visiva di farmacocinetica e farmacodinamica, facile da memorizzare" width="1405" height="1874" loading="lazy" decoding="async">
+          <img src="./amostras/p41-curva-dose.webp" alt="Pagina 41: la curva dose-risposta spiegata con illustrazioni" width="1405" height="1874" loading="lazy" decoding="async">
         </div>
 
       </div>
@@ -2201,164 +2238,94 @@
     <div class="container">
       <div class="section-header">
         <span class="eyebrow eyebrow-inverse">Sommario</span>
-        <h2>Dai un'occhiata ai 9 capitoli</h2>
-        <p class="subjects-subtitle">Dai concetti di base alla tossicità: i fondamenti che escono a ogni esame, completamente illustrati</p>
+        <h2>Dai un'occhiata alle 6 parti e ai 28 capitoli</h2>
+        <p class="subjects-subtitle">Dal linguaggio di base alle interazioni e alla sicurezza: 83 pagine, tutte illustrate</p>
       </div>
 
       <div class="subjects-accordion fade-in visible" role="list">
 
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-1">
-            <span class="subject-num" aria-hidden="true">1</span>
-            <span class="subject-title">Concetti di Base della Farmacologia</span>
+            <span class="subject-num" aria-hidden="true">I</span>
+            <span class="subject-title">Il linguaggio <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 5-15</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-1" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Droga, rimedio, principio attivo e farmaco</li>
-                <li>Effetto placebo e nocebo</li>
-                <li>Potenza ed efficacia</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>Le parole di base</li><li>Forme farmaceutiche</li><li>Nomi e approcci</li><li>Ripasso della parte</li></ul></div>
           </div>
         </div>
-
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-2">
-            <span class="subject-num" aria-hidden="true">2</span>
-            <span class="subject-title">Forme Farmaceutiche</span>
+            <span class="subject-num" aria-hidden="true">II</span>
+            <span class="subject-title">Come entra <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 16-21</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-2" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Introduzione alle forme farmaceutiche</li>
-                <li>Solide, semisolide, liquide e gassose</li>
-                <li>Cerotti transdermici</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>Panoramica delle vie</li><li>Vie enterali</li><li>Vie parenterali</li><li>Vie locali e respiratorie</li><li>Come si sceglie la via</li></ul></div>
           </div>
         </div>
-
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-3">
-            <span class="subject-num" aria-hidden="true">3</span>
-            <span class="subject-title">Nomenclatura dei Farmaci</span>
+            <span class="subject-num" aria-hidden="true">III</span>
+            <span class="subject-title">Il viaggio del farmaco <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 22-34</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-3" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Nome chimico</li>
-                <li>Farmaci generici ed equivalenti</li>
-                <li>Nomi commerciali: perché Paracetamolo = Acetaminofene = Tachipirina</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>La mappa: ADME</li><li>Assorbimento</li><li>Distribuzione</li><li>Metabolismo</li><li>Escrezione ed emivita</li><li>Ripasso della parte</li></ul></div>
           </div>
         </div>
-
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-4">
-            <span class="subject-num" aria-hidden="true">4</span>
-            <span class="subject-title">Approcci Terapeutici</span>
+            <span class="subject-num" aria-hidden="true">IV</span>
+            <span class="subject-title">Come agisce <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 35-42</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-4" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Omeopatici</li>
-                <li>Allopatici</li>
-                <li>Fitoterapici</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>Recettori e ligandi</li><li>Selettività e dose</li><li>Cinetica contro dinamica</li></ul></div>
           </div>
         </div>
-
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-5">
-            <span class="subject-num" aria-hidden="true">5</span>
-            <span class="subject-title">Vie di Somministrazione</span>
+            <span class="subject-num" aria-hidden="true">V</span>
+            <span class="subject-title">Sicurezza <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 43-50</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-5" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Orale, sublinguale, buccale, rettale</li>
-                <li>Parenterale, inalatoria, intranasale</li>
-                <li>Topica, oculare, otologica, epidurale</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>Finestra terapeutica e tossicità</li><li>Reazioni e differenze individuali</li><li>Prevenzione e smaltimento</li></ul></div>
           </div>
         </div>
-
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-6">
-            <span class="subject-num" aria-hidden="true">6</span>
-            <span class="subject-title">Farmacocinetica</span>
+            <span class="subject-num" aria-hidden="true">VI</span>
+            <span class="subject-title">Le interazioni <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 51-67</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-6" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Assorbimento, distribuzione, metabolismo</li>
-                <li>Escrezione (ADME)</li>
-                <li>Applicazioni cliniche pratiche</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>Come nasce un'interazione</li><li>Dolore e infiammazione</li><li>Cuore e circolazione</li><li>Sistema nervoso</li><li>Infezioni</li><li>Ormoni e digerente</li><li>Ripasso della parte</li></ul></div>
           </div>
         </div>
-
         <div class="subject-item" data-open="false" role="listitem">
           <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-7">
-            <span class="subject-num" aria-hidden="true">7</span>
-            <span class="subject-title">Farmacodinamica</span>
+            <span class="subject-num" aria-hidden="true">&middot;</span>
+            <span class="subject-title">In chiusura <em style="font-style:normal;opacity:.6;font-weight:600">&middot; pp. 68-72</em></span>
             <span class="subject-icon" aria-hidden="true"></span>
           </button>
           <div class="subject-content" id="subj-content-7" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Agonisti e antagonisti</li>
-                <li>Recettori accoppiati a proteine G</li>
-                <li>Selettività e relazione dose-risposta</li>
-              </ul>
-            </div>
+            <div class="subject-content-inner"><ul class="subject-content-list"><li>Glossario &mdash; p. 68</li><li>Fonti e riferimenti &mdash; p. 70</li><li>Indice analitico &mdash; p. 71</li></ul></div>
+          </div>
+        </div>
+      </div>
           </div>
         </div>
 
-        <div class="subject-item" data-open="false" role="listitem">
-          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-8">
-            <span class="subject-num" aria-hidden="true">8</span>
-            <span class="subject-title">Farmacocinetica vs Farmacodinamica</span>
-            <span class="subject-icon" aria-hidden="true"></span>
-          </button>
-          <div class="subject-content" id="subj-content-8" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Schema comparativo illustrato</li>
-                <li>La differenziazione definitiva e immediata</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
 
-        <div class="subject-item" data-open="false" role="listitem">
-          <button class="subject-summary" type="button" aria-expanded="false" aria-controls="subj-content-9">
-            <span class="subject-num" aria-hidden="true">9</span>
-            <span class="subject-title">Tossicità e Farmacogenomica</span>
-            <span class="subject-icon" aria-hidden="true"></span>
-          </button>
-          <div class="subject-content" id="subj-content-9" role="region">
-            <div class="subject-content-inner">
-              <ul class="subject-content-list">
-                <li>Meccanismi, tossicità acuta e cronica</li>
-                <li>Organo-specifica e ipersensibilità</li>
-                <li>Farmacogenomica e medicina personalizzata</li>
-                <li>Strategie per prevenire le intossicazioni</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
+
+        
+
+        
+
 
       </div>
     </div>
@@ -2377,14 +2344,14 @@
         <p class="text-center">...apri <strong>1 mappa mentale illustrata</strong> che ti mostra l'ADME (assorbimento, distribuzione, metabolismo, escrezione) in 4 blocchi visivi.</p>
 
         <div class="solution-image">
-          <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/amostras/cinetica-x-dinamica.webp?v=7" alt="Esempio di mappa mentale illustrata" width="1405" height="1874" loading="lazy" decoding="async">
+          <img src="./amostras/p23-adme.webp" alt="Pagina 23: ADME, il viaggio del farmaco in quattro tappe, illustrato" width="1405" height="1874" loading="lazy" decoding="async">
         </div>
 
         <p class="text-center">Il tuo cervello <strong>vede il flusso</strong>. I collegamenti si formano da soli. E finalmente capisci perché conta la via di somministrazione, perché alcuni farmaci passano dal metabolismo epatico e altri vengono escreti immodificati.</p>
 
         <p class="text-center" style="font-size: 22px; font-weight: 700; margin-top: 40px;">È esattamente questo che fa il Kit di Farmacologia Illustrata.</p>
 
-        <p class="text-center">Non è &ldquo;l'ennesimo PDF&rdquo;. È il sistema che organizza tutto quello che già sai (e quello che ancora non sai) in <strong>8 moduli illustrati</strong>, pensati perché il tuo cervello <strong>capisca invece di memorizzare</strong>.</p>
+        <p class="text-center">Non è &ldquo;l'ennesimo PDF&rdquo;. È il sistema che organizza tutto quello che già sai (e quello che ancora non sai) in <strong>4 parti e 28 capitoli illustrati</strong>, pensati perché il tuo cervello <strong>capisca invece di memorizzare</strong>.</p>
 
         <p class="text-center">Perché quando capisci le basi, <strong>tutto inizia ad avere senso</strong>.</p>
       </div>
@@ -2397,74 +2364,73 @@
       <h2 class="text-center">Ecco Cosa Riceverai Acquistando il Kit:</h2>
 
       <div style="margin: 20px auto 28px;">
-        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/combo-amostras.webp?v=9" alt="Kit di Farmacologia Illustrata: mockup con pagine di esempio" width="1100" height="1620" loading="lazy" decoding="async" style="max-width: 480px; width: 100%; display: block; margin: 0 auto;">
+        <img src="./mockups/combo-amostras-v2.webp" alt="Kit di Farmacologia Illustrata: mockup con pagine di esempio" width="1000" height="1473" loading="lazy" decoding="async" style="max-width: 480px; width: 100%; display: block; margin: 0 auto;">
       </div>
 
       <div class="topics-grid">
-        <div class="topic-item">
-          <span class="topic-num">1</span>
-          <div>
-            <h3>Concetti di Base</h3>
-            <p>Potenza, efficacia ed effetto placebo: le fondamenta che escono a ogni esame.</p>
-          </div>
-        </div>
 
         <div class="topic-item">
-          <span class="topic-num">2</span>
+          <span class="topic-num">I</span>
           <div>
-            <h3>Forme Farmaceutiche</h3>
-            <p>Solide, liquide, gassose e transdermiche, illustrate per non confonderle mai più.</p>
+            <span class="topic-pages">pp. 5&ndash;15</span>
+            <h3>Il linguaggio</h3>
+            <p>Le parole che servono per leggere tutto il resto, separate una volta per tutte.</p>
           </div>
         </div>
-
         <div class="topic-item">
-          <span class="topic-num">3</span>
+          <span class="topic-num">II</span>
           <div>
-            <h3>Nomenclatura dei Farmaci</h3>
-            <p>Chimico, generico e commerciale: perché Paracetamolo = Acetaminofene = Tachipirina.</p>
+            <span class="topic-pages">pp. 16&ndash;21</span>
+            <h3>Come entra</h3>
+            <p>Le vie di somministrazione, raggruppate per come il farmaco entra davvero.</p>
           </div>
         </div>
-
         <div class="topic-item">
-          <span class="topic-num">4</span>
+          <span class="topic-num">III</span>
           <div>
-            <h3>Approcci Terapeutici</h3>
-            <p>Allopatici, omeopatici e fitoterapici, con contesto clinico reale.</p>
+            <span class="topic-pages">pp. 22&ndash;34</span>
+            <h3>Il viaggio del farmaco</h3>
+            <p>Farmacocinetica: dove entra, dove va, chi lo trasforma e come se ne va.</p>
           </div>
         </div>
-
         <div class="topic-item">
-          <span class="topic-num">5</span>
+          <span class="topic-num">IV</span>
           <div>
-            <h3>Vie di Somministrazione</h3>
-            <p>Dalla orale alla intratecale, con esempi di farmaci che escono davvero all'esame.</p>
+            <span class="topic-pages">pp. 35&ndash;42</span>
+            <h3>Come agisce</h3>
+            <p>Farmacodinamica: a quale bersaglio si lega e che cosa succede una volta arrivato.</p>
           </div>
         </div>
-
         <div class="topic-item">
-          <span class="topic-num">6</span>
+          <span class="topic-num">V</span>
           <div>
-            <h3>Farmacocinetica (ADME)</h3>
-            <p>Assorbimento, distribuzione, metabolismo ed escrezione, passo per passo in forma visiva.</p>
+            <span class="topic-pages">pp. 43&ndash;50</span>
+            <h3>Sicurezza</h3>
+            <p>Quando la dose diventa un problema, e in chi cambia più spesso.</p>
           </div>
         </div>
-
         <div class="topic-item">
-          <span class="topic-num">7</span>
+          <span class="topic-num">VI</span>
           <div>
-            <h3>Farmacodinamica</h3>
-            <p>Agonisti, antagonisti e recettori: il meccanismo d'azione finalmente chiaro.</p>
-          </div>
-        </div>
-
-        <div class="topic-item">
-          <span class="topic-num">8</span>
-          <div>
-            <h3>Tossicità</h3>
-            <p>Acuta, cronica e per organi: l'essenziale per la pratica clinica reale.</p>
+            <span class="topic-pages">pp. 51&ndash;67</span>
+            <h3>Le interazioni</h3>
+            <p>Le interazioni per classe, con il rischio, il meccanismo e la condotta.</p>
           </div>
         </div>
       </div>
+        </div>
+
+        
+
+        
+
+        
+      </div>
+
+      <p class="text-center" style="font-size:15px;color:var(--text-light);max-width:760px;margin:0 auto;">
+        In chiusura: <strong>glossario</strong>, <strong>fonti e riferimenti</strong> e
+        <strong>indice analitico</strong> per ritrovare ogni voce.
+      </p>
 
       <div style="text-align: center; margin-top: 48px;">
         <a href="#offerta" class="btn-cta">VOGLIO VEDERE L'OFFERTA COMPLETA</a>
@@ -2480,7 +2446,7 @@
       <div class="bonus-grid">
         <div class="bonus-item-with-image">
           <div class="bonus-mockup">
-            <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/bonus-1.webp?v=9" alt="Guida Dalla A alla Z" width="720" height="1000" loading="lazy" decoding="async">
+            <img src="./mockups/bonus-1.webp" alt="Guida Dalla A alla Z" width="528" height="733" loading="lazy" decoding="async">
           </div>
           <div class="bonus-text">
             <h3>BONUS 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo;</h3>
@@ -2491,7 +2457,7 @@
 
         <div class="bonus-item-with-image">
           <div class="bonus-mockup">
-            <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/bonus-2.webp?v=9" alt="Schede di Ripasso Rapido" width="720" height="1000" loading="lazy" decoding="async">
+            <img src="./mockups/bonus-2.webp" alt="Schede di Ripasso Rapido" width="528" height="733" loading="lazy" decoding="async">
           </div>
           <div class="bonus-text">
             <h3>BONUS 2: Schede di Ripasso Rapido, &ldquo;Le 5 Classi Che Escono Più Spesso all'Esame&rdquo;</h3>
@@ -2510,14 +2476,14 @@
 
       <!-- DECISION BOX -->
       <div class="decision-box" id="offerta">
-        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/combo-entregaveis.webp?v=9" alt="Kit completo: 8 Moduli + 2 Bonus" class="db-mockup" width="1200" height="886" loading="lazy" decoding="async">
+        <img src="./mockups/hero-kit-v2.webp" alt="Kit completo: 28 Capitoli + 2 Bonus" class="db-mockup" width="1200" height="892" loading="lazy" decoding="async">
 
         <h3 class="db-title">Kit Farmacologia Illustrata</h3>
 
         <ul class="db-checklist">
           <li>
             <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
-            8 Moduli Illustrati di Farmacologia
+            28 Capitoli Illustrati di Farmacologia
             <span class="db-price-val">47€</span>
           </li>
           <li>
@@ -2626,7 +2592,7 @@
       <h2 class="text-center">Ricapitolando: Ecco Cosa Ricevi Oggi</h2>
 
       <ul class="recap-list">
-        <li>8 Moduli Illustrati di Farmacologia: dai concetti di base alla tossicità, tutto visivo e organizzato</li>
+        <li>28 Capitoli Illustrati di Farmacologia, in 4 parti: dal linguaggio di base alle interazioni e alla sicurezza, tutto visivo e organizzato</li>
         <li>Bonus 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo; (valore 17€)</li>
         <li>Bonus 2: Schede di Ripasso Rapido, Le 5 Classi Che Escono Più Spesso (valore 27€)</li>
         <li>Accesso immediato: ricevi tutto via email automatica in meno di 2 minuti</li>
@@ -3100,13 +3066,13 @@
     (function(){
       var buyers = [
         { name: "Chiara da Milano", prod: "Ha acquistato il Kit Completo", time: "fa 4 minuti" },
-        { name: "Marco da Roma", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 12 minuti" },
+        { name: "Marco da Roma", prod: "Kit Completo · 28 Capitoli + 2 Bonus", time: "fa 12 minuti" },
         { name: "Martina da Bologna", prod: "Ha acquistato il Kit Completo", time: "fa 18 minuti" },
-        { name: "Lorenzo da Napoli", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 25 minuti" },
+        { name: "Lorenzo da Napoli", prod: "Kit Completo · 28 Capitoli + 2 Bonus", time: "fa 25 minuti" },
         { name: "Sofia da Torino", prod: "Ha sbloccato il Kit Completo", time: "fa 31 minuti" },
-        { name: "Matteo da Firenze", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 39 minuti" },
+        { name: "Matteo da Firenze", prod: "Kit Completo · 28 Capitoli + 2 Bonus", time: "fa 39 minuti" },
         { name: "Camilla da Padova", prod: "Ha acquistato il Kit Completo", time: "fa 44 minuti" },
-        { name: "Alessandro da Pisa", prod: "Kit Completo · 8 Moduli + 2 Bonus", time: "fa 52 minuti" }
+        { name: "Alessandro da Pisa", prod: "Kit Completo · 28 Capitoli + 2 Bonus", time: "fa 52 minuti" }
       ];
       var idx = 0;
       var toast = document.getElementById('spToast');
@@ -3115,7 +3081,7 @@
       var spTime = document.getElementById('spTime');
       var spShot = document.getElementById('spShot');
       var spClose = document.getElementById('spClose');
-      var KIT_IMG = "https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/hero-kit.webp?v=9";
+      var KIT_IMG = "./mockups/hero-kit-v2.webp";
 
       if (!toast) return;
       if (spShot) spShot.src = KIT_IMG;
