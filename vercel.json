@@ -1,3 +1,20 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/libri",
+      "destination": "/biblioteca",
+      "permanent": true
+    },
+    {
+      "source": "/libri.html",
+      "destination": "/biblioteca",
+      "permanent": true
+    },
+    {
+      "source": "/prontuari",
+      "destination": "/collezione",
+      "permanent": true
+    }
+  ]
 }

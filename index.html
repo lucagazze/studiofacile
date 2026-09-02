@@ -448,6 +448,19 @@
     }
 
 
+    .amostra-btn{display:block;width:100%;padding:0;border:none;background:none;
+      cursor:zoom-in;font-family:inherit;position:relative;border-radius:12px;overflow:hidden}
+    .amostra-btn img{display:block;width:100%;height:auto;border-radius:12px}
+    .amostra-cap{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;
+      font-size:12.5px;font-weight:700;color:#fff;text-align:left;line-height:1.3;
+      background:linear-gradient(to top,rgba(12,20,44,.86),rgba(12,20,44,0))}
+    .gal-cta-wrap{text-align:center;margin-top:26px}
+    .gal-cta{display:inline-block;background:#fff;border:2px solid #2645a0;color:#2645a0;
+      font-family:inherit;font-size:16px;font-weight:800;padding:14px 26px;border-radius:12px;
+      cursor:pointer;transition:background .18s,transform .15s}
+    .gal-cta:hover{background:#eff4fd;transform:translateY(-2px)}
+    .gal-cta-sm{font-size:14px;padding:11px 20px;margin-top:14px}
+    .gal-cta-note{font-size:14px;color:#667085;margin:10px 0 0}
     .bonus-sfoglia{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
     .bonus-sfoglia figure{flex:1 1 140px;max-width:190px;margin:0}
     .bonus-sfoglia img{width:100%;border-radius:10px;border:1px solid #e1e8f4;
@@ -2142,7 +2155,7 @@
   <section class="section" aria-label="Anteprime del materiale">
     <div class="container">
       <h2 class="text-center">Ecco Come Sono le Pagine Che Studierai</h2>
-      <p class="text-center section-sub-p">Linguaggio diretto, organizzazione visiva e associazioni che restano in memoria. Guarda il materiale dall'interno:</p>
+      <p class="text-center section-sub-p">Linguaggio diretto, organizzazione visiva e associazioni che restano in memoria. Tocca una pagina per aprirle tutte e sette:</p>
 
       <div class="testimonials-carousel-wrap" role="region" aria-label="Carosello delle anteprime del materiale">
         <button type="button" class="carousel-nav" data-dir="prev" data-target="amostras-scroll" aria-label="Anteprima precedente">
@@ -2153,11 +2166,48 @@
         </button>
 
         <div class="testimonials-scroll" id="amostras-scroll" role="list" data-no-autoplay>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p57-warfarin.webp" alt="Pagina 57: le interazioni del warfarin, con rischio, meccanismo e condotta" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p37-recettori.webp" alt="Pagina 37: recettori, chiave e serratura, illustrato" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p47-ipersensibilita.webp" alt="Pagina 47: come nasce una reazione da ipersensibilità" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p48-metabolizzatori.webp" alt="Pagina 48: perché la stessa dose non fa lo stesso effetto" width="1405" height="1874" loading="lazy" decoding="async"></article>
-          <article class="testimonial-item amostra-item" role="listitem"><img src="./amostras/p52-interazione.webp" alt="Pagina 52: come nasce un'interazione fra due farmaci" width="1405" height="1874" loading="lazy" decoding="async"></article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="0" aria-label="Ingrandisci: Potenza non è efficacia">
+              <img src="./anteprime/farmacologia_01.webp" alt="Potenza non è efficacia" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">Potenza non è efficacia</span>
+            </button>
+          </article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="1" aria-label="Ingrandisci: Tutte le vie in una pagina">
+              <img src="./anteprime/farmacologia_02.webp" alt="Tutte le vie in una pagina" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">Tutte le vie in una pagina</span>
+            </button>
+          </article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="2" aria-label="Ingrandisci: ADME: il viaggio in quattro tappe">
+              <img src="./anteprime/farmacologia_03.webp" alt="ADME: il viaggio in quattro tappe" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">ADME: il viaggio in quattro tappe</span>
+            </button>
+          </article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="3" aria-label="Ingrandisci: Il percorso nel nefrone">
+              <img src="./anteprime/farmacologia_04.webp" alt="Il percorso nel nefrone" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">Il percorso nel nefrone</span>
+            </button>
+          </article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="4" aria-label="Ingrandisci: Recettori: chiave e serratura">
+              <img src="./anteprime/farmacologia_05.webp" alt="Recettori: chiave e serratura" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">Recettori: chiave e serratura</span>
+            </button>
+          </article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="5" aria-label="Ingrandisci: La curva dose-risposta">
+              <img src="./anteprime/farmacologia_06.webp" alt="La curva dose-risposta" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">La curva dose-risposta</span>
+            </button>
+          </article>
+          <article class="testimonial-item amostra-item" role="listitem">
+            <button type="button" class="amostra-btn" data-galleria="farmacologia" data-galleria-pagina="6" aria-label="Ingrandisci: Le interazioni in sei regole">
+              <img src="./anteprime/farmacologia_07.webp" alt="Le interazioni in sei regole" width="1100" height="1556" loading="lazy" decoding="async">
+              <span class="amostra-cap">Le interazioni in sei regole</span>
+            </button>
+          </article>
         </div>
 
         <div class="carousel-progress" aria-hidden="true">
@@ -2165,6 +2215,13 @@
         </div>
 
         <div class="carousel-dots" id="amostras-dots" role="tablist" aria-label="Navigazione delle anteprime"></div>
+      </div>
+
+      <div class="gal-cta-wrap">
+        <button type="button" class="gal-cta" data-galleria="farmacologia">
+          👁️ Sfoglia tutte e 7 le pagine
+        </button>
+        <p class="gal-cta-note">Pagine reali del libro, in alta risoluzione, cos&igrave; sai esattamente cosa ricevi.</p>
       </div>
     </div>
   </section>
@@ -2456,9 +2513,10 @@
           </div>
           <div class="bonus-text">
             <h3>BONUS 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo;</h3>
-            <p class="value">Valore singolo: 17€</p>
+            <p class="value">Valore singolo: 9,90€</p>
             <p>Un glossario completo dei termini che OGNI professionista della salute deve padroneggiare. Consultalo quando vuoi, portalo in tirocinio, usalo come riferimento rapido durante i turni.</p>
             <div class="bonus-sfoglia"><figure><img src="./amostras/bonus1-voci-A.webp" alt="Pagina del glossario, lettera A" width="702" height="993" loading="lazy" decoding="async"><figcaption>Ogni voce con la definizione, il «perché conta» e il disegno</figcaption></figure><figure><img src="./amostras/bonus1-coppie.webp" alt="Le coppie che si confondono" width="702" height="993" loading="lazy" decoding="async"><figcaption>Dose, dosaggio e posologia messe a confronto</figcaption></figure></div>
+            <button type="button" class="gal-cta gal-cta-sm" data-galleria="bonus1">👁️ Sfoglia 6 pagine del Bonus 1</button>
           </div>
         </div>
 
@@ -2468,7 +2526,7 @@
           </div>
           <div class="bonus-text">
             <h3>BONUS 2: Schede di Ripasso Rapido, &ldquo;Le 5 Classi Che Escono Più Spesso all'Esame&rdquo;</h3>
-            <p class="value">Valore singolo: 27€</p>
+            <p class="value">Valore singolo: 9,90€</p>
             <ul>
               <li>Antipertensivi (ACE-inibitori, sartani, beta-bloccanti)</li>
               <li>FANS (ibuprofene, naprossene, ketorolac)</li>
@@ -2477,7 +2535,9 @@
               <li>Oppioidi (morfina, codeina, tramadolo)</li>
             </ul>
             <p style="margin-top: 16px;">Queste 5 classi coprono il 60-70% delle domande di farmacologia agli esami. Padroneggia questo e hai già metà esame in tasca.</p>
-            <div class="bonus-sfoglia"><figure><img src="./amostras/bonus2-meccanismo.webp" alt="Meccanismo degli antipertensivi" width="702" height="993" loading="lazy" decoding="async"><figcaption>Il meccanismo illustrato, classe per classe</figcaption></figure><figure><img src="./amostras/bonus2-ripasso.webp" alt="Pagina di ripasso lampo" width="702" height="993" loading="lazy" decoding="async"><figcaption>Dieci domande con la risposta da coprire</figcaption></figure><figure><img src="./amostras/bonus2-confronto.webp" alt="Le cinque classi a confronto" width="702" height="993" loading="lazy" decoding="async"><figcaption>La tabella che le mette tutte sotto gli occhi</figcaption></figure></div>
+            <div class="bonus-sfoglia"><figure><img src="./amostras/bonus2-meccanismo.webp" alt="Meccanismo degli antipertensivi" width="702" height="993" loading="lazy" decoding="async"><figcaption>Il meccanismo illustrato, classe per classe</figcaption></figure><figure><img src="./amostras/bonus2-ripasso.webp" alt="Pagina di ripasso lampo" width="702" height="993" loading="lazy" decoding="async"><figcaption>Dieci domande con la risposta da coprire</figcaption></figure><figure><img src="./amostras/bonus2-confronto.webp" alt="Le cinque classi a confronto" width="702" height="993" loading="lazy" decoding="async"><figcaption>La tabella che le mette tutte sotto gli occhi</figcaption></figure>
+            <button type="button" class="gal-cta gal-cta-sm" data-galleria="bonus2">👁️ Sfoglia 6 pagine del Bonus 2</button>
+          </div>
           </div>
         </div>
       </div>
@@ -2492,17 +2552,17 @@
           <li>
             <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
             28 Capitoli Illustrati di Farmacologia
-            <span class="db-price-val">47€</span>
+            <span class="db-price-val">27,70€</span>
           </li>
           <li>
             <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
             Bonus 1: Guida &ldquo;Dalla A alla Z&rdquo;
-            <span class="db-price-val">17€</span>
+            <span class="db-price-val">9,90€</span>
           </li>
           <li>
             <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
             Bonus 2: Schede di Ripasso Rapido
-            <span class="db-price-val">27€</span>
+            <span class="db-price-val">9,90€</span>
           </li>
           <li>
             <span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
@@ -2512,10 +2572,10 @@
         </ul>
 
         <div class="db-anchoring">
-          <p class="db-old-price">Valore totale: 91€</p>
+          <p class="db-old-price">Valore totale: 47,50€</p>
           <p class="db-new-price-label">Oggi solo:</p>
           <p class="db-new-price">15€</p>
-          <span class="db-discount-badge">84% DI SCONTO</span>
+          <span class="db-discount-badge">RISPARMI 32,50&euro;</span>
         </div>
 
         <a href="https://checkout.studiofacilebook.com/" data-checkout class="db-cta">SÌ, VOGLIO IL KIT COMPLETO A 15€</a>
@@ -2601,15 +2661,15 @@
 
       <ul class="recap-list">
         <li>28 Capitoli Illustrati di Farmacologia, in 6 parti: dal linguaggio di base alle interazioni e alla sicurezza, tutto visivo e organizzato</li>
-        <li>Bonus 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo; (valore 17€)</li>
-        <li>Bonus 2: Schede di Ripasso Rapido, Le 5 Classi Che Escono Più Spesso (valore 27€)</li>
+        <li>Bonus 1: Guida &ldquo;Dalla A alla Z: Termini Fondamentali di Farmacia Clinica&rdquo; (valore 9,90€)</li>
+        <li>Bonus 2: Schede di Ripasso Rapido, Le 5 Classi Che Escono Più Spesso (valore 9,90€)</li>
         <li>Accesso immediato: ricevi tutto via email automatica in meno di 2 minuti</li>
         <li>Garanzia di 30 giorni senza domande: provi senza rischio</li>
         <li>PDF in alta risoluzione: stampa, annota, porta in tirocinio</li>
       </ul>
 
       <div class="price-recap">
-        <p class="old-price">91€</p>
+        <p class="old-price">47,50€</p>
         <p class="new-price">15€</p>
       </div>
 
@@ -3121,5 +3181,7 @@
       }, 6000);
     })();
   </script>
+  <script src="/galleria.js" defer></script>
+
 </body>
 </html>
