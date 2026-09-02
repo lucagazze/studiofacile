@@ -7,3 +7,16 @@ nano-gen-*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# copie di lavoro: non devono finire online
+*.bak
+*.bak[0-9]
+*.html.bak*
+amostras.bak/
+_originali/
+
+# sorgenti pesanti non usati dal sito
+portadas-tienda/
+build-covers/
+scripts/
+mockups/ebooks/

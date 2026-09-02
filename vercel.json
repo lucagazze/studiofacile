@@ -15,6 +15,16 @@
       "source": "/prontuari",
       "destination": "/collezione",
       "permanent": true
+    },
+    {
+      "source": "/refund-policy",
+      "destination": "/rimborso",
+      "permanent": true
+    },
+    {
+      "source": "/refund-policy.html",
+      "destination": "/rimborso",
+      "permanent": true
     }
   ]
 }
