@@ -114,6 +114,7 @@
       border-radius:999px; white-space:nowrap;
     }
     .promo-time { font-weight:600; }
+    .promo-short { display:none; }
     .promo-time strong { color:var(--accent); font-weight:800; }
     .promo-clock { color:var(--accent); font-weight:700; }
     .promo-link { color:#FFFFFF; font-weight:800; text-decoration:underline; text-underline-offset:3px; white-space:nowrap; }
@@ -294,6 +295,7 @@
       max-width:900px; margin:0 auto;
     }
     .guarantee-icon { font-size:34px; line-height:1; }
+    .guarantee-box > div { min-width: 0; }
     .guarantee-box h3 { color:#065f46; font-size:19px; }
     .guarantee-box p { font-size:15.5px; margin-bottom:0; }
 
@@ -348,11 +350,16 @@
     .modal-footer .btn-cta { display:block; width:100%; }
 
     /* === RESPONSIVE === */
-    @media (max-width:639px) {
+    @media (max-width: 899px) {
+      .promo-link { display: none; }
+      .promo-full { display: none; }
+      .promo-short { display: inline; font-weight: 600; }
+    }
+
+    @media (max-width: 639px) {
       .promo { padding:8px 12px; font-size:12.5px; }
       .promo-in { gap:6px; }
       .promo-txt { font-size:10.5px; padding:3px 9px; }
-      .promo-link { display:none; }
     }
     @media (min-width:640px) {
       .stats-grid { grid-template-columns:repeat(3,1fr); }
@@ -379,9 +386,10 @@
   <!-- PROMO BAR -->
   <div class="promo" role="status" aria-live="off">
     <a class="promo-in" href="#combo">
-      <span class="promo-txt">⚡ Solo per oggi</span>
-      <span class="promo-time">Trio Clinico a <strong>19,90€</strong> invece di 54,70€ &middot; scade stasera, <span class="promo-clock" id="promoClock"></span></span>
-      <span class="promo-link">Approfittane &rarr;</span>
+      <span class="promo-full"><span class="promo-txt">⚡ Solo per oggi</span></span>
+      <span class="promo-full"><span class="promo-time">Trio Clinico a <strong>19,90€</strong> invece di 54,70€ &middot; scade stasera, <span class="promo-clock" id="promoClock"></span></span></span>
+      <span class="promo-short">⚡ Solo oggi: Trio a <strong>19,90€</strong> invece di 54,70€</span>
+      <span class="promo-full"><span class="promo-link">Approfittane &rarr;</span></span>
     </a>
   </div>
 
