@@ -18,7 +18,7 @@ ORIG = os.path.join(BASE, "_originali")
 
 # file -> larghezza mostrata sul sito (misurata nel browser)
 MOSTRATO = {
-    "Img-Leandro.webp": 266,
+    "Img-Leandro.webp": 300,
     "amostras/p57-warfarin.webp": 319,
     "amostras/p37-recettori.webp": 319,
     "amostras/p47-ipersensibilita.webp": 319,
