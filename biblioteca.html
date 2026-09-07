@@ -1583,7 +1583,7 @@
         return;
       }
       if (typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout', {
+        fbq('trackCustom', 'ClickCTA', {
           content_name: prod,
           value: val,
           currency: 'EUR'

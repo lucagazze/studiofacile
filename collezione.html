@@ -1191,7 +1191,7 @@
       var prod = cta.getAttribute('data-product') || 'Prontuari Studio Facile';
       var val = parseFloat(cta.getAttribute('data-price')) || 16.70;
       if (typeof fbq === 'function') {
-        fbq('track', 'InitiateCheckout', { content_name: prod, value: val, currency: 'EUR' });
+        fbq('trackCustom', 'ClickCTA', { content_name: prod, value: val, currency: 'EUR' });
       }
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'begin_checkout', cta_id: prod, value: val, currency: 'EUR' });

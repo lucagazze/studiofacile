@@ -2836,7 +2836,7 @@
           cta_id: a.id || a.className || 'sin-id',
           ecommerce: { currency: 'EUR', value: 15, items: [ITEM] }
         });
-        if (typeof fbq === 'function') fbq('track', 'InitiateCheckout', FB);
+        if (typeof fbq === 'function') fbq('trackCustom', 'ClickCTA', FB);
       }, true);
     })();
   </script>
