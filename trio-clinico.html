@@ -159,6 +159,9 @@
     }
 
     .promo-clock {
+      flex-basis: 100%;
+      margin: 0 auto;
+      text-align: center;
       font-size: 14px;
       font-weight: 700;
       letter-spacing: 0.2px;
@@ -178,8 +181,6 @@
         text-align: center;
       }
       .promo-txt, .promo-time { white-space: nowrap; }
-      .promo-time { flex-wrap: wrap; justify-content: center; }
-      .promo-clock { flex-basis: 100%; margin-top: 3px; }
       .promo-txt { font-size: 11.5px; letter-spacing: 0.05em; }
       .promo-time { font-size: 11.5px; }
     }
@@ -649,7 +650,7 @@
   <div class="promo" role="status" aria-live="off">
     <div class="promo-in">
       <span class="promo-txt">Offerta di lancio</span>
-      <span class="promo-time">Valida fino a oggi, <span class="promo-clock" id="promoClock"></span></span>
+      <span class="promo-time">Valida fino a oggi,</span><span class="promo-clock" id="promoClock"></span>
     </div>
   </div>
 
