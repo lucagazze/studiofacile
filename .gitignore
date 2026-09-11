@@ -20,3 +20,5 @@ portadas-tienda/
 build-covers/
 scripts/
 mockups/ebooks/
+.vercel
+.env*
