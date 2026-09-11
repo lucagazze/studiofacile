@@ -642,9 +642,19 @@
 <!-- Brevo: seguimiento web (visitas y clics de compra para las automatizaciones) -->
 <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
 <script>
-  window.Brevo = window.Brevo || [];
-  Brevo.push(["init", { client_key: "8ogytok4pdv94cxv4noom3tt" }]);
+    // Version: 2.0
+    window.Brevo = window.Brevo || [];
+    Brevo.push([
+        "init",
+        {
+        client_key: "8ogytok4pdv94cxv4noom3tt",
+        // Optional: Add other initialization options, see documentation
+        }
+    ]);
+</script>
+<script>
   (function () {
+    window.Brevo = window.Brevo || [];
     var base = { store: "Studio Facile", lang: "it", page: location.pathname, utm_source: new URLSearchParams(location.search).get("utm_source") || "" };
     Brevo.push(["track", "landing_viewed", {}, { data: base }]);
     document.addEventListener("click", function (e) {
