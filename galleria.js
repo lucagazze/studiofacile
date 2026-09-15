@@ -168,14 +168,14 @@
   function ctaHtml(slug) {
     var kit = ['farmacologia', 'bonus1', 'bonus2'];
     if (kit.indexOf(slug) !== -1) {
-      return '<a href="/" data-product="Kit Farmacologia Illustrata" data-price="15" data-goto-page="1">' +
-             'SCOPRI IL KIT COMPLETO &middot; 15&euro;</a>';
+      return '<a href="/" data-product="Kit Farmacologia Illustrata" data-price="24" data-goto-page="1">' +
+             'SCOPRI IL KIT COMPLETO &middot; 24&euro;</a>';
     }
     var trio = ['emergenza', 'antibiotici', 'psicofarmaci'];
     var dove = trio.indexOf(slug) !== -1 ? '/trio-clinico' : '/collezione';
     var testo = trio.indexOf(slug) !== -1
-      ? 'VEDI IL TRIO CLINICO &middot; 19,90&euro;'
-      : 'VEDI LA COLLEZIONE &middot; 32,90&euro;';
+      ? 'VEDI IL TRIO CLINICO &middot; 21,65&euro;'
+      : 'VEDI LA COLLEZIONE &middot; 36,15&euro;';
     return '<a href="' + dove + '" data-goto-page="1">' + testo + '</a>';
   }
 

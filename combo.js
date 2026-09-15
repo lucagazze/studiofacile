@@ -13,8 +13,8 @@
       nome: 'Trio Clinico',
       sotto: '3 prontuari · 250 pagine illustrate',
       dettaglio: 'Emergenza, Antibiotici e Psicofarmaci',
-      prezzo: '16,70€',
-      avolume: '5,57€ a volume',
+      prezzo: '21,65€',
+      avolume: '7,22€ a volume',
       img: '/mockups/books/mockup-trio-tablets.webp',
       link: '/trio-clinico'
     },
@@ -22,8 +22,8 @@
       nome: 'Collezione Completa',
       sotto: '5 prontuari · 386 pagine illustrate',
       dettaglio: 'Tutti e cinque i prontuari clinici',
-      prezzo: '27,50€',
-      avolume: '5,50€ a volume',
+      prezzo: '36,15€',
+      avolume: '7,23€ a volume',
       img: '/mockups/books/mockup-bundle-tablets.webp',
       link: '/collezione'
     }

@@ -26,14 +26,14 @@
       img: '/avvisi/collezione.webp',
       nome: 'Collezione Completa',
       prod: '5 prontuari clinici · 386 pagine illustrate',
-      meta: '27,50€ · un solo acquisto',
+      meta: '36,15€ · un solo acquisto',
       link: '/collezione'
     },
     {
       img: '/avvisi/trio.webp',
       nome: 'Trio Clinico',
       prod: 'Emergenza, Antibiotici e Psicofarmaci',
-      meta: '16,70€ · 250 pagine',
+      meta: '21,65€ · 250 pagine',
       link: '/trio-clinico'
     },
     {
