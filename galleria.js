@@ -69,6 +69,18 @@
         ['laboratorio_07', 'L’emostasi in una pagina']
       ]
     },
+    ecg: {
+      titolo: 'Leggere l’ECG',
+      pagine: [
+        ['ecg_01', 'La carta dell’ECG'],
+        ['ecg_02', 'Le onde e gli intervalli'],
+        ['ecg_03', 'Il metodo in otto passi'],
+        ['ecg_04', 'La fibrillazione atriale'],
+        ['ecg_05', 'Defibrillabili e non defibrillabili'],
+        ['ecg_06', 'I territori dell’infarto'],
+        ['ecg_07', 'L’iperkaliemia']
+      ]
+    },
     farmacologia: {
       titolo: 'Farmacologia Illustrata',
       pagine: [
@@ -211,7 +223,10 @@
     });
     elBody.scrollTop = 0;
 
-    elFoot.innerHTML = ctaHtml(slug);
+    // Niente pulsante in fondo al visore (decisione di Luca): chi guarda le
+    // anteprime resta nella pagina in cui si trova.
+    elFoot.innerHTML = '';
+    elFoot.style.display = 'none';
 
     ov.classList.add('on');
     document.body.style.overflow = 'hidden';
