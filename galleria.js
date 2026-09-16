@@ -81,6 +81,18 @@
         ['ecg_07', 'L’iperkaliemia']
       ]
     },
+    calcoli: {
+      titolo: 'Calcoli e Dosaggi',
+      pagine: [
+        ['calcoli_01', 'Il metodo in cinque passi'],
+        ['calcoli_02', 'La regola del tre'],
+        ['calcoli_03', 'La dose per chilo'],
+        ['calcoli_04', '1:1000 e 1:10.000'],
+        ['calcoli_05', 'Le gocce al minuto'],
+        ['calcoli_06', 'mcg/kg/min: le amine'],
+        ['calcoli_07', 'I dieci errori più comuni']
+      ]
+    },
     farmacologia: {
       titolo: 'Farmacologia Illustrata',
       pagine: [
