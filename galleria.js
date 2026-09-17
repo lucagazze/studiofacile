@@ -94,6 +94,7 @@
       ]
     },
     fisica: {
+      sub: ' pagine di anteprima',
       titolo: 'Fisica Illustrata',
       pagine: [
         ['fisica_01', 'I vettori in una pagina'],
@@ -221,7 +222,7 @@
     elTit.appendChild(document.createTextNode('Anteprima: ' + libro.titolo));
     var sub = document.createElement('span');
     sub.className = 'gal-sub';
-    sub.textContent = libro.pagine.length + ' pagine reali del volume';
+    sub.textContent = libro.pagine.length + (libro.sub || ' pagine reali del volume');
     elTit.appendChild(sub);
 
     elBody.innerHTML = '';
