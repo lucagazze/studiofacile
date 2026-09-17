@@ -93,6 +93,15 @@
         ['calcoli_07', 'I dieci errori più comuni']
       ]
     },
+    fisica: {
+      titolo: 'Fisica Illustrata',
+      pagine: [
+        ['fisica_01', 'I vettori in una pagina'],
+        ['fisica_02', 'Le leggi di Newton in una pagina'],
+        ['fisica_03', 'Come funziona un circuito'],
+        ['fisica_04', 'Suono, luce e onde']
+      ]
+    },
     farmacologia: {
       titolo: 'Farmacologia Illustrata',
       pagine: [
