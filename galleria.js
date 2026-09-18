@@ -103,6 +103,18 @@
         ['fisica_04', 'Suono, luce e onde']
       ]
     },
+    biologia: {
+      titolo: 'Biologia Illustrata',
+      pagine: [
+        ['biologia_01', 'L’albero della vita e la cellula'],
+        ['biologia_02', 'La cellula eucariotica'],
+        ['biologia_03', 'La forcella replicativa'],
+        ['biologia_04', 'La membrana plasmatica'],
+        ['biologia_05', 'I mitocondri e il loro genoma'],
+        ['biologia_06', 'Il ciclo cellulare e i checkpoint'],
+        ['biologia_07', 'Necrosi e apoptosi']
+      ]
+    },
     farmacologia: {
       titolo: 'Farmacologia Illustrata',
       pagine: [
