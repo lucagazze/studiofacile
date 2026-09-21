@@ -7,7 +7,6 @@
   'use strict';
 
   var BASE = '/anteprime/';
-  var FR = (document.documentElement.lang || '').indexOf('fr') === 0;
 
   var LIBRI = {
     emergenza: {
@@ -68,16 +67,6 @@
         ['laboratorio_05', 'Che cos’è l’emocromo'],
         ['laboratorio_06', 'Il rene in quattro numeri'],
         ['laboratorio_07', 'L’emostasi in una pagina']
-      ]
-    },
-    ecg_fr: {
-      titolo: 'Lire l’ECG',
-      sub: ' pages réelles du livre',
-      pagine: [
-        ['ecg_fr_02', 'Les ondes et les intervalles'],
-        ['ecg_fr_03', 'La méthode en huit étapes'],
-        ['ecg_fr_04', 'La fibrillation atriale'],
-        ['ecg_fr_05', 'Rythmes choquables et non choquables']
       ]
     },
     ecg: {
@@ -206,7 +195,7 @@
       '<div class="gal-box">' +
         '<div class="gal-head">' +
           '<div class="gal-tit" id="galTit"></div>' +
-          '<button class="gal-x" type="button" aria-label="' + (FR ? 'Fermer' : 'Chiudi') + '">&times;</button>' +
+          '<button class="gal-x" type="button" aria-label="Chiudi">&times;</button>' +
         '</div>' +
         '<div class="gal-body" id="galBody"></div>' +
         '<div class="gal-foot" id="galFoot"></div>' +
@@ -242,7 +231,7 @@
     lastFocus = document.activeElement;
 
     elTit.innerHTML = '';
-    elTit.appendChild(document.createTextNode((FR ? 'Aperçu : ' : 'Anteprima: ') + libro.titolo));
+    elTit.appendChild(document.createTextNode('Anteprima: ' + libro.titolo));
     var sub = document.createElement('span');
     sub.className = 'gal-sub';
     sub.textContent = libro.pagine.length + (libro.sub || ' pagine reali del volume');
