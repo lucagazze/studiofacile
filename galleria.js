@@ -107,12 +107,12 @@
     fisica: {
       titolo: 'Fisica Illustrata',
       pagine: [
-        ['fisica_01', 'I tre principi della dinamica'],
-        ['fisica_02', 'Bernoulli: stenosi e aneurisma'],
-        ['fisica_03', 'L’effetto Doppler'],
-        ['fisica_04', 'Resistenze in serie e in parallelo'],
-        ['fisica_05', 'Le leve del corpo umano'],
-        ['fisica_06', 'Il primo principio della termodinamica']
+        ['fisica_libro_01', 'L’effetto Doppler'],
+        ['fisica_libro_02', 'Il primo principio della termodinamica'],
+        ['fisica_libro_03', 'Bernoulli: stenosi e aneurisma'],
+        ['fisica_libro_04', 'Resistenze in serie e in parallelo'],
+        ['fisica_libro_05', 'Archimede e il galleggiamento'],
+        ['fisica_libro_06', 'Le leve del corpo umano']
       ]
     },
     biologia: {
