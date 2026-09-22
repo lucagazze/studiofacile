@@ -112,9 +112,7 @@
         ['fisica_03', 'L’effetto Doppler'],
         ['fisica_04', 'Resistenze in serie e in parallelo'],
         ['fisica_05', 'Le leve del corpo umano'],
-        ['fisica_06', 'Il primo principio della termodinamica'],
-        ['fisica_07', 'La legge di Stevino'],
-        ['fisica_08', 'Corrente elettrica e leggi di Ohm']
+        ['fisica_06', 'Il primo principio della termodinamica']
       ]
     },
     biologia: {
