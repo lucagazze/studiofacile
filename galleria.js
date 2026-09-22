@@ -105,13 +105,16 @@
       ]
     },
     fisica: {
-      sub: ' pagine di anteprima',
       titolo: 'Fisica Illustrata',
       pagine: [
-        ['fisica_01', 'I vettori in una pagina'],
-        ['fisica_02', 'Le leggi di Newton in una pagina'],
-        ['fisica_03', 'Come funziona un circuito'],
-        ['fisica_04', 'Suono, luce e onde']
+        ['fisica_01', 'I tre principi della dinamica'],
+        ['fisica_02', 'Bernoulli: stenosi e aneurisma'],
+        ['fisica_03', 'L’effetto Doppler'],
+        ['fisica_04', 'Resistenze in serie e in parallelo'],
+        ['fisica_05', 'Le leve del corpo umano'],
+        ['fisica_06', 'Il primo principio della termodinamica'],
+        ['fisica_07', 'La legge di Stevino'],
+        ['fisica_08', 'Corrente elettrica e leggi di Ohm']
       ]
     },
     biologia: {
