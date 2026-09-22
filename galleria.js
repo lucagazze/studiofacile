@@ -115,6 +115,16 @@
         ['fisica_libro_06', 'Le leve del corpo umano']
       ]
     },
+    chimica: {
+      titolo: 'Chimica Illustrata',
+      pagine: [
+        ['chimica_tavola', 'La tavola periodica completa'],
+        ['chimica_tabelle', 'Tabelle e costanti'],
+        ['chimica_esame1', 'Domande stile esame'],
+        ['chimica_esame2', 'Domande a completamento e soluzioni'],
+        ['chimica_sommario', 'Il sommario: 7 parti, 69 capitoli']
+      ]
+    },
     biologia: {
       titolo: 'Biologia Illustrata',
       pagine: [
