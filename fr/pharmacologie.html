@@ -1207,6 +1207,21 @@
       font-size: 14px;
     }
 
+
+    /* el pie en francés tiene textos más largos: debe poder ir a dos líneas */
+    .footer .container > p {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2px 6px;
+      max-width: 100%;
+    }
+    .footer .container > p a { margin-left: 0 !important; white-space: nowrap; }
+    @media (max-width: 480px) {
+      .footer .container > p { font-size: 13px; line-height: 1.6; }
+    }
+
     .footer-links {
       margin: 20px 0;
       display: flex;
@@ -2085,13 +2100,15 @@
     .sp-close:hover{background:#ffffff;border-color:#cbd5e1;color:#12191f;transform:scale(1.08);box-shadow:0 4px 12px rgba(18,25,31,.2)}
     .sp-close:active{transform:scale(.96)}
     @media (max-width:560px){
-      .sp-toast{left:8px;right:8px;top:10px;max-width:none}
+      .sp-toast{left:8px;right:8px;top:10px;max-width:none;padding-right:34px}
+      /* la cruz va DENTRO de la tarjeta: fuera quedaba cortada por el borde de la pantalla */
+      .sp-close{top:6px;right:6px;width:30px;height:30px;font-size:17px}
     }
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-   {"@type":"Product","name":"Kit di Farmacologia Illustrata",
-    "description":"Farmacologia illustrata in 6 parti e 28 capitoli: il linguaggio (vocabolario, nomenclatura, forme farmaceutiche, dose e potenza), il viaggio del farmaco (vie di somministrazione, farmacocinetica, farmacodinamica), le interazioni per apparato e la sicurezza (tossicità, ipersensibilità, farmacogenomica). Plus 2 bonus, en français.",
+   {"@type":"Product","name":"Kit de Pharmacologie Illustrée",
+    "description":"Pharmacologie illustrée en 6 parties et 28 chapitres : le langage (vocabulaire, formes pharmaceutiques, dose et puissance), le voyage du médicament (voies d'administration, pharmacocinétique, pharmacodynamie), les interactions par appareil et la sécurité (toxicité, hypersensibilité, pharmacogénomique). Plus 2 bonus, en français.",
     "image":"https://www.studiofacilebook.com/brand/og-home.jpg?v=8",
     "brand":{"@type":"Brand","name":"Studio Facile"},
     "offers":{"@type":"Offer","price":"19.90","priceCurrency":"EUR","availability":"https://schema.org/InStock",
