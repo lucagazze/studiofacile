@@ -118,11 +118,11 @@
     chimica: {
       titolo: 'Chimica Illustrata',
       pagine: [
-        ['chimica_tavola', 'La tavola periodica completa'],
-        ['chimica_tabelle', 'Tabelle e costanti'],
-        ['chimica_esame1', 'Domande stile esame'],
-        ['chimica_esame2', 'Domande a completamento e soluzioni'],
-        ['chimica_sommario', 'Il sommario: 7 parti, 69 capitoli']
+        ['chimica_a1', 'L’atomo e gli isotopi'],
+        ['chimica_p2', 'L’acqua, il pH e il pOH'],
+        ['chimica_c2', 'Dare il nome: la nomenclatura IUPAC'],
+        ['chimica_s8', 'Osmolarità e tonicità'],
+        ['chimica_r3', 'Energia di attivazione e catalizzatori']
       ]
     },
     biologia: {
