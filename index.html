@@ -2087,32 +2087,6 @@
     @media (max-width:560px){
       .sp-toast{left:8px;right:8px;top:10px;max-width:none}
     }
-  
-    /* Aviso de producto digital: llegaban mails de gente que esperaba un
-       libro de papel. Va debajo del mockup, que es lo que confunde. */
-    .sf-digitale {
-      /* flex + fit-content y NO inline-flex: en línea se quedaba pegado a
-         las estrellas de la prueba social compartiendo renglón, y los
-         márgenes automáticos no centran un elemento en línea. */
-      display: flex;
-      width: fit-content;
-      max-width: 100%;
-      align-items: center;
-      gap: 8px;
-      margin: 16px auto 4px;
-      padding: 7px 16px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .14);
-      border: 1px solid rgba(255, 255, 255, .26);
-      font-size: 13.5px;
-      font-weight: 600;
-      line-height: 1.35;
-      color: inherit;
-    }
-    .sf-digitale svg { width: 15px; height: 15px; flex: 0 0 15px; }
-    @media (max-width: 560px) {
-      .sf-digitale { font-size: 12.5px; padding: 6px 13px; }
-    }
 </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
@@ -2180,7 +2154,6 @@
         <img src="./mockups/hero-kit-v2.webp" alt="Kit Completo di Farmacologia Illustrata"
              width="1200" height="892" loading="eager" fetchpriority="high" decoding="async">
       </div>
-      <p class="sf-digitale"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg><span>Libro <strong>digitale</strong> in PDF: lo scarichi subito, non arriva per posta</span></p>
       <p class="hero-social">
         <span class="stars" aria-hidden="true">★★★★★</span>
         <span><strong>+11.978 studenti e professionisti</strong> della salute</span>
