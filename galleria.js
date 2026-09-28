@@ -104,6 +104,18 @@
         ['calcoli_07', 'I dieci errori più comuni']
       ]
     },
+    physique_fr: {
+      titolo: 'Physique Illustrée',
+      sub: ' pages réelles du livre',
+      pagine: [
+        ['physique_fr_01', 'Accélération et chute libre'],
+        ['physique_fr_02', 'Bernoulli : sténose et anévrisme'],
+        ['physique_fr_03', 'L’effet Doppler'],
+        ['physique_fr_04', 'Résistances en série et en parallèle'],
+        ['physique_fr_05', 'Archimède et la flottabilité'],
+        ['physique_fr_06', 'Les leviers du corps humain']
+      ]
+    },
     fisica: {
       titolo: 'Fisica Illustrata',
       pagine: [
@@ -113,6 +125,18 @@
         ['fisica_libro_04', 'Resistenze in serie e in parallelo'],
         ['fisica_libro_05', 'Archimede e il galleggiamento'],
         ['fisica_libro_06', 'Le leve del corpo umano']
+      ]
+    },
+    chimie_fr: {
+      titolo: 'Chimie Illustrée',
+      sub: ' pages réelles du livre',
+      pagine: [
+        ['chimie_fr_01', 'L’atome et les isotopes'],
+        ['chimie_fr_02', 'La mole'],
+        ['chimie_fr_03', 'Les solutions tampon et le pH du sang'],
+        ['chimie_fr_04', 'Michaelis-Menten : Km et Vmax'],
+        ['chimie_fr_05', 'Stéréochimie : R et S'],
+        ['chimie_fr_06', 'Énergie d’activation et catalyseurs']
       ]
     },
     chimica: {
@@ -135,6 +159,19 @@
         ['biologia_05', 'I mitocondri e il loro genoma'],
         ['biologia_06', 'Il ciclo cellulare e i checkpoint'],
         ['biologia_07', 'Necrosi e apoptosi']
+      ]
+    },
+    pharmacologie_fr: {
+      titolo: 'Pharmacologie Illustrée',
+      sub: ' pages réelles du livre',
+      pagine: [
+        ['pharmacologie_fr_01', 'Puissance n’est pas efficacité'],
+        ['pharmacologie_fr_02', 'Toutes les voies sur une page'],
+        ['pharmacologie_fr_03', 'ADME : le voyage en quatre étapes'],
+        ['pharmacologie_fr_04', 'Le parcours dans le néphron'],
+        ['pharmacologie_fr_05', 'Récepteurs : la clé et la serrure'],
+        ['pharmacologie_fr_06', 'La courbe dose-réponse'],
+        ['pharmacologie_fr_07', 'Les interactions en six règles']
       ]
     },
     farmacologia: {
