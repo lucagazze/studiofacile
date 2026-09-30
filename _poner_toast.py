@@ -106,6 +106,12 @@ PAGINAS = {
         "prod2": "Kit Medicine &middot; 46 pagine + 2 Bonus",
         "prod3": "Ha sbloccato il Kit Le Medicine Che Prendi",
     },
+    "radiografie": {
+        "img": CDN % "radiografie",
+        "prod1": "Ha acquistato il Kit Radiografie Illustrate",
+        "prod2": "Kit Radiografie &middot; 58 pagine + 2 Bonus",
+        "prod3": "Ha sbloccato il Kit Radiografie Illustrate",
+    },
     "emogas": {
         "img": CDN % "emogas",
         "prod1": "Ha acquistato il Kit Emogas ed Elettroliti",
