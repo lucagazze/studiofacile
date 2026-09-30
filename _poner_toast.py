@@ -109,7 +109,7 @@ PAGINAS = {
     "emogas": {
         "img": CDN % "emogas",
         "prod1": "Ha acquistato il Kit Emogas ed Elettroliti",
-        "prod2": "Kit Emogas &middot; 50 pagine + 2 Bonus",
+        "prod2": "Kit Emogas &middot; 45 pagine + 2 Bonus",
         "prod3": "Ha sbloccato il Kit Emogas ed Elettroliti",
     },
 }
