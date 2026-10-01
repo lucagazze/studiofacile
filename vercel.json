@@ -2,6 +2,39 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "einfacheslernen.studiofacilebook.com"
+        }
+      ],
+      "destination": "/de/ekg",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "xn--tudefacile-96a.studiofacilebook.com"
+        }
+      ],
+      "destination": "/fr/ecg",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "etudefacile.studiofacilebook.com"
+        }
+      ],
+      "destination": "/fr/ecg",
+      "permanent": false
+    },
+    {
       "source": "/libri",
       "destination": "/biblioteca",
       "permanent": true
