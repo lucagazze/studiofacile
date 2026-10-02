@@ -22,3 +22,7 @@ scripts/
 mockups/ebooks/
 .vercel
 .env*
+
+# Pagine dei libri estratte dai PDF per generare i mockup: sono il
+# prodotto che si vende, non vanno pubblicate.
+mockups/*/_pag/
