@@ -2118,59 +2118,20 @@
 <!-- /Brevo -->
 
   <style id="palette-astrologia">
-    /* Lo scheletro e' quello della collana, i colori no: qui il blu
-       istituzionale lascia il posto al viola e al lavanda della copertina,
-       e l'arancio del bottone diventa oro. */
-    :root{
-      --primary:#6b3fa0;
-      --primary-dark:#4a2878;
-      --primary-light:#f3edfb;
-      --bg-light:#f6f2fc;
-      --bg-dark:#3b1d63;
-      --border:#e4d9f5;
-      --accent:#f0b93b;
-      /* L'oro chiaro col testo bianco dava 2,56 di contrasto: illeggibile.
-         Questo oro scuro sta a 5,25 e resta oro. Misurato, non scelto a
-         occhio. */
-      --cta:#8f6413;
-      --cta-hover:#75500f;
-      --shadow:0 4px 20px rgba(59,29,99,.12);
-      --shadow-cta:0 6px 22px rgba(201,155,46,.40);
-    }
-    .hero{background:linear-gradient(150deg,#7a4bb5 0%,#6b3fa0 48%,#4a2878 100%)}
-    .hero::before{background:
-      radial-gradient(720px 400px at 80% -10%, rgba(240,185,59,.20), transparent 62%),
-      radial-gradient(560px 340px at 5% 105%, rgba(167,139,250,.22), transparent 66%)}
-    .hero h1 mark{background:linear-gradient(180deg,transparent 58%,rgba(240,185,59,.45) 58%)}
-    .stats-bar{background:linear-gradient(180deg,#f3edfb 0%,#fbf8ff 100%)}
-    .section-alt{background:#f8f4fd}
-    .comparison-section{background:linear-gradient(170deg,#f3edfb 0%,#ffffff 100%)}
-    .subjects-section{background:linear-gradient(160deg,#4a2878 0%,#3b1d63 100%)!important}
-    /* Dentro la fascia scura l'occhiello ereditava il viola del tema e
-       finiva viola su viola: qui torna chiaro. */
-    .subjects-section .eyebrow,
-    .subjects-section .eyebrow-inverse{color:#e9dcff}
-    /* L'oro come TESTO su bianco non si legge (1,79): i valori dei bonus
-       vanno in viola, che su bianco sta a 7,38. */
-    /* Il riquadro del bonus ha il fondo viola scuro: il valore ci andava
-       sopra in viola, 1,47 di contrasto. Qui va in oro chiaro, 8,1. */
-    .value, .bonus-item .value, .bonus-text .value{color:#f3d58b}
-    /* Sottotitolo del sommario: grigio su viola scuro, 2,26. */
-    .subjects-subtitle{color:#ddd0f2}
-    /* Barra dell'offerta: il bianco al 62% non reggeva. */
-    .promo-time{color:rgba(255,255,255,.88)}
-    /* Etichetta QUESTO: rosso chiaro su rosa, 3,95. */
-    .comparison-label.bad{background:#fcd9d9;color:#9b1c1c}
-    /* il titolo della sezione viola restava blu notte: 1,58 */
-    .subjects-section h2, .subjects-section h2 *{color:#fff}
-    /* il verde della garanzia su fondo verdino dava 2,42 */
+    /* Nessuna tavolozza propria: astrologia usa gli stessi colori di tutta
+       la collana — il blu e l'arancio di index.html — come odontoiatria.
+       Qui sotto restano solo le correzioni di contrasto, misurate sulla
+       pagina renderizzata, identiche a quelle dell'altra landing. */
+
+    /* bianco su arancio #f97316 dava 2,82: stesso arancio, piu' profondo */
+    .btn-cta, .db-cta{background:#c2410c}
+    .btn-cta:hover, .db-cta:hover{background:#9a3412}
+    /* il verde della garanzia sul verdino dava 2,42 */
     .guarantee-box h3{color:#047857}
-    /* le stelline oro sul viola davano 3,34 */
-    .hero-social .stars, .tst-card .stars{color:#ffdf8a}
-    /* L'occhiello aveva il fondo scritto a mano in blu (rgba 38,69,160):
-       con il testo viola dava 1,16. Fondo lavanda e testo viola scuro. */
-    .eyebrow{background:rgba(107,63,160,.12);color:#4a2878}
-    .db-discount-badge{background:#f6e7bd;color:#6b4408}
+    /* l'ora della promo sul blu dava 3,68 */
+    .promo-time{color:rgba(255,255,255,.92)}
+    /* il rosso dell'etichetta «QUESTO» sul rosa dava 3,95 */
+    .comparison-label.bad{background:#fcd9d9;color:#9b1c1c}
   </style>
 </head>
 <body>
@@ -2187,7 +2148,7 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-mockup">
-        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/hero.webp?v=74d98271" alt="Astrologia Facile, con Le Tavole della Luna e Siete compatibili in regalo"
+        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/hero.webp?v=c68fb0ae" alt="Astrologia Facile, con Le Tavole della Luna e Siete compatibili in regalo"
              width="1200" height="886" loading="eager" fetchpriority="high" decoding="async">
       </div>
       <p class="hero-social">
@@ -2421,7 +2382,7 @@
     <div class="container">
       <h2 class="text-center">Ecco Cosa Riceverai con Astrologia Facile:</h2>
       <div style="margin: 20px auto 28px;">
-        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/combo.webp?v=d0b8da82" alt="Astrologia Facile: mockup con pagine di esempio" width="1000" height="1473" loading="lazy" decoding="async" style="max-width: 480px; width: 100%; display: block; margin: 0 auto;">
+        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/combo.webp?v=d1ee2f71" alt="Astrologia Facile: mockup con pagine di esempio" width="1000" height="1473" loading="lazy" decoding="async" style="max-width: 480px; width: 100%; display: block; margin: 0 auto;">
       </div>
       <div class="topics-grid">
         <div class="topic-item">
@@ -2487,7 +2448,7 @@
 
         <div class="bonus-item-with-image">
           <div class="bonus-mockup">
-            <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/bonus-compatibili.webp?v=3bbcf806" alt="Siete compatibili?, il bonus sulle affinità segno per segno" width="720" height="1000" loading="lazy" decoding="async">
+            <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/bonus-compatibili.webp?v=3cb75147" alt="Siete compatibili?, il bonus sulle affinità segno per segno" width="720" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="bonus-text">
             <h3>BONUS 2: &ldquo;Siete compatibili?&rdquo;, amore e amicizia segno per segno</h3>
@@ -2502,7 +2463,7 @@
 
       <!-- DECISION BOX -->
       <div class="decision-box" id="offerta">
-        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/hero.webp?v=74d98271" alt="Astrologia Facile con i due volumi in regalo" class="db-mockup" width="1200" height="886" loading="lazy" decoding="async">
+        <img src="https://czocbnyoenjbpxmcqobn.supabase.co/storage/v1/object/public/algoritmia-img/studiofacile/mockups/astrologia/hero.webp?v=c68fb0ae" alt="Astrologia Facile con i due volumi in regalo" class="db-mockup" width="1200" height="886" loading="lazy" decoding="async">
         <h3 class="db-title">Astrologia Facile + i 2 volumi in regalo</h3>
         <ul class="db-checklist">
           <li><span class="db-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Astrologia Facile: 71 pagine illustrate<span class="db-price-val">39,90€</span></li>
