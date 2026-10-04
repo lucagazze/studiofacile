@@ -127,6 +127,34 @@
         ['fisica_libro_06', 'Le leve del corpo umano']
       ]
     },
+    unghie: {
+      titolo: 'Unghie Illustrate',
+      pagine: [
+        ['unghie_01', 'L’apex: il punto che decide'],
+        ['unghie_02', 'Le cinque cause del sollevamento'],
+        ['unghie_03', 'Le frese: la forma dice il lavoro'],
+        ['unghie_04', 'Le tre zone e gli spessori'],
+        ['unghie_05', 'La preparazione, passo per passo'],
+        ['unghie_06', 'Quando non si lavora'],
+        ['unghie_07', 'L’unghia non è una lastra']
+      ]
+    },
+    /* Mancava: la landing dell'odontoiatria chiama data-galleria="odontoiatria"
+       da sette bottoni e qui non c'era nessuna voce con quel nome, quindi
+       il clic per ingrandire non apriva niente. Le sette chiavi e le sette
+       didascalie sono quelle di ANTEPRIME in landing_odontoiatria.py. */
+    odontoiatria: {
+      titolo: 'Odontoiatria Illustrata',
+      pagine: [
+        ['odontoiatria_01', 'Ogni dente ha un numero'],
+        ['odontoiatria_02', 'Il dente è fatto a strati'],
+        ['odontoiatria_03', 'Il kit d’esame: quattro strumenti'],
+        ['odontoiatria_04', 'Il vassoio per un’otturazione'],
+        ['odontoiatria_05', 'Mordenzante, adesivo, composito'],
+        ['odontoiatria_06', 'La catena della sterilizzazione'],
+        ['odontoiatria_07', 'Dove passano i nervi']
+      ]
+    },
     chimie_fr: {
       titolo: 'Chimie Illustrée',
       sub: ' pages réelles du livre',
