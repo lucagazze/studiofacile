@@ -35,16 +35,6 @@
       "permanent": false
     },
     {
-      "source": "/de/naegel",
-      "destination": "https://nails.studiofacilebook.com/de",
-      "permanent": false
-    },
-    {
-      "source": "/de/naegel.html",
-      "destination": "https://nails.studiofacilebook.com/de",
-      "permanent": false
-    },
-    {
       "source": "/libri",
       "destination": "/biblioteca",
       "permanent": true
@@ -68,6 +58,56 @@
       "source": "/refund-policy.html",
       "destination": "/rimborso",
       "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/de/naegel",
+      "destination": "https://checkout-propio-sepia.vercel.app/lp/nails/de/index.html"
+    },
+    {
+      "source": "/de/naegel/kasse",
+      "destination": "https://checkout-propio-sepia.vercel.app/de/naegel/kasse"
+    },
+    {
+      "source": "/fr/ongles",
+      "destination": "https://checkout-propio-sepia.vercel.app/lp/nails/fr/index.html"
+    },
+    {
+      "source": "/fr/ongles/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/ongles/paiement"
+    },
+    {
+      "source": "/lp/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/_next/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/api/:path*"
+    },
+    {
+      "source": "/gracias",
+      "destination": "https://checkout-propio-sepia.vercel.app/gracias"
+    },
+    {
+      "source": "/oferta/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/oferta/:path*"
+    },
+    {
+      "source": "/catalogo/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/catalogo/:path*"
+    },
+    {
+      "source": "/d/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/d/:path*"
+    },
+    {
+      "source": "/t.js",
+      "destination": "https://checkout-propio-sepia.vercel.app/t.js"
     }
   ]
 }
