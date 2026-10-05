@@ -35,6 +35,16 @@
       "permanent": false
     },
     {
+      "source": "/de/naegel",
+      "destination": "https://nails.studiofacilebook.com/de",
+      "permanent": false
+    },
+    {
+      "source": "/de/naegel.html",
+      "destination": "https://nails.studiofacilebook.com/de",
+      "permanent": false
+    },
+    {
       "source": "/libri",
       "destination": "/biblioteca",
       "permanent": true
