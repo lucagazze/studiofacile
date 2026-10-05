@@ -139,6 +139,22 @@
         ['unghie_07', 'L’unghia non è una lastra']
       ]
     },
+    /* L'edizione tedesca: la landing /de/naegel chiama data-galleria="naegel_de"
+       da sette bottoni. Le chiavi e le didascalie sono quelle di ANTEPRIME in
+       landing_naegel_de.py — le stesse pagine dell'italiana, perche' il libro
+       tedesco tiene lo stesso impianto, ma i file sono altri (naegel_de_0N). */
+    naegel_de: {
+      titolo: 'Nageldesign Illustriert',
+      pagine: [
+        ['naegel_de_01', 'Der Apex: der Punkt, der entscheidet'],
+        ['naegel_de_02', 'Die fünf Ursachen für Ablösungen'],
+        ['naegel_de_03', 'Die Fräser: die Form sagt die Arbeit'],
+        ['naegel_de_04', 'Die drei Zonen und die Schichtstärken'],
+        ['naegel_de_05', 'Die Vorbereitung, Schritt für Schritt'],
+        ['naegel_de_06', 'Wann nicht gearbeitet wird'],
+        ['naegel_de_07', 'Der Nagel ist keine Platte']
+      ]
+    },
     /* Mancava: la landing dell'odontoiatria chiama data-galleria="odontoiatria"
        da sette bottoni e qui non c'era nessuna voce con quel nome, quindi
        il clic per ingrandire non apriva niente. Le sette chiavi e le sette
