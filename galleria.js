@@ -143,6 +143,21 @@
        da sette bottoni. Le chiavi e le didascalie sono quelle di ANTEPRIME in
        landing_naegel_de.py — le stesse pagine dell'italiana, perche' il libro
        tedesco tiene lo stesso impianto, ma i file sono altri (naegel_de_0N). */
+    /* L'edizione francese: la landing /fr/ongles chiama
+       data-galleria="ongles_fr" da sette bottoni. Le chiavi e le
+       didascalie sono quelle di ANTEPRIME in landing_ongles_fr.py. */
+    ongles_fr: {
+      titolo: 'Ongles Illustrés',
+      pagine: [
+        ['ongles_fr_01', "L'apex : le point qui décide"],
+        ['ongles_fr_02', 'Les cinq causes du décollement'],
+        ['ongles_fr_03', 'Les fraises : la forme dit le travail'],
+        ['ongles_fr_04', 'Les trois zones et les épaisseurs'],
+        ['ongles_fr_05', 'La préparation, pas à pas'],
+        ['ongles_fr_06', 'Quand on ne travaille pas'],
+        ['ongles_fr_07', "Un ongle n'est pas une plaque"]
+      ]
+    },
     naegel_de: {
       titolo: 'Nageldesign Illustriert',
       pagine: [
