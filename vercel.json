@@ -138,6 +138,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/unghie/cassa"
     },
     {
+      "source": "/es/odontologia",
+      "destination": "/es/odontologia.html"
+    },
+    {
+      "source": "/es/odontologia/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/odontologia/pago"
+    },
+    {
       "source": "/it/ormoni/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/ormoni/cassa"
     },
