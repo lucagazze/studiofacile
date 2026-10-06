@@ -82,6 +82,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/physique/paiement"
     },
     {
+      "source": "/it/odontoiatria/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/odontoiatria/cassa"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
