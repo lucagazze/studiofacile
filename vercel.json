@@ -86,6 +86,26 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/odontoiatria/cassa"
     },
     {
+      "source": "/it/biologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/biologia/cassa"
+    },
+    {
+      "source": "/it/calcoli/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/calcoli/cassa"
+    },
+    {
+      "source": "/it/emogas/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/emogas/cassa"
+    },
+    {
+      "source": "/it/anatomia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/anatomia/cassa"
+    },
+    {
+      "source": "/it/chimica/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/chimica/cassa"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
