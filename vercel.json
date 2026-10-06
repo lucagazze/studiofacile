@@ -126,6 +126,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/astrologia/cassa"
     },
     {
+      "source": "/it/ecg/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/ecg/cassa"
+    },
+    {
       "source": "/it/ormoni/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/ormoni/cassa"
     },
