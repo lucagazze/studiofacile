@@ -130,6 +130,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/ecg/cassa"
     },
     {
+      "source": "/it/farmacologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/farmacologia/cassa"
+    },
+    {
+      "source": "/it/unghie/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/unghie/cassa"
+    },
+    {
       "source": "/it/ormoni/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/ormoni/cassa"
     },
