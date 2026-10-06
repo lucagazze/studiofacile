@@ -118,6 +118,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/farmaci/cassa"
     },
     {
+      "source": "/it/fisica/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/fisica/cassa"
+    },
+    {
+      "source": "/it/astrologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/astrologia/cassa"
+    },
+    {
       "source": "/it/ormoni/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/ormoni/cassa"
     },
