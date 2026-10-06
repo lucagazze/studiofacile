@@ -142,6 +142,22 @@
       "destination": "/es/odontologia.html"
     },
     {
+      "source": "/es/ayuda",
+      "destination": "/es/ayuda.html"
+    },
+    {
+      "source": "/es/reembolso",
+      "destination": "/es/reembolso.html"
+    },
+    {
+      "source": "/es/condiciones",
+      "destination": "/es/condiciones.html"
+    },
+    {
+      "source": "/es/privacidad",
+      "destination": "/es/privacidad.html"
+    },
+    {
       "source": "/es/odontologia/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/odontologia/pago"
     },
