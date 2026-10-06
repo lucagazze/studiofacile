@@ -78,6 +78,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/ongles/paiement"
     },
     {
+      "source": "/fr/physique/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/physique/paiement"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
