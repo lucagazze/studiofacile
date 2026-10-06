@@ -106,6 +106,22 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/chimica/cassa"
     },
     {
+      "source": "/it/analisi/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/analisi/cassa"
+    },
+    {
+      "source": "/it/radiografie/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/radiografie/cassa"
+    },
+    {
+      "source": "/it/farmaci/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/farmaci/cassa"
+    },
+    {
+      "source": "/it/ormoni/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/ormoni/cassa"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
