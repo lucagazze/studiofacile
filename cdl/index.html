@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pass the CDL Pre-Trip &mdash; 100 parts, 8 patterns</title>
+<meta name="description" content="The CDL pre-trip inspection drawn part by part: 100 illustrated pages for the part of the skills test that fails most people, plus the backing test and the road test free.">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asfalto:#14161a;--asfalto-2:#1b1f26;--acero:#2a313b;
+  --hiviz:#f7a325;--hiviz-d:#b97404;--hiviz-l:#ffc257;
+  --alerta:#d8321c;
+  --hormigon:#f1f0ec;--papel:#fff;
+  --tinta:#15181d;--tinta-2:#39404a;--suave:#626a75;--linea:#d9d7d1;
+  --si:#1f7a45;--no:#b3281c;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--hormigon);color:var(--tinta);
+  font:400 17px/1.62 Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--hiviz-d)}
+h1,h2,h3{font-family:Oswald,Impact,"Arial Narrow",sans-serif;font-weight:700;
+  line-height:1.06;letter-spacing:.005em;margin:0;text-wrap:balance}
+p{margin:0 0 1em}
+svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 16px}
+.estrecha{max-width:780px}
+
+/* ---- superficies ------------------------------------------------- */
+/* El asfalto: gris muy oscuro con grano y el resplandor ambar de una
+   baliza arriba a la izquierda. El grano es un SVG inline para no pedir
+   una imagen mas. */
+.asfalto{position:relative;color:#eceef1;background-color:var(--asfalto);
+  background-image:
+    radial-gradient(900px 520px at 8% -12%,rgba(247,163,37,.22),transparent 60%),
+    radial-gradient(720px 460px at 108% 10%,rgba(120,150,190,.12),transparent 58%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.sec{padding:62px 0}
+.sec-alt{background:var(--papel)}
+@media (min-width:900px){.sec{padding:92px 0}}
+
+/* La cinta retrorreflectante del semirremolque: rojo y blanco a 45. */
+.cinta{height:12px;background:repeating-linear-gradient(45deg,
+  var(--alerta) 0 20px,#f3f1ee 20px 40px)}
+/* Entre dos secciones claras, la raya discontinua de la calzada. */
+.sec+.sec-alt,.sec-alt+.sec{border-top:3px dashed rgba(247,163,37,.5)}
+
+/* ---- tipografia de seccion --------------------------------------- */
+/* El ojal es la calcomania de inspeccion del parabrisas. */
+.ojal{display:inline-flex;align-items:center;gap:8px;
+  font:700 12px/1 Oswald,sans-serif;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--hiviz-d);padding:7px 14px;border:2px solid currentColor;
+  border-radius:4px;margin-bottom:16px}
+.asfalto .ojal{color:var(--hiviz)}
+.titulo{text-align:center;margin:0 auto 36px;max-width:820px}
+.titulo h2{font-size:clamp(30px,6vw,48px);text-transform:uppercase;color:var(--tinta)}
+.asfalto .titulo h2{color:#fff}
+.titulo p{margin:14px auto 0;color:var(--suave);font-size:18px;max-width:660px}
+.asfalto .titulo p{color:rgba(236,238,241,.78)}
+.acento{color:var(--hiviz-d)}
+.asfalto .acento{color:var(--hiviz)}
+
+/* ---- boton -------------------------------------------------------- */
+/* Placa de alta visibilidad: ambar, canto oscuro abajo como una chapa
+   atornillada, y un reborde interior. */
+.btn{position:relative;display:flex;align-items:center;justify-content:center;
+  gap:10px;width:100%;max-width:560px;margin:0 auto;padding:19px 22px 20px;
+  border-radius:8px;background:linear-gradient(180deg,var(--hiviz) 0%,#e08c0c 100%);
+  color:#17181b;text-decoration:none;
+  font:700 clamp(18px,4.6vw,22px)/1.15 Oswald,Impact,sans-serif;
+  letter-spacing:.06em;text-transform:uppercase;text-align:center;
+  box-shadow:0 5px 0 #8c5702,0 16px 32px rgba(0,0,0,.35);
+  transition:transform .12s ease,box-shadow .12s ease}
+.btn::before{content:"";position:absolute;inset:4px;border-radius:5px;
+  border:2px solid rgba(23,24,27,.22);pointer-events:none}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 #8c5702,0 10px 22px rgba(0,0,0,.3)}
+.btn:focus-visible{outline:3px solid var(--hiviz-l);outline-offset:4px}
+.confia{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;
+  margin:16px 0 0;font-size:14px;color:var(--suave)}
+.confia span{display:inline-flex;align-items:center;gap:6px}
+.confia svg{color:var(--hiviz-d)}
+.asfalto .confia{color:rgba(236,238,241,.74)}
+.asfalto .confia svg{color:var(--hiviz)}
+
+/* ---- barra de lanzamiento ----------------------------------------- */
+.promo{position:sticky;top:0;z-index:999;width:100%;padding:8px 16px;
+  background:linear-gradient(180deg,#24282f 0%,#15181d 100%);
+  border-bottom:2px solid var(--hiviz);box-shadow:0 3px 16px rgba(0,0,0,.4)}
+.promo-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;
+  justify-content:center;gap:8px 18px;flex-wrap:wrap;line-height:1.3}
+.promo b{display:inline-flex;align-items:center;gap:9px;color:#fff;
+  font:700 13px/1 Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.promo b::before{content:"";width:8px;height:8px;border-radius:50%;
+  background:var(--hiviz);animation:faro 2.4s ease-out infinite}
+@keyframes faro{0%{box-shadow:0 0 0 0 rgba(247,163,37,.7)}
+  70%{box-shadow:0 0 0 9px rgba(247,163,37,0)}
+  100%{box-shadow:0 0 0 0 rgba(247,163,37,0)}}
+.promo span{font-size:13.5px;color:rgba(236,238,241,.82)}
+section[id]{scroll-margin-top:58px}
+
+/* ---- hero ---------------------------------------------------------- */
+.hero{padding:30px 0 56px;overflow:hidden}
+.marca{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:18px}
+.marca span{font:700 13px/1 Oswald,sans-serif;letter-spacing:.34em;
+  text-transform:uppercase;color:var(--hiviz)}
+.barras{display:flex;width:62px;height:5px;border-radius:2px;overflow:hidden}
+.barras i{flex:1}
+.barras i:nth-child(1){background:var(--alerta)}
+.barras i:nth-child(2){background:#f3f1ee}
+.barras i:nth-child(3){background:var(--alerta)}
+.hero-in{display:grid;gap:26px;align-items:center}
+.hero-img{max-width:560px;margin:0 auto;width:100%}
+.hero-txt{text-align:center}
+.hero h1{font-size:clamp(33px,8.2vw,56px);text-transform:uppercase;color:#fff}
+.hero h1 em{font-style:normal;color:var(--hiviz);display:block}
+.hero .sub{font-size:18.5px;color:rgba(236,238,241,.86);margin:18px auto 24px;
+  max-width:620px}
+@media (min-width:900px){
+  .hero{padding:38px 0 86px}
+  .hero-in{grid-template-columns:1.02fr 1fr;gap:44px}
+  .hero-txt{text-align:left;order:-1}
+  .marca{align-items:flex-start}
+  .hero .sub{margin-left:0}
+  .hero .btn{margin-left:0}
+  .hero .confia{justify-content:flex-start}
+  .hero-img{max-width:none}
+  .hero-img img{transform:scale(1.1)}
+}
+
+/* ---- ventajas ------------------------------------------------------ */
+.ventajas{list-style:none;margin:22px auto 26px;padding:0;display:grid;gap:12px;
+  max-width:600px;text-align:left}
+.ventajas li{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;
+  border-radius:10px;background:rgba(255,255,255,.055);
+  border-left:4px solid var(--hiviz)}
+.ventajas svg{width:42px;height:42px;padding:9px;border-radius:8px;
+  background:var(--hiviz);color:var(--asfalto);stroke-width:2.1}
+.ventajas b{display:block;font:600 19px/1.2 Oswald,sans-serif;
+  text-transform:uppercase;color:#fff}
+.ventajas span{display:block;font-size:15px;line-height:1.5;
+  color:rgba(236,238,241,.84);margin-top:4px}
+
+/* ---- barra de datos ------------------------------------------------ */
+.datos{background:var(--acero);color:#fff}
+.datos-in{display:grid;grid-template-columns:repeat(3,1fr);max-width:1080px;
+  margin:0 auto}
+.dato{padding:22px 10px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.dato:last-child{border-right:0}
+.dato b{display:block;font:700 clamp(26px,6vw,38px)/1 Oswald,sans-serif;
+  color:var(--hiviz)}
+.dato span{display:block;margin-top:6px;font-size:13px;line-height:1.35;
+  color:rgba(255,255,255,.78)}
+
+/* ---- carrusel de muestras ------------------------------------------ */
+.pista{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:4px 4px 18px;scrollbar-width:none}
+.pista::-webkit-scrollbar{display:none}
+.hoja{flex:0 0 min(78vw,400px);scroll-snap-align:center;margin:0}
+.hoja button{display:block;width:100%;padding:0;border:0;background:none;
+  cursor:zoom-in;font:inherit;color:inherit;text-align:left}
+/* El marco de cada muestra imita una chapa de acero. */
+.marco{display:block;position:relative;padding:8px;border-radius:8px;
+  background:linear-gradient(160deg,#3b434f,#232931);
+  box-shadow:0 16px 34px rgba(20,22,26,.3)}
+.marco img{border-radius:3px}
+.hoja figcaption{margin:12px 2px 0;font:600 15px/1.4 Inter,sans-serif;
+  color:var(--tinta-2)}
+.flechas{display:flex;justify-content:center;gap:10px;margin-top:6px}
+.flechas button{width:46px;height:46px;border-radius:50%;cursor:pointer;
+  border:2px solid var(--linea);background:var(--papel);color:var(--tinta);
+  display:grid;place-items:center;font-size:20px}
+.flechas button:hover{border-color:var(--hiviz);color:var(--hiviz-d)}
+.puntos{display:flex;justify-content:center;gap:7px;margin-top:10px}
+.puntos i{width:8px;height:8px;border-radius:50%;background:var(--linea);
+  transition:width .2s ease,background .2s ease}
+.puntos i.on{width:24px;border-radius:4px;background:var(--hiviz)}
+.lupa{position:fixed;inset:0;z-index:9999;background:rgba(10,11,13,.94);
+  display:flex;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+.lupa img{max-width:100%;max-height:100%;border-radius:4px;
+  box-shadow:0 24px 70px rgba(0,0,0,.6)}
+
+/* ---- confrontacion -------------------------------------------------- */
+.frente{display:grid;gap:18px;max-width:900px;margin:0 auto}
+@media (min-width:860px){.frente{grid-template-columns:1fr 1fr;gap:22px}}
+.lado{border-radius:12px;padding:24px 22px;background:var(--papel);
+  border:1px solid var(--linea)}
+.lado h3{font-size:21px;text-transform:uppercase;letter-spacing:.03em;
+  margin-bottom:14px}
+.lado.sin{border-top:5px solid var(--no)}
+.lado.sin h3{color:var(--no)}
+.lado.con{border-top:5px solid var(--si);box-shadow:0 14px 34px rgba(20,22,26,.1)}
+.lado.con h3{color:var(--si)}
+.lado ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.lado li{display:flex;gap:10px;font-size:15.5px;line-height:1.5;color:var(--tinta-2)}
+.lado li::before{content:"\00d7";font-weight:700;color:var(--no);flex:none;width:18px}
+.lado.con li::before{content:"\2713";color:var(--si)}
+
+/* ---- los tres volumenes --------------------------------------------- */
+.vols{display:grid;gap:22px}
+@media (min-width:900px){.vols{grid-template-columns:repeat(3,1fr);gap:26px;
+  align-items:start}}
+.vol{background:var(--papel);border:1px solid var(--linea);border-radius:12px;
+  padding:20px;box-shadow:0 12px 30px rgba(20,22,26,.08);display:flex;
+  flex-direction:column;gap:14px}
+.vol.principal{border:2px solid var(--hiviz);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.vol .etiq{align-self:flex-start;font:700 11.5px/1 Oswald,sans-serif;
+  letter-spacing:.16em;text-transform:uppercase;padding:6px 10px;border-radius:4px;
+  background:var(--acero);color:#fff}
+.vol.principal .etiq{background:var(--hiviz);color:var(--asfalto)}
+.vol h3{font-size:22px;text-transform:uppercase;color:var(--tinta)}
+.vol p{margin:0;font-size:15.5px;color:var(--suave)}
+.vol img{border-radius:6px;box-shadow:0 10px 24px rgba(20,22,26,.18)}
+
+/* ---- indice ---------------------------------------------------------- */
+.partes{display:grid;gap:14px;max-width:900px;margin:0 auto}
+@media (min-width:820px){.partes{grid-template-columns:1fr 1fr}}
+.parte{display:flex;gap:16px;background:var(--papel);border:1px solid var(--linea);
+  border-radius:10px;padding:18px}
+.parte .num{flex:none;width:46px;height:46px;border-radius:8px;display:grid;
+  place-items:center;background:var(--asfalto);color:var(--hiviz);
+  font:700 19px/1 Oswald,sans-serif}
+.parte .pp{display:block;font:700 11.5px/1 Oswald,sans-serif;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--hiviz-d);margin-bottom:5px}
+.parte h3{font-size:20px;text-transform:uppercase;color:var(--tinta);margin-bottom:5px}
+.parte p{margin:0;font-size:15px;color:var(--suave)}
+
+/* ---- plan de dos semanas --------------------------------------------- */
+.plan{display:grid;max-width:720px;margin:0 auto}
+.paso{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:0 0 26px;
+  position:relative}
+.paso:last-child{padding-bottom:0}
+.paso .hito{flex:none;width:58px;height:58px;border-radius:50%;display:grid;
+  place-items:center;background:var(--hiviz);color:var(--asfalto);
+  font:700 13px/1.05 Oswald,sans-serif;text-align:center;text-transform:uppercase;
+  position:relative;z-index:1}
+/* El hilo que une los hitos es la raya discontinua de la calzada. */
+.paso::before{content:"";position:absolute;left:28px;top:58px;bottom:0;width:3px;
+  background:repeating-linear-gradient(180deg,rgba(247,163,37,.55) 0 10px,
+    transparent 10px 20px)}
+.paso:last-child::before{display:none}
+.paso h3{font-size:21px;text-transform:uppercase;color:#fff;margin:8px 0 5px}
+.paso p{margin:0;font-size:15.5px;color:rgba(236,238,241,.8)}
+
+/* ---- oferta ----------------------------------------------------------- */
+.oferta{max-width:620px;margin:0 auto;background:var(--papel);
+  border:2px solid var(--hiviz);border-radius:14px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.oferta-top{background:var(--asfalto);padding:22px 20px;text-align:center}
+.oferta-top h3{color:#fff;font-size:clamp(21px,5vw,29px);text-transform:uppercase}
+.oferta-img{padding:16px 20px 0}
+.oferta-cuerpo{padding:6px 22px 26px}
+.recibe{list-style:none;margin:0 0 4px;padding:0}
+.recibe li{display:flex;align-items:center;gap:11px;padding:13px 0;
+  border-bottom:1px solid var(--linea);font-size:15.5px;color:var(--tinta-2)}
+.recibe li:last-child{border-bottom:0}
+.recibe .tic{flex:none;width:22px;height:22px;border-radius:50%;background:var(--si);
+  color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700}
+.recibe .val{margin-left:auto;font:700 13px/1 Oswald,sans-serif;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--si)}
+.precio{text-align:center;padding:16px 0 20px;border-top:3px dashed var(--linea)}
+.precio span{display:block;font:700 12px/1 Oswald,sans-serif;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--suave);margin-bottom:8px}
+.precio b{font:700 clamp(46px,12vw,64px)/1 Oswald,sans-serif;color:var(--tinta)}
+.chica{text-align:center;font-size:13.5px;color:var(--suave);margin:16px 0 0}
+
+/* ---- garantia ---------------------------------------------------------- */
+.garantia{max-width:760px;margin:0 auto;background:var(--papel);
+  border:2px dashed var(--hiviz-d);border-radius:14px;padding:30px 26px;
+  text-align:center}
+.sello{width:76px;height:76px;margin:0 auto 14px;border-radius:50%;
+  background:var(--hiviz);color:var(--asfalto);display:grid;place-items:center;
+  font:700 19px/1.05 Oswald,sans-serif;text-transform:uppercase}
+.garantia h3{font-size:26px;text-transform:uppercase;margin-bottom:12px}
+.garantia p{color:var(--tinta-2);font-size:16px}
+
+/* ---- para quien --------------------------------------------------------- */
+.quien{display:grid;gap:18px;max-width:1000px;margin:0 auto}
+@media (min-width:860px){.quien{grid-template-columns:repeat(3,1fr)}}
+.quien div{background:var(--papel);border:1px solid var(--linea);border-radius:10px;
+  padding:22px 20px;border-top:5px solid var(--hiviz)}
+.quien h3{font-size:19px;text-transform:uppercase;margin-bottom:8px;color:var(--tinta)}
+.quien p{margin:0;font-size:15.5px;color:var(--suave)}
+
+/* ---- preguntas ---------------------------------------------------------- */
+.faq{max-width:800px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:var(--papel);border:1px solid var(--linea);
+  border-radius:10px;overflow:hidden}
+.faq details[open]{border-color:var(--hiviz)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 20px;
+  font:600 17px/1.4 Inter,sans-serif;display:flex;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;flex:none;
+  font:700 24px/1 Oswald,sans-serif;color:var(--hiviz-d)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 20px 20px;color:var(--tinta-2);font-size:15.5px}
+
+/* ---- pie ----------------------------------------------------------------- */
+.pie{background:var(--asfalto);color:rgba(236,238,241,.5);padding:34px 0;
+  font-size:12.5px;text-align:center}
+.pie p{margin:0 auto 12px;max-width:720px}
+.pie nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;
+  margin-bottom:14px}
+.pie a{color:rgba(236,238,241,.72);text-decoration:none}
+.pie a:hover{color:var(--hiviz);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="promo"><div class="promo-in">
+  <b>Launch price</b><span>Three books, one payment, today</span>
+</div></div>
+
+<header class="asfalto hero">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <div class="marca">
+        <span>United States &middot; Class A</span>
+        <span class="barras"><i></i><i></i><i></i></span>
+      </div>
+      <h1>You Don't Have to Memorise 100 Parts<em>To Pass the CDL Pre-Trip</em></h1>
+      <p class="sub">It looks like a hundred items. It is really eight patterns that
+        repeat. 100 illustrated pages for the part of the skills test that fails most
+        people &mdash; plus the other two parts, free.</p>
+      <ul class="ventajas">
+        <li><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg><div><b>One idea per page</b><span>The drawing carries it. The
+          words are only the caption.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Checked against 5 state manuals</b><span>Every figure,
+          one by one, before the page was drawn.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>In your hands in two minutes</b><span>Three PDFs by email.
+          Read them in the yard, print them for the test.</span></div></li>
+      </ul>
+      <a href="#offer" class="btn">Show me the 8 patterns</a>
+      <div class="confia">
+        <span><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Secure checkout</span>
+        <span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> Instant download</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> 30-day guarantee</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="kit.webp" alt="The three books: pre-trip, backing test and road test"
+           width="1400" height="940" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</header>
+
+<div class="cinta"></div>
+
+<section class="datos"><div class="datos-in">
+  <div class="dato"><b>100</b><span>illustrated pages,<br>one idea each</span></div>
+  <div class="dato"><b>3</b><span>books: the three parts<br>of the skills test</span></div>
+  <div class="dato"><b>5</b><span>official state manuals<br>behind every number</span></div>
+</div></section>
+
+<section class="sec sec-alt" id="inside">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">Look inside</span>
+      <h2>This Is What a Page <span class="acento">Actually Looks Like</span></h2>
+      <p>Not a checklist you have already seen. Tap any page to read it full size.</p>
+    </div>
+    <div class="pista" id="pista">
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The formula: two things about every part">
+            <span class="marco"><img src="page_02.webp" alt="The formula: two things about every part" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>The formula: two things about every part</figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The whole walk-around on one page">
+            <span class="marco"><img src="page_05.webp" alt="The whole walk-around on one page" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>The whole walk-around on one page</figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The seven air brake steps, in order">
+            <span class="marco"><img src="page_06.webp" alt="The seven air brake steps, in order" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>The seven air brake steps, in order</figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The leakage test, all four limits">
+            <span class="marco"><img src="page_03.webp" alt="The leakage test, all four limits" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>The leakage test, all four limits</figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The jaws go around the shank, not the head">
+            <span class="marco"><img src="page_04.webp" alt="The jaws go around the shank, not the head" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>The jaws go around the shank, not the head</figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Tread depth: 4/32 in front, 2/32 behind">
+            <span class="marco"><img src="page_07.webp" alt="Tread depth: 4/32 in front, 2/32 behind" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>Tread depth: 4/32 in front, 2/32 behind</figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: A truck brakes when it loses air">
+            <span class="marco"><img src="page_01.webp" alt="A truck brakes when it loses air" width="1100" height="1473" loading="lazy" decoding="async"></span>
+            <figcaption>A truck brakes when it loses air</figcaption>
+          </button>
+        </figure>
+    </div>
+    <div class="puntos" id="puntos"></div>
+    <div class="flechas">
+      <button type="button" id="ant" aria-label="Previous page">&#8592;</button>
+      <button type="button" id="sig" aria-label="Next page">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap estrecha">
+    <div class="titulo">
+      <span class="ojal">The real problem</span>
+      <h2>The Pre-Trip Is Not a <span class="acento">Memory Test</span></h2>
+    </div>
+    <p>You have been handed a list of a hundred parts and told to learn it. That is why
+      it feels impossible &mdash; and why people who studied for three weeks still blank
+      out in front of the examiner.</p>
+    <p>Here is the thing nobody tells you: <strong>almost every part is checked the same
+      way.</strong> Eighteen wheels, one pattern. Every hose, one pattern. Every bracket,
+      one pattern. And about every single part you say the same two things: what condition
+      it is in, and whether it is held on properly.</p>
+    <p>Learn eight patterns and the hundred parts stop being a list. They become things
+      you <strong>recognise</strong>.</p>
+    <p style="font-family:Oswald,sans-serif;font-size:27px;text-transform:uppercase;
+      text-align:center;margin:34px 0 0;line-height:1.14">
+      You are not trying to remember.<br>
+      <span class="acento">You are trying to see.</span></p>
+  </div>
+</section>
+
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">The difference</span>
+      <h2>A List You Forget <span class="acento">vs. A Picture You Don't</span></h2>
+    </div>
+    <div class="frente">
+      <div class="lado sin">
+        <h3>The handout you were given</h3>
+        <ul>
+          <li>A hundred names in a column</li>
+          <li>No drawing, no context, no order</li>
+          <li>Numbers with no source &mdash; and some of them wrong for your state</li>
+          <li>You still freeze when the examiner points</li>
+        </ul>
+      </div>
+      <div class="lado con">
+        <h3>This book</h3>
+        <ul>
+          <li>The same parts, drawn, one idea per page</li>
+          <li>Good and bad side by side, so you learn to see a defect</li>
+          <li>Every figure checked against five official state handbooks</li>
+          <li>You remember it because you understood it</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cinta"></div>
+
+<section class="sec asfalto" id="books">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">The kit</span>
+      <h2>The Skills Test Has Three Parts.<br><span class="acento">You Get All Three.</span></h2>
+      <p>The book is the first one &mdash; the one that fails most people. The other two
+        come with it, free.</p>
+    </div>
+    <div class="vols">
+      <div class="vol principal">
+        <span class="etiq">The book</span>
+        <img src="cover_book.webp" alt="Pass the CDL Pre-Trip" width="1100" height="1473"
+             loading="lazy" decoding="async">
+        <h3>Pass the CDL Pre-Trip</h3>
+        <p>100 pages. Engine, cab, air brakes, the walk-around, coupling and trailer,
+          plus six sheets made to print and take to the yard.</p>
+      </div>
+      <div class="vol">
+        <span class="etiq">Bonus 1</span>
+        <img src="cover_b1.webp" alt="Pass the CDL Backing Test" width="1100" height="1473"
+             loading="lazy" decoding="async">
+        <h3>Pass the CDL Backing Test</h3>
+        <p>The six official manoeuvres drawn with their cones &mdash; and how the examiner
+          actually scores them. Stopping is free. Pulling forward is not.</p>
+      </div>
+      <div class="vol">
+        <span class="etiq">Bonus 2</span>
+        <img src="cover_b2.webp" alt="Pass the CDL Road Test" width="1100" height="1473"
+             loading="lazy" decoding="async">
+        <h3>Pass the CDL Road Test</h3>
+        <p>They are not watching how you drive. They are counting thirteen specific
+          things, each one scored every time it comes up. One page each.</p>
+      </div>
+    </div>
+    <div style="margin-top:42px"><a href="#offer" class="btn">I want the kit &mdash; $49</a></div>
+  </div>
+</section>
+
+<section class="sec" id="contents">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">What is inside the book</span>
+      <h2>Six Parts, <span class="acento">From the Engine to the Trailer</span></h2>
+    </div>
+    <div class="partes">
+        <div class="parte"><span class="num">I</span><div>
+          <span class="pp">10 pages</span><h3>How the test works</h3><p>The formula you say about every part, the four words that cover most of the test, and the route you never have to think about again.</p>
+        </div></div>
+        <div class="parte"><span class="num">II</span><div>
+          <span class="pp">24 pages</span><h3>Engine and cab</h3><p>Under the hood and behind the wheel, in the order the official method walks it. Fluids, belts, steering, gauges and the emergency kit.</p>
+        </div></div>
+        <div class="parte"><span class="num">III</span><div>
+          <span class="pp">16 pages</span><h3>Air brakes</h3><p>The only part that fails you on the spot. The seven steps drawn one by one, and every number the test asks for.</p>
+        </div></div>
+        <div class="parte"><span class="num">IV</span><div>
+          <span class="pp">22 pages</span><h3>The walk-around</h3><p>Zone by zone around the tractor. Wheels, suspension, brakes, fuel and the steering you have to grab, not look at.</p>
+        </div></div>
+        <div class="parte"><span class="num">V</span><div>
+          <span class="pp">20 pages</span><h3>Coupling and trailer</h3><p>The part nobody draws because it is underneath. The kingpin, the jaws and the gap that means it is not coupled.</p>
+        </div></div>
+        <div class="parte"><span class="num">VI</span><div>
+          <span class="pp">6 pages</span><h3>Six tear-out sheets</h3><p>Made to print and take to the yard: the route, the formula, the seven brake steps, every number on one sheet, the wheel check, and a blank page to test yourself.</p>
+        </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec asfalto">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">How you use it</span>
+      <h2>Two Weeks From <span class="acento">Today to Test Day</span></h2>
+      <p>You do not have to do it this way. But if you have a date on the calendar and
+        no plan, start here.</p>
+    </div>
+    <div class="plan">
+        <div class="paso"><span class="hito">Days<br>1-2</span><div>
+          <h3>Learn the formula</h3><p>Part I. Two things about every part, four words, one route. After this the hundred items stop being a list.</p></div></div>
+        <div class="paso"><span class="hito">Days<br>3-6</span><div>
+          <h3>Walk the truck on paper</h3><p>Engine, cab and the walk-around. A few pages a day is enough; you are recognising shapes, not memorising names.</p></div></div>
+        <div class="paso"><span class="hito">Days<br>7-9</span><div>
+          <h3>Own the air brakes</h3><p>The seven steps in order, out loud, until you can do them without the book. This is the part that fails people on the spot.</p></div></div>
+        <div class="paso"><span class="hito">Days<br>10-11</span><div>
+          <h3>Couple and uncouple</h3><p>The kingpin, the jaws, the gap. The part that is underneath and that nobody ever draws for you.</p></div></div>
+        <div class="paso"><span class="hito">Days<br>12-14</span><div>
+          <h3>Say it out loud</h3><p>Print the six tear-out sheets, stand next to a truck and run the whole thing from the blank page. If you can do that, you can do it for the examiner.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">Is this for you</span>
+      <h2>Who This <span class="acento">Was Drawn For</span></h2>
+    </div>
+    <div class="quien">
+      <div><h3>You are in CDL school right now</h3>
+        <p>Three weeks, a date on the calendar and four to seven thousand dollars already
+          spent. You do not have time to learn a hundred items the slow way.</p></div>
+      <div><h3>You failed the pre-trip once</h3>
+        <p>You know the parts. What went wrong is that you blanked, skipped a zone or
+          missed a step of the brake check. This book is the route and the words.</p></div>
+      <div><h3>English is not your first language</h3>
+        <p>Every part is drawn next to its name, so you learn the word and the thing at
+          the same time instead of translating a list.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap estrecha">
+    <div class="titulo">
+      <span class="ojal">How this book was made</span>
+      <h2>Every Number Checked Against <span class="acento">Five State Handbooks</span></h2>
+    </div>
+    <p>Not a blog, not a practice app: the official manuals the test is written from.
+      Each figure was looked up, one by one, before the page was drawn.</p>
+    <p>That is not a slogan &mdash; it changed the book. The low air pressure warning,
+      for example, <strong>does not say the same thing everywhere</strong>: most manuals
+      say the signal must come on before pressure falls below 55 psi, New York says below
+      60, and California words it as a band from 55 to 75. A book that prints one of those
+      as <em>the</em> answer is wrong in most of the country.</p>
+    <p>So that page does not print a number. It shows you that it varies, and leaves you
+      a space to write your own state's.</p>
+    <p style="font-family:Oswald,sans-serif;font-size:24px;text-transform:uppercase;
+      text-align:center;margin:34px 0 0;line-height:1.14">
+      Your examiner's score sheet always wins.<br>
+      <span class="acento">The book says so on page three.</span></p>
+  </div>
+</section>
+
+<div class="cinta"></div>
+
+<section class="sec asfalto" id="offer">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">The offer</span>
+      <h2>Everything You Get, <span class="acento">For One Payment</span></h2>
+    </div>
+    <div class="oferta">
+      <div class="oferta-top"><h3>The complete CDL skills test kit</h3></div>
+      <div class="oferta-img">
+        <img src="kit.webp" alt="The three books" width="1400" height="940"
+             loading="lazy" decoding="async">
+      </div>
+      <div class="oferta-cuerpo">
+        <ul class="recibe">
+          <li><span class="tic">&#10003;</span>The book: 100 illustrated pages</li>
+          <li><span class="tic">&#10003;</span>Bonus 1: the backing test, drawn
+            <span class="val">Free</span></li>
+          <li><span class="tic">&#10003;</span>Bonus 2: the road test, drawn
+            <span class="val">Free</span></li>
+          <li><span class="tic">&#10003;</span>Six tear-out sheets for the yard
+            <span class="val">Included</span></li>
+          <li><span class="tic">&#10003;</span>Print it as often as you want
+            <span class="val">Included</span></li>
+        </ul>
+        <div class="precio"><span>One payment</span><b>$49</b></div>
+        <a href="https://pay.medicalstudylab.com/pass-the-cdl-kit" data-checkout class="btn">Get the kit &mdash; $49</a>
+        <div class="confia">
+          <span><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Secure checkout</span>
+          <span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> Instant download</span>
+          <span><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> 30 days to try it</span>
+        </div>
+        <p class="chica">All three PDFs arrive by email within minutes.
+          One payment, no subscription.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="garantia">
+      <div class="sello">30<br>days</div>
+      <h3>Read it. Print it. Take it to the yard.</h3>
+      <p>If it does not help you, write to us within 30 days and you get
+        <strong>100% of your money back</strong>. No forms, no explanations,
+        no small print.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="ojal">Questions</span>
+      <h2>Before You <span class="acento">Decide</span></h2>
+    </div>
+    <div class="faq">
+        <details><summary>Is this the written test or the driving test?</summary><p>Neither. This is the vehicle inspection &mdash; the pre-trip &mdash; which is the first of the three parts of the skills test, and the one most people fail. The two bonus books cover the other two parts.</p></details>
+        <details><summary>I am in a different state. Does it still work?</summary><p>Yes, and it is built for that. Every figure was checked against the official handbooks of five states. Where they all agree, the number is printed. Where they do not &mdash; the low air warning is the clearest case &mdash; the page shows you that it varies and leaves you a space to write your own state's number. Your examiner's score sheet always wins, and the book says so on page three.</p></details>
+        <details><summary>Do I still need my school?</summary><p>Yes. This is not a course and it does not give you a licence or a certificate. It is the illustrated material that goes with the training you are already paying for.</p></details>
+        <details><summary>How do I get it?</summary><p>By email, straight after you buy. Three PDFs you can read on your phone in the yard or print and take with you.</p></details>
+        <details><summary>Can I print it?</summary><p>Yes, as many times as you want, for yourself. The last six pages are made to be printed.</p></details>
+        <details><summary>Is it only for Class A?</summary><p>It is written for the Class A combination vehicle, because that is the longest inspection and the one with the coupling and the trailer. If you are testing in a straight truck, the engine, cab, brake and walk-around parts are the same; the coupling and trailer part will not apply to you.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec asfalto">
+  <div class="wrap estrecha" style="text-align:center">
+    <div class="titulo"><h2>One Last Thing</h2></div>
+    <p>The pre-trip is the part of the skills test that fails the most people.</p>
+    <p>Not because it is hard. Because they were handed a list instead of a picture.</p>
+    <p style="font-family:Oswald,sans-serif;font-size:30px;text-transform:uppercase;
+      margin:30px 0 26px;line-height:1.12">
+      A hundred parts.<br><span class="acento">Eight patterns.</span></p>
+    <a href="#offer" class="btn">Get the kit &mdash; $49</a>
+    <div class="confia"><span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> All three PDFs by email in minutes</span></div>
+  </div>
+</section>
+
+<footer class="pie"><div class="wrap">
+  <nav>
+    <a href="https://www.medicalstudylab.com/terms">Terms</a>
+    <a href="https://www.medicalstudylab.com/privacy">Privacy</a>
+    <a href="https://www.medicalstudylab.com/refund-policy">Refund policy</a>
+    <a href="https://www.medicalstudylab.com/support">Support</a>
+  </nav>
+  <p>Study material for people preparing for the CDL skills test. It is not a course,
+    it does not issue a licence or a certificate, and it does not replace your training
+    provider or your state's examiner.</p>
+  <p>Sold and delivered by QUILLSTONE DIGITAL LLC, 1057 NW 136TH AVE, Miami, FL 33182, US
+    &middot; info@medicalstudylab.com</p>
+</div></footer>
+
+<script>
+(function(){
+  var pista=document.getElementById('pista');
+  if(pista){
+    var hojas=[].slice.call(pista.children);
+    var puntos=document.getElementById('puntos');
+    hojas.forEach(function(){puntos.appendChild(document.createElement('i'))});
+    function cual(){
+      var c=pista.scrollLeft+pista.clientWidth/2,m=0,d=1e9;
+      hojas.forEach(function(h,i){
+        var x=h.offsetLeft+h.offsetWidth/2;
+        if(Math.abs(x-c)<d){d=Math.abs(x-c);m=i}});
+      return m;
+    }
+    function pinta(){
+      var n=cual();
+      [].forEach.call(puntos.children,function(p,i){p.className=i===n?'on':''});
+    }
+    var t;
+    pista.addEventListener('scroll',function(){
+      clearTimeout(t);t=setTimeout(pinta,80)},{passive:true});
+    function mueve(d){
+      var i=Math.min(hojas.length-1,Math.max(0,cual()+d)),h=hojas[i];
+      pista.scrollTo({left:h.offsetLeft-(pista.clientWidth-h.offsetWidth)/2,
+        behavior:'smooth'});
+    }
+    document.getElementById('ant').onclick=function(){mueve(-1)};
+    document.getElementById('sig').onclick=function(){mueve(1)};
+    pinta();
+  }
+  /* La lupa: las paginas son el producto, el comprador las quiere de cerca. */
+  var caja=null;
+  function cerrar(){if(caja){caja.remove();caja=null;document.body.style.overflow=''}}
+  document.querySelectorAll('[data-lupa]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.querySelector('img');if(!i)return;
+      cerrar();
+      caja=document.createElement('div');caja.className='lupa';
+      caja.innerHTML='<img src="'+i.getAttribute('src')+'" alt="">';
+      caja.addEventListener('click',cerrar);
+      document.body.appendChild(caja);document.body.style.overflow='hidden';
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')cerrar()});
+})();
+</script>
+</body>
+</html>
