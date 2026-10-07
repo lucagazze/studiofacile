@@ -70,6 +70,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/de/naegel/kasse"
     },
     {
+      "source": "/de/ekg/kasse",
+      "destination": "https://checkout-propio-sepia.vercel.app/de/ekg/kasse"
+    },
+    {
       "source": "/fr/ongles",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/nails/fr/index.html"
     },
