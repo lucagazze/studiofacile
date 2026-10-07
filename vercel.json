@@ -90,6 +90,30 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/physique/paiement"
     },
     {
+      "source": "/fr/odontologie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/odontologie/paiement"
+    },
+    {
+      "source": "/fr/chimie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/chimie/paiement"
+    },
+    {
+      "source": "/fr/pharmacologie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/pharmacologie/paiement"
+    },
+    {
+      "source": "/collezione/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/collezione/cassa"
+    },
+    {
+      "source": "/trio-clinico/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/trio-clinico/cassa"
+    },
+    {
+      "source": "/biblioteca-completa/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/biblioteca-completa/cassa"
+    },
+    {
       "source": "/it/odontoiatria/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/odontoiatria/cassa"
     },
