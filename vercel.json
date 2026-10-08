@@ -98,6 +98,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/chimie/paiement"
     },
     {
+      "source": "/fr/colorimetrie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/colorimetrie/paiement"
+    },
+    {
       "source": "/fr/pharmacologie/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/pharmacologie/paiement"
     },
