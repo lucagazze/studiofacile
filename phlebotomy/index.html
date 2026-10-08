@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phlebotomy Made Visual &mdash; tubes, veins and the order of draw</title>
+<meta name="description" content="Phlebotomy explained with pictures: 52 illustrated pages on the tubes, the veins, the draw and the order of draw, plus The Tube Guide and a 150-question practice test, free.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1f2a5c">
+<link rel="icon" href="cover_book.webp" type="image/webp">
+<link rel="preload" as="image" href="kit.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,
+'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1775621307023595');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1775621307023595&ev=PageView&noscript=1" alt=""></noscript>
+<style>
+:root{
+  --navy:#1f2a5c;--navy-d:#161e45;--navy-2:#2d3a75;
+  --rojo:#c8323f;--rojo-d:#a92533;--rojo-l:#e2525e;
+  --crema:#f7f3e8;--crema-2:#efe8d8;--papel:#fff;
+  --tinta:#1f2a5c;--texto:#323a58;--suave:#5f6683;--linea:#e4ddcc;
+  --azul:#dde9f7;--azul-t:#2c5d9b;
+  --rosa:#f9dfdb;--rosa-t:#b23a3a;
+  --verde:#dcefe1;--verde-t:#2f7a4c;
+  --lila:#e9e1f4;--lila-t:#6a4aa0;
+  --amar:#fcf0d4;--amar-t:#9a6a0b;
+  --si:#2f7a4c;--no:#b3281c;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--crema);color:var(--texto);
+  font:400 17px/1.62 Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--rojo-d)}
+h1,h2,h3{font-family:Inter,system-ui,sans-serif;color:var(--tinta);margin:0;
+  line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0 0 1em}
+svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 16px}
+.estrecha{max-width:760px}
+.sec{padding:60px 0}
+.sec-blanca{background:var(--papel)}
+@media (min-width:900px){.sec{padding:92px 0}}
+
+/* ---- titulos de seccion ------------------------------------------------ */
+/* La pastilla es la de la tapa: «THE TUBES», «THE DRAW»... */
+.chip{display:inline-block;font:800 11.5px/1 Inter,sans-serif;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--navy);background:var(--azul);
+  padding:8px 14px;border-radius:999px;margin-bottom:16px}
+.chip.rosa{background:var(--rosa);color:var(--rosa-t)}
+.chip.verde{background:var(--verde);color:var(--verde-t)}
+.chip.lila{background:var(--lila);color:var(--lila-t)}
+.chip.amar{background:var(--amar);color:var(--amar-t)}
+.titulo{text-align:center;margin:0 auto 34px;max-width:800px}
+.titulo h2{font-size:clamp(28px,6.4vw,44px);font-weight:900}
+.titulo p{margin:14px auto 0;color:var(--suave);font-size:17.5px;max-width:640px}
+.rojo{color:var(--rojo)}
+
+/* ---- boton ------------------------------------------------------------- */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  max-width:520px;margin:0 auto;padding:18px 22px;border-radius:14px;
+  background:var(--rojo);color:#fff;text-decoration:none;text-align:center;
+  font:800 clamp(17px,4.4vw,20px)/1.2 Inter,sans-serif;letter-spacing:-.005em;
+  box-shadow:0 4px 0 var(--rojo-d),0 14px 30px rgba(200,50,63,.28);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease}
+.btn:hover{background:#d23a47;transform:translateY(2px);
+  box-shadow:0 2px 0 var(--rojo-d),0 8px 20px rgba(200,50,63,.25)}
+.btn:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
+.btn svg{width:20px;height:20px;stroke-width:2.6}
+.confia{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;
+  margin:14px 0 0;font-size:14px;color:var(--suave)}
+.confia span{display:inline-flex;align-items:center;gap:6px}
+.confia svg{color:var(--navy)}
+
+/* ---- barra de marca ---------------------------------------------------- */
+.marca{background:var(--navy);color:#fff;text-align:center;padding:9px 16px;
+  font:700 12px/1.3 Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.marca span{opacity:.72;letter-spacing:.06em;text-transform:none;font-weight:500;
+  margin-left:10px}
+
+/* ---- hero -------------------------------------------------------------- */
+/* Fondo crema con las manchas pastel de la tapa. */
+.hero{position:relative;overflow:hidden;padding:26px 0 46px;
+  background:
+    radial-gradient(420px 300px at 92% 8%,rgba(233,225,244,.95),transparent 70%),
+    radial-gradient(380px 280px at 4% 40%,rgba(249,223,219,.85),transparent 70%),
+    radial-gradient(460px 320px at 70% 96%,rgba(221,233,247,.95),transparent 70%),
+    var(--crema)}
+.hero-in{display:grid;gap:20px;align-items:center}
+.hero-txt{text-align:center;order:1}
+.hero-img{order:2;max-width:620px;width:100%;margin:0 auto}
+.hero-pie{order:3}
+.hero .chip{background:#fff;box-shadow:0 2px 10px rgba(31,42,92,.08);margin-bottom:14px}
+.hero h1{font-size:clamp(40px,11vw,70px);font-weight:900;line-height:1;
+  letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--rojo);display:block}
+.hero .bajada{font:600 clamp(17px,4.4vw,21px)/1.4 Inter,sans-serif;color:var(--navy);
+  margin:14px auto 0;max-width:560px}
+.hero .sub{font-size:16px;line-height:1.55;color:var(--suave);margin:10px auto 0;
+  max-width:580px}
+@media (min-width:900px){
+  .hero{padding:48px 0 84px}
+  .hero-in{grid-template-columns:1fr 1.08fr;gap:10px 40px;
+    grid-template-areas:"txt img" "pie img"}
+  .hero-txt{grid-area:txt;text-align:left;align-self:end}
+  .hero-pie{grid-area:pie;align-self:start}
+  .hero-img{grid-area:img;max-width:none}
+  .hero .bajada,.hero .sub{margin-left:0}
+  .hero .sub{font-size:17.5px}
+  .hero .btn{margin-left:0}
+  .hero .confia{justify-content:flex-start}
+}
+
+/* ---- ventajas (compactas en el celular, para no tapar el kit) --------- */
+.ventajas{list-style:none;margin:6px auto 20px;padding:0;display:grid;gap:8px;
+  max-width:560px;text-align:left}
+.ventajas li{display:flex;gap:12px;align-items:center;padding:10px 12px;
+  border-radius:12px;background:rgba(255,255,255,.78);
+  box-shadow:0 1px 0 rgba(31,42,92,.06)}
+.ventajas i{flex:none;width:34px;height:34px;border-radius:9px;display:grid;
+  place-items:center;font-style:normal;color:var(--navy)}
+.ventajas li:nth-child(1) i{background:var(--azul)}
+.ventajas li:nth-child(2) i{background:var(--rosa);color:var(--rosa-t)}
+.ventajas li:nth-child(3) i{background:var(--verde);color:var(--verde-t)}
+.ventajas i svg{width:18px;height:18px;stroke-width:2.3}
+.ventajas b{display:block;font:800 15px/1.25 Inter,sans-serif;color:var(--navy)}
+.ventajas span{display:block;font-size:13.5px;line-height:1.4;color:var(--suave);
+  margin-top:1px}
+@media (min-width:900px){
+  .ventajas{margin:24px 0 26px;gap:10px}
+  .ventajas li{padding:13px 15px}
+  .ventajas b{font-size:16.5px}
+  .ventajas span{font-size:14.5px}
+}
+
+/* ---- barra de datos ---------------------------------------------------- */
+.datos{background:var(--navy);color:#fff}
+.datos-in{display:grid;grid-template-columns:repeat(3,1fr);max-width:1100px;margin:0 auto}
+.dato{padding:22px 8px;text-align:center;border-right:1px solid rgba(255,255,255,.14)}
+.dato:last-child{border-right:0}
+.dato b{display:block;font:900 clamp(28px,7vw,42px)/1 Inter,sans-serif;
+  letter-spacing:-.03em;color:#fff}
+.dato b small{font-size:.5em;color:var(--rojo-l);font-weight:800}
+.dato span{display:block;margin-top:7px;font-size:12.5px;line-height:1.35;
+  color:rgba(255,255,255,.76)}
+@media (min-width:700px){.dato span{font-size:14px}}
+
+/* ---- carrusel de paginas ----------------------------------------------- */
+.pista{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:6px 4px 18px;scrollbar-width:none;overscroll-behavior-x:contain}
+.pista::-webkit-scrollbar{display:none}
+.hoja{flex:0 0 min(76vw,360px);scroll-snap-align:center;margin:0}
+.hoja button{display:block;width:100%;padding:0;border:0;background:none;
+  cursor:zoom-in;font:inherit;color:inherit;text-align:left}
+.marco{display:block;padding:7px;border-radius:14px;background:#fff;
+  box-shadow:0 14px 34px rgba(31,42,92,.14),0 0 0 1px rgba(31,42,92,.05)}
+.marco img{border-radius:8px}
+.hoja figcaption{margin:12px 4px 0}
+.hoja figcaption small{display:block;font:700 11px/1.3 Inter,sans-serif;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--rojo);margin-bottom:3px}
+.hoja figcaption span{display:block;font:700 15.5px/1.35 Inter,sans-serif;color:var(--navy)}
+.flechas{display:flex;justify-content:center;gap:10px;margin-top:6px}
+.flechas button{width:46px;height:46px;border-radius:50%;cursor:pointer;
+  border:1.5px solid var(--linea);background:#fff;color:var(--navy);
+  display:grid;place-items:center;font-size:20px}
+.flechas button:hover{border-color:var(--navy)}
+.puntos{display:flex;justify-content:center;gap:7px;margin-top:8px}
+.puntos i{width:8px;height:8px;border-radius:50%;background:var(--linea);
+  transition:width .2s ease,background .2s ease}
+.puntos i.on{width:24px;border-radius:4px;background:var(--rojo)}
+.lupa{position:fixed;inset:0;z-index:9999;background:rgba(18,23,48,.94);
+  display:flex;align-items:center;justify-content:center;padding:14px;cursor:zoom-out}
+.lupa img{max-width:100%;max-height:100%;border-radius:6px;
+  box-shadow:0 24px 70px rgba(0,0,0,.5)}
+
+/* ---- tres comprobaciones (p. 3 del libro) ------------------------------ */
+.tres{display:grid;gap:14px;max-width:980px;margin:0 auto}
+@media (min-width:780px){.tres{grid-template-columns:repeat(3,1fr);gap:18px}}
+.check{border-radius:18px;padding:22px 20px 20px;position:relative}
+.check:nth-child(1){background:var(--azul)}
+.check:nth-child(2){background:var(--rosa)}
+.check:nth-child(3){background:var(--verde)}
+.check .n{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;
+  display:grid;place-items:center;font:900 17px/1 Inter,sans-serif;margin-bottom:12px}
+.check h3{font-size:21px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;
+  margin-bottom:6px}
+.check p{margin:0;font-size:15.5px;color:var(--texto)}
+.check .donde{display:inline-block;margin-top:10px;font:800 12.5px/1 Inter,sans-serif;
+  color:var(--navy);background:rgba(255,255,255,.7);padding:6px 10px;border-radius:999px}
+/* La franja navy de abajo de cada pagina del libro. */
+.franja{max-width:980px;margin:18px auto 0;background:var(--navy);color:#fff;
+  border-radius:16px;padding:18px 20px;text-align:center}
+.franja b{display:block;font:900 14px/1.3 Inter,sans-serif;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:4px}
+.franja span{font-size:15px;color:rgba(255,255,255,.86)}
+
+/* ---- comparacion ------------------------------------------------------- */
+.frente{display:grid;gap:16px;max-width:920px;margin:0 auto}
+@media (min-width:820px){.frente{grid-template-columns:1fr 1fr;gap:22px}}
+.lado{border-radius:18px;padding:24px 22px;background:#fff;border:1px solid var(--linea)}
+.lado h3{font-size:20px;font-weight:900;margin-bottom:14px}
+.lado.sin h3{color:var(--suave)}
+.lado.con{border:2px solid var(--navy);box-shadow:0 16px 36px rgba(31,42,92,.12)}
+.lado ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.lado li{display:flex;gap:10px;font-size:15.5px;line-height:1.5;color:var(--texto)}
+.lado li::before{content:"\00d7";font-weight:900;color:var(--no);flex:none;width:18px}
+.lado.con li::before{content:"\2713";color:var(--si)}
+
+/* ---- los tres libros --------------------------------------------------- */
+.vols{display:grid;gap:16px}
+@media (min-width:900px){.vols{grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}}
+/* En el celular la tapa va chica a la izquierda: tres tapas a lo ancho
+   eran 2.000 px de scroll para decir tres cosas. */
+.vol{background:#fff;border-radius:18px;padding:16px;
+  box-shadow:0 12px 30px rgba(31,42,92,.08);display:grid;
+  grid-template-columns:104px 1fr;column-gap:16px;row-gap:6px;align-items:start;
+  border:1px solid var(--linea)}
+.vol img{grid-column:1;grid-row:1 / span 4}
+.vol>:not(img){grid-column:2}
+.vol p{grid-column:1 / -1!important;margin-top:8px!important}
+@media (min-width:520px){.vol{grid-template-columns:150px 1fr}
+  .vol p{grid-column:2!important;margin-top:0!important}}
+@media (min-width:900px){
+  .vol{display:flex;flex-direction:column;gap:12px;padding:18px 18px 22px}
+  .vol p{margin-top:0!important}}
+.vol.principal{border:2px solid var(--rojo)}
+.vol .etiq{align-self:flex-start;justify-self:start;font:800 11.5px/1 Inter,sans-serif;letter-spacing:.12em;
+  text-transform:uppercase;padding:7px 11px;border-radius:999px;
+  background:var(--lila);color:var(--lila-t)}
+.vol.principal .etiq{background:var(--rojo);color:#fff}
+.vol img{border-radius:8px;box-shadow:0 10px 24px rgba(31,42,92,.16)}
+.vol h3{font-size:21px;font-weight:900}
+.vol .pp{font:700 13px/1 Inter,sans-serif;color:var(--rojo);letter-spacing:.02em}
+.vol p{margin:0;font-size:15.5px;color:var(--suave)}
+.vol ul{margin:2px 0 0;padding:0 0 0 18px;font-size:15px;color:var(--texto)}
+.vol li{margin:3px 0}
+
+/* ---- indice ------------------------------------------------------------ */
+.partes{display:grid;gap:12px;max-width:860px;margin:0 auto}
+.parte{border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--linea)}
+.parte summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;
+  padding:16px 16px}
+.parte summary::-webkit-details-marker{display:none}
+.parte .num{flex:none;width:48px;height:48px;border-radius:12px;display:grid;
+  place-items:center;font:900 16px/1 Inter,sans-serif;color:var(--navy)}
+.parte.azul .num{background:var(--azul)}
+.parte.rosa .num{background:var(--rosa)}
+.parte.verde .num{background:var(--verde)}
+.parte.lila .num{background:var(--lila)}
+.parte.amar .num{background:var(--amar)}
+.parte .tt{flex:1;min-width:0}
+.parte .tt small{display:block;font:800 11.5px/1.2 Inter,sans-serif;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--rojo);margin-bottom:3px}
+.parte .tt b{display:block;font:900 18.5px/1.2 Inter,sans-serif;color:var(--navy)}
+.parte .tt span{display:block;font-size:14px;line-height:1.4;color:var(--suave);margin-top:2px}
+.parte summary::after{content:"+";flex:none;font:700 24px/1 Inter,sans-serif;color:var(--navy);
+  width:28px;text-align:center}
+.parte[open] summary::after{content:"\2212"}
+.parte ol{margin:0;padding:4px 18px 18px 80px;font-size:15px;color:var(--texto);
+  display:grid;gap:5px}
+@media (max-width:480px){.parte ol{padding-left:40px}}
+@media (min-width:760px){.parte ol{grid-template-columns:1fr 1fr;column-gap:28px}}
+
+/* ---- examenes ---------------------------------------------------------- */
+.bloques{display:grid;gap:10px;max-width:860px;margin:0 auto}
+@media (min-width:700px){.bloques{grid-template-columns:1fr 1fr}}
+.bloque{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;
+  padding:13px 15px;border:1px solid var(--linea)}
+.bloque .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--navy);
+  color:#fff;display:grid;place-items:center;font:900 15px/1 Inter,sans-serif}
+.bloque b{display:block;font:800 15.5px/1.3 Inter,sans-serif;color:var(--navy)}
+.bloque span{display:block;font-size:13px;color:var(--suave)}
+.siglas{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 26px}
+.siglas span{font:800 13.5px/1 Inter,sans-serif;color:var(--navy);background:#fff;
+  border:1.5px solid var(--navy);border-radius:999px;padding:9px 14px}
+.aviso{max-width:860px;margin:18px auto 0;font-size:13.5px;line-height:1.55;
+  color:var(--suave);text-align:center}
+
+/* ---- como usarlo ------------------------------------------------------- */
+.pasos{display:grid;gap:14px;max-width:980px;margin:0 auto}
+@media (min-width:820px){.pasos{grid-template-columns:repeat(3,1fr);gap:18px}}
+.paso{background:#fff;border-radius:18px;padding:22px 20px;border:1px solid var(--linea)}
+.paso .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;
+  background:var(--rojo);color:#fff;font:900 15px/1 Inter,sans-serif;margin-bottom:12px}
+.paso h3{font-size:19px;font-weight:900;margin-bottom:6px}
+.paso p{margin:0;font-size:15.5px;color:var(--suave)}
+
+/* ---- para quien -------------------------------------------------------- */
+.quien{display:grid;gap:14px;max-width:1000px;margin:0 auto}
+@media (min-width:860px){.quien{grid-template-columns:repeat(3,1fr);gap:18px}}
+.quien div{border-radius:18px;padding:22px 20px}
+.quien div:nth-child(1){background:var(--azul)}
+.quien div:nth-child(2){background:var(--amar)}
+.quien div:nth-child(3){background:var(--lila)}
+.quien h3{font-size:19px;font-weight:900;margin-bottom:8px}
+.quien p{margin:0;font-size:15.5px;color:var(--texto)}
+
+/* ---- oferta ------------------------------------------------------------ */
+.oferta-sec{background:var(--navy);
+  background-image:radial-gradient(600px 380px at 10% 0%,rgba(200,50,63,.25),transparent 65%),
+    radial-gradient(600px 420px at 100% 100%,rgba(233,225,244,.16),transparent 65%)}
+.oferta-sec .titulo h2{color:#fff}
+.oferta-sec .chip{background:rgba(255,255,255,.12);color:#fff}
+.oferta{max-width:600px;margin:0 auto;background:#fff;border-radius:22px;overflow:hidden;
+  box-shadow:0 26px 60px rgba(0,0,0,.35)}
+.oferta-top{background:var(--crema);padding:18px 18px 4px;text-align:center}
+.oferta-top h3{font-size:clamp(20px,5vw,26px);font-weight:900}
+.oferta-img{padding:4px 12px 0;background:var(--crema)}
+.oferta-cuerpo{padding:8px 20px 24px}
+.recibe{list-style:none;margin:0 0 4px;padding:0}
+.recibe li{display:flex;align-items:center;gap:11px;padding:13px 0;
+  border-bottom:1px solid var(--linea);font-size:15.5px;line-height:1.4;color:var(--texto)}
+.recibe li:last-child{border-bottom:0}
+.recibe .tic{flex:none;width:22px;height:22px;border-radius:50%;background:var(--si);
+  color:#fff;display:grid;place-items:center;font-size:12px;font-weight:900}
+.recibe .val{margin-left:auto;padding-left:8px;font:800 12px/1 Inter,sans-serif;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--si);white-space:nowrap}
+.precio{text-align:center;padding:16px 0 18px;border-top:2px dashed var(--linea)}
+.precio span{display:block;font:800 12px/1 Inter,sans-serif;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+.precio b{font:900 clamp(50px,13vw,66px)/1 Inter,sans-serif;color:var(--navy);
+  letter-spacing:-.04em}
+.precio small{display:block;margin-top:6px;font-size:13.5px;color:var(--suave)}
+.chica{text-align:center;font-size:13.5px;color:var(--suave);margin:14px 0 0}
+
+/* ---- garantia ---------------------------------------------------------- */
+.garantia{max-width:760px;margin:0 auto;background:#fff;border:2px dashed var(--navy);
+  border-radius:20px;padding:30px 22px;text-align:center}
+.sello{width:80px;height:80px;margin:0 auto 14px;border-radius:50%;background:var(--verde);
+  color:var(--verde-t);display:grid;place-items:center;
+  font:900 18px/1.05 Inter,sans-serif;text-transform:uppercase}
+.garantia h3{font-size:clamp(21px,5vw,26px);font-weight:900;margin-bottom:12px}
+.garantia p{color:var(--texto);font-size:16px}
+
+/* ---- preguntas --------------------------------------------------------- */
+.faq{max-width:800px;margin:0 auto;display:grid;gap:10px}
+.faq details{background:#fff;border:1px solid var(--linea);border-radius:14px;overflow:hidden}
+.faq details[open]{border-color:var(--navy)}
+.faq summary{cursor:pointer;list-style:none;padding:17px 18px;
+  font:700 16.5px/1.4 Inter,sans-serif;color:var(--navy);display:flex;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;flex:none;font:700 24px/1 Inter,sans-serif;
+  color:var(--rojo)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 18px;color:var(--texto);font-size:15.5px}
+
+/* ---- cierre ------------------------------------------------------------ */
+.cierre{text-align:center}
+.cierre .grande{font:900 clamp(28px,7vw,40px)/1.12 Inter,sans-serif;letter-spacing:-.03em;
+  color:var(--navy);margin:8px 0 18px}
+.cierre .grande em{font-style:normal;color:var(--rojo)}
+
+/* ---- pie --------------------------------------------------------------- */
+.pie{background:var(--navy-d);color:rgba(255,255,255,.55);padding:34px 0 40px;
+  font-size:12.5px;text-align:center}
+.pie p{margin:0 auto 12px;max-width:720px}
+.pie nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:14px}
+.pie a{color:rgba(255,255,255,.78);text-decoration:none}
+.pie a:hover{color:#fff;text-decoration:underline}
+
+/* ---- barra de compra pegajosa ----------------------------------------- */
+/* Aparece cuando el boton del hero sale de la pantalla y se esconde cuando
+   la caja de la oferta esta a la vista, para no tapar el boton principal. */
+.pega{position:fixed;left:0;right:0;bottom:0;z-index:900;background:#fff;
+  border-top:1px solid var(--linea);box-shadow:0 -8px 26px rgba(31,42,92,.14);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  transform:translateY(110%);transition:transform .25s ease}
+.pega.on{transform:none}
+.pega-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.pega-txt{flex:1;min-width:0;line-height:1.25}
+.pega-txt b{display:block;font:900 15px/1.2 Inter,sans-serif;color:var(--navy);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pega-txt span{display:block;font-size:12.5px;color:var(--suave)}
+.pega .btn{width:auto;flex:none;margin:0;padding:13px 18px;font-size:16px;border-radius:12px;
+  box-shadow:0 3px 0 var(--rojo-d)}
+body.con-pega .pie{padding-bottom:110px}
+</style>
+</head>
+<body>
+
+<div class="marca">Studio Facile<span>Made Visual</span></div>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <span class="chip">Phlebotomy study guide &middot; US edition</span>
+      <h1>Phlebotomy <em>Made Visual</em></h1>
+      <p class="bajada">Tubes, veins and the order of draw, explained with pictures.</p>
+      <p class="sub">52 illustrated pages, one topic per page. Plus two free bonuses:
+        The Tube Guide and a 150-question practice test, every answer explained.</p>
+    </div>
+    <div class="hero-img">
+      <img src="kit.webp" alt="The three books: Phlebotomy Made Visual, The Tube Guide and Phlebotomy Practice Test"
+            width="1300" height="818" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-pie">
+      <ul class="ventajas">
+        <li><i><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></i><div><b>One topic per page</b><span>The drawing carries
+          the idea, the boxes give the rule.</span></div></li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></i><div><b>Follows the CLSI standards</b><span>And common
+          US practice. Where labs differ, the page says so.</span></div></li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></i><div><b>Three PDFs by email</b><span>Read them on your
+          phone, print what you need.</span></div></li>
+      </ul>
+      <a href="https://pay.studiofacilebook.com/phlebotomy-made-visual-kit" data-checkout id="cta-hero" class="btn">Get the 3 books &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="confia">
+        <span><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Secure checkout</span>
+        <span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> Instant download</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> 30-day refund policy</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="datos"><div class="datos-in">
+  <div class="dato"><b>52</b><span>illustrated pages,<br>one topic each</span></div>
+  <div class="dato"><b>150</b><span>practice questions,<br>answers explained</span></div>
+  <div class="dato"><b>3</b><span>PDFs: the book<br>+ 2 free bonuses</span></div>
+</div></section>
+
+<section class="sec sec-blanca" id="inside">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip">Look inside</span>
+      <h2>This Is What a Page <span class="rojo">Actually Looks Like</span></h2>
+      <p>Real pages from the three books. Tap any page to see it full size.</p>
+    </div>
+    <div class="pista" id="pista">
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The order of draw: one fixed sequence">
+            <span class="marco"><img src="page_01.webp" alt="The order of draw: one fixed sequence" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 23</small><span>The order of draw: one fixed sequence</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Light blue: why you fill it to the line">
+            <span class="marco"><img src="page_02.webp" alt="Light blue: why you fill it to the line" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 16</small><span>Light blue: why you fill it to the line</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The veins of the arm: H and M patterns">
+            <span class="marco"><img src="page_03.webp" alt="The veins of the arm: H and M patterns" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 28</small><span>The veins of the arm: H and M patterns</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Venipuncture step by step: anchor and insert">
+            <span class="marco"><img src="page_04.webp" alt="Venipuncture step by step: anchor and insert" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 32</small><span>Venipuncture step by step: anchor and insert</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: No blood? Look at where the bevel is">
+            <span class="marco"><img src="page_05.webp" alt="No blood? Look at where the bevel is" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 36</small><span>No blood? Look at where the bevel is</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Blood cultures: before antibiotics, from clean skin">
+            <span class="marco"><img src="page_06.webp" alt="Blood cultures: before antibiotics, from clean skin" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 42</small><span>Blood cultures: before antibiotics, from clean skin</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Hemolysis: how it looks and what causes it">
+            <span class="marco"><img src="page_07.webp" alt="Hemolysis: how it looks and what causes it" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 49</small><span>Hemolysis: how it looks and what causes it</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The numbers to remember, on one page">
+            <span class="marco"><img src="page_08.webp" alt="The numbers to remember, on one page" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Phlebotomy Made Visual &middot; p. 52</small><span>The numbers to remember, on one page</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: One card per tube: light blue">
+            <span class="marco"><img src="page_09.webp" alt="One card per tube: light blue" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Bonus 1 · The Tube Guide &middot; p. 4</small><span>One card per tube: light blue</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The answer key: one line on why">
+            <span class="marco"><img src="page_10.webp" alt="The answer key: one line on why" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Bonus 2 · Practice Test &middot; p. 17</small><span>The answer key: one line on why</span></figcaption>
+          </button>
+        </figure>
+    </div>
+    <div class="puntos" id="puntos"></div>
+    <div class="flechas">
+      <button type="button" id="ant" aria-label="Previous page">&#8592;</button>
+      <button type="button" id="sig" aria-label="Next page">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip rosa">How the book works</span>
+      <h2>Every Draw Rests on <span class="rojo">Three Checks</span></h2>
+      <p>The right patient, the right tube and the right order. The book is built
+        around them, and draws each one.</p>
+    </div>
+    <div class="tres">
+      <div class="check"><span class="n">1</span><h3>Right patient</h3>
+        <p>Two identifiers, checked against the requisition, before any tube is
+          touched.</p><span class="donde">Part I</span></div>
+      <div class="check"><span class="n">2</span><h3>Right tube</h3>
+        <p>Each stopper color means an additive, and each additive suits certain
+          tests.</p><span class="donde">Part II</span></div>
+      <div class="check"><span class="n">3</span><h3>Right order</h3>
+        <p>Tubes are filled in a fixed sequence, so no additive passes from one tube
+          into the next.</p><span class="donde">Parts II and III</span></div>
+    </div>
+    <div class="franja"><b>How each page works</b><span>One topic per page. The drawing
+      carries the idea, the boxes give the rule, and the dark strip at the bottom holds
+      the point most often missed on the job and on the exam.</span></div>
+  </div>
+</section>
+
+<section class="sec sec-blanca">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip verde">The difference</span>
+      <h2>A Chart You Memorize <span class="rojo">vs. A Page You Understand</span></h2>
+    </div>
+    <div class="frente">
+      <div class="lado sin">
+        <h3>A color chart and a list of steps</h3>
+        <ul>
+          <li>Stopper colors with no reason behind them</li>
+          <li>The order of draw as a string of words to memorize</li>
+          <li>No picture of the vein, the angle or where the bevel went</li>
+          <li>Rules that differ from source to source, with no way to tell why</li>
+        </ul>
+      </div>
+      <div class="lado con">
+        <h3>Phlebotomy Made Visual</h3>
+        <ul>
+          <li>Each stopper explained: what is inside it and what it is for</li>
+          <li>The order of draw &mdash; and why the order matters (carryover)</li>
+          <li>The veins, the tourniquet, the angle and the bevel, drawn</li>
+          <li>CLSI standards and common US practice; where labs differ, it says so</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="books">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip lila">The kit</span>
+      <h2>One Book to Learn It. <span class="rojo">Two to Keep It.</span></h2>
+      <p>The book teaches. The Tube Guide stays on the tray. The Practice Test tells
+        you what to review. The two bonuses are free.</p>
+    </div>
+    <div class="vols">
+      <div class="vol principal">
+        <span class="etiq">The book</span>
+        <img src="cover_book.webp" alt="Phlebotomy Made Visual"  width="640" height="857"
+             loading="lazy" decoding="async">
+        <span class="pp">52 pages &middot; 5 parts</span>
+        <h3>Phlebotomy Made Visual</h3>
+        <p>Before the needle, the tubes, the draw, special collections and when things
+          go wrong. One topic per page, from the two identifiers to the numbers to
+          remember.</p>
+      </div>
+      <div class="vol">
+        <span class="etiq">Bonus 1 &middot; Free</span>
+        <img src="cover_b1.webp" alt="The Tube Guide"  width="640" height="857"
+             loading="lazy" decoding="async">
+        <span class="pp">20 pages &middot; made to print</span>
+        <h3>The Tube Guide</h3>
+        <p>Every tube, every test, on one card. One card per tube, the order of draw
+          on one page, and an A&ndash;Z finder from test to tube. Print it and keep it
+          on the tray.</p>
+      </div>
+      <div class="vol">
+        <span class="etiq">Bonus 2 &middot; Free</span>
+        <img src="cover_b2.webp" alt="Phlebotomy Practice Test"  width="640" height="857"
+             loading="lazy" decoding="async">
+        <span class="pp">22 pages &middot; 150 questions</span>
+        <h3>Phlebotomy Practice Test</h3>
+        <p>150 exam-style questions in six blocks of 25, an answer sheet to print, and
+          an answer key with one line on why for every answer &mdash; plus what to
+          review if you missed it.</p>
+      </div>
+    </div>
+    <div style="margin-top:38px"><a href="https://pay.studiofacilebook.com/phlebotomy-made-visual-kit" data-checkout class="btn">Get the kit &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="sec sec-blanca" id="contents">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip amar">What is inside the book</span>
+      <h2>Five Parts, <span class="rojo">From the Requisition to the Lab</span></h2>
+      <p>The real table of contents. Tap a part to see its pages.</p>
+    </div>
+    <div class="partes">
+      <details class="parte azul" open><summary><span class="num">I</span><span class="tt"><small>Part I &middot; pp. 4–12</small><b>Before the needle</b><span>Everything that happens before the skin is touched</span></span></summary>
+        <ol><li>What a phlebotomist does</li><li>Two identifiers, every time</li><li>Hand hygiene and PPE</li><li>Standard precautions and needlesticks</li><li>The requisition and the label</li><li>The tray: everything you need</li><li>Needles and gauges</li><li>Tube holder, butterfly or syringe?</li></ol></details>
+      <details class="parte rosa"><summary><span class="num">II</span><span class="tt"><small>Part II &middot; pp. 13–25</small><b>The tubes</b><span>What is inside each stopper, and the order they go in</span></span></summary>
+        <ol><li>Inside a tube</li><li>Serum, plasma or whole blood</li><li>Light blue: sodium citrate</li><li>Red: the serum tube</li><li>Gold (SST): the gel separator</li><li>Green: heparin</li><li>Lavender: EDTA</li><li>Gray: the glucose tube</li><li>The other stoppers (pink, royal blue, yellow, tan)</li><li>The order of draw</li><li>Why the order matters (carryover)</li><li>Inversions, tube by tube</li></ol></details>
+      <details class="parte verde"><summary><span class="num">III</span><span class="tt"><small>Part III &middot; pp. 26–37</small><b>The draw</b><span>From choosing the vein to the bandage</span></span></summary>
+        <ol><li>Where not to draw</li><li>The veins of the arm (H and M patterns)</li><li>Hand veins</li><li>The tourniquet</li><li>Cleaning the site</li><li>Venipuncture step by step (1): anchor and insert</li><li>Step by step (2): fill, release, withdraw</li><li>Drawing with a butterfly (discard tube)</li><li>Drawing with a syringe (transfer device)</li><li>No blood? Fix the needle</li><li>After the draw</li></ol></details>
+      <details class="parte lila"><summary><span class="num">IV</span><span class="tt"><small>Part IV &middot; pp. 38–45</small><b>Special collections</b><span>Capillary sticks, cultures, timed and sensitive samples</span></span></summary>
+        <ol><li>The fingerstick</li><li>The heel stick</li><li>Capillary order of draw</li><li>Blood cultures</li><li>Timed draws: GTT, peak and trough</li><li>Ice, light, warmth: special handling</li><li>Children, older adults and difficult veins</li></ol></details>
+      <details class="parte amar"><summary><span class="num">V</span><span class="tt"><small>Part V &middot; pp. 46–52</small><b>When things go wrong</b><span>Complications, bad specimens and how to avoid both</span></span></summary>
+        <ol><li>Hematoma and fainting</li><li>Nerves and arteries: when to stop</li><li>Hemolysis</li><li>Errors that ruin a specimen</li><li>Processing and transport</li><li>Numbers to remember</li></ol></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip">For the certification exam</span>
+      <h2>It Covers What the <span class="rojo">Certification Exams</span> Ask About</h2>
+      <p>The book and the Practice Test cover the topics of the common US phlebotomy
+        certification exams. The 150 questions come in six blocks:</p>
+    </div>
+    <div class="siglas"><span>NHA CPT</span><span>ASCP PBT</span><span>AMT RPT</span><span>NCCT</span></div>
+    <div class="bloques">
+      <div class="bloque"><span class="n">1</span><div><b>Safety and Infection Control</b><span>Questions 1–25</span></div></div>
+      <div class="bloque"><span class="n">2</span><div><b>Patient ID and Communication</b><span>Questions 26–50</span></div></div>
+      <div class="bloque"><span class="n">3</span><div><b>Equipment and Tubes</b><span>Questions 51–75</span></div></div>
+      <div class="bloque"><span class="n">4</span><div><b>Order of Draw and Additives</b><span>Questions 76–100</span></div></div>
+      <div class="bloque"><span class="n">5</span><div><b>Venipuncture Technique</b><span>Questions 101–125</span></div></div>
+      <div class="bloque"><span class="n">6</span><div><b>Special Collections and Processing</b><span>Questions 126–150</span></div></div>
+    </div>
+    <p class="aviso">The questions were written for this book: they are not official exam
+      questions, and Studio Facile is not affiliated with NHA, ASCP, AMT or NCCT. Each
+      exam sets its own length, timing and passing standard, so check your candidate
+      handbook.</p>
+  </div>
+</section>
+
+<section class="sec sec-blanca">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip verde">How you use it</span>
+      <h2>Read It, Keep It Close, <span class="rojo">Test Yourself</span></h2>
+    </div>
+    <div class="pasos">
+      <div class="paso"><span class="n">1</span><h3>Read one part at a time</h3>
+        <p>Five parts, in the order a draw happens: before the needle, the tubes, the
+          draw, special collections, and when things go wrong.</p></div>
+      <div class="paso"><span class="n">2</span><h3>Keep The Tube Guide on the tray</h3>
+        <p>Print it. When you are not sure which tube a test needs, the A&ndash;Z
+          finder tells you.</p></div>
+      <div class="paso"><span class="n">3</span><h3>Take the test one block a day</h3>
+        <p>25 questions, about 25 minutes. Aim for at least 20 of 25 in every block;
+          the key sends each wrong answer back to its topic.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip lila">Is this for you</span>
+      <h2>Who This <span class="rojo">Was Drawn For</span></h2>
+    </div>
+    <div class="quien">
+      <div><h3>You are in a phlebotomy program</h3>
+        <p>Lectures, clinicals and a stopper chart to learn. Each topic on one
+          illustrated page you can come back to.</p></div>
+      <div><h3>Your certification exam is coming up</h3>
+        <p>150 practice questions in six blocks, and an answer key that tells you
+          what to reread when you miss one.</p></div>
+      <div><h3>You draw blood as part of your job</h3>
+        <p>Medical assistants, nursing and lab staff who want the tubes, the order of
+          draw and the special collections clear, on one page each.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec oferta-sec" id="offer">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip">The offer</span>
+      <h2>Everything You Get, <span style="color:#ff8a93">For One Payment</span></h2>
+    </div>
+    <div class="oferta">
+      <div class="oferta-top"><h3>Phlebotomy Made Visual &middot; the kit</h3></div>
+      <div class="oferta-img">
+        <img src="kit.webp" alt="The three books"  width="1300" height="818"
+             loading="lazy" decoding="async">
+      </div>
+      <div class="oferta-cuerpo">
+        <ul class="recibe">
+          <li><span class="tic">&#10003;</span>The book: 52 illustrated pages, five parts</li>
+          <li><span class="tic">&#10003;</span>Bonus 1: The Tube Guide (20 pages)
+            <span class="val">Free</span></li>
+          <li><span class="tic">&#10003;</span>Bonus 2: Practice Test, 150 questions
+            <span class="val">Free</span></li>
+          <li><span class="tic">&#10003;</span>Answer sheet to print, every answer explained
+            <span class="val">Included</span></li>
+          <li><span class="tic">&#10003;</span>Print it as often as you want
+            <span class="val">Included</span></li>
+        </ul>
+        <div class="precio"><span>One payment</span><b>$27</b>
+          <small>No subscription</small></div>
+        <a href="https://pay.studiofacilebook.com/phlebotomy-made-visual-kit" data-checkout class="btn">Get the kit &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="confia">
+          <span><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Secure checkout</span>
+          <span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> Instant download</span>
+          <span><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> 30-day refund policy</span>
+        </div>
+        <p class="chica">All three PDFs arrive by email within minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-blanca">
+  <div class="wrap">
+    <div class="garantia">
+      <div class="sello">30<br>days</div>
+      <h3>If something is wrong with it, you get your money back</h3>
+      <p>For 30 days. If a file does not open, if what you received is not what
+        this page describes, if you were charged twice or the download never
+        arrived, write to us and we refund you in full.</p>
+      <p style="margin-bottom:0">One email to
+        <a href="mailto:info@studiofacilebook.com">info@studiofacilebook.com</a>
+        is enough.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip rosa">Questions</span>
+      <h2>Before You <span class="rojo">Decide</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is this official exam prep?</summary><p>No. It is an independent illustrated study guide. It covers the topics the national certification exams ask about &mdash; NHA CPT, ASCP PBT, AMT RPT and NCCT &mdash; but Studio Facile is not affiliated with any of those organizations, and the 150 practice questions were written for this book: they are not official exam questions. Each exam sets its own length, timing and passing standard, so check your candidate handbook.</p></details>
+      <details><summary>Does it replace my phlebotomy program?</summary><p>No. It is not a course, and it does not give you a certificate or clinical hours. It is the illustrated material that goes with the training you are already doing.</p></details>
+      <details><summary>Which standards does it follow?</summary><p>The CLSI standards and common US practice. The tube colors are BD Vacutainer&rsquo;s, the most common tube line in US labs. Where laboratories differ, the page says so &mdash; and your facility&rsquo;s procedure manual always has the final word.</p></details>
+      <details><summary>How do I get it?</summary><p>By email, straight after you buy. Three PDFs you can read on your phone, tablet or computer.</p></details>
+      <details><summary>Can I print it?</summary><p>Yes, as many times as you want, for yourself. The Tube Guide is made to be printed and kept on the tray, and the practice test has an answer sheet you can print and fill in.</p></details>
+      <details><summary>How many pages is it?</summary><p>The book has 52 pages, The Tube Guide 20 and the Practice Test 22. One topic per page.</p></details>
+      <details><summary>Is it a subscription?</summary><p>No. One payment of $27, and the three PDFs are yours.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-blanca cierre">
+  <div class="wrap estrecha">
+    <div class="titulo" style="margin-bottom:10px"><h2>One Last Thing</h2></div>
+    <p>Every draw rests on three checks. The book draws each one, so you can see
+      it instead of memorizing it.</p>
+    <p class="grande">Right patient.<br>Right tube.<br><em>Right order.</em></p>
+    <a href="https://pay.studiofacilebook.com/phlebotomy-made-visual-kit" data-checkout class="btn">Get the 3 books &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="confia"><span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> All three PDFs by email in minutes</span></div>
+  </div>
+</section>
+
+<footer class="pie"><div class="wrap">
+  <nav>
+    <a href="terms">Terms</a>
+    <a href="privacy">Privacy</a>
+    <a href="refund-policy">Refund policy</a>
+    <a href="support">Support</a>
+  </nav>
+  <p>Study material for people learning phlebotomy and preparing for certification.
+    It is not a course, it does not issue a certificate, it is not affiliated with
+    NHA, ASCP, AMT or NCCT, and it does not replace your training program or your
+    facility&rsquo;s procedures.</p>
+  <p>Sold and delivered by QUILLSTONE DIGITAL LLC, 1057 NW 136TH AVE, Miami, FL 33182, US
+    &middot; info@studiofacilebook.com</p>
+</div></footer>
+
+<div class="pega" id="pega" aria-hidden="true"><div class="pega-in">
+  <div class="pega-txt"><b>Phlebotomy Made Visual</b><span>3 PDFs &middot; one payment of $27</span></div>
+  <a href="https://pay.studiofacilebook.com/phlebotomy-made-visual-kit" data-checkout class="btn" tabindex="-1">Get it &mdash; $27</a>
+</div></div>
+
+<script>
+(function(){
+  var pista=document.getElementById('pista');
+  if(pista){
+    var hojas=[].slice.call(pista.children);
+    var puntos=document.getElementById('puntos');
+    hojas.forEach(function(){puntos.appendChild(document.createElement('i'))});
+    function cual(){
+      var c=pista.scrollLeft+pista.clientWidth/2,m=0,d=1e9;
+      hojas.forEach(function(h,i){
+        var x=h.offsetLeft+h.offsetWidth/2;
+        if(Math.abs(x-c)<d){d=Math.abs(x-c);m=i}});
+      return m;
+    }
+    function pinta(){
+      var n=cual();
+      [].forEach.call(puntos.children,function(p,i){p.className=i===n?'on':''});
+    }
+    var t;
+    pista.addEventListener('scroll',function(){
+      clearTimeout(t);t=setTimeout(pinta,80)},{passive:true});
+    function mueve(d){
+      var i=Math.min(hojas.length-1,Math.max(0,cual()+d)),h=hojas[i];
+      pista.scrollTo({left:h.offsetLeft-(pista.clientWidth-h.offsetWidth)/2,
+        behavior:'smooth'});
+    }
+    document.getElementById('ant').onclick=function(){mueve(-1)};
+    document.getElementById('sig').onclick=function(){mueve(1)};
+    pinta();
+  }
+  var caja=null;
+  function cerrar(){if(caja){caja.remove();caja=null;document.body.style.overflow=''}}
+  document.querySelectorAll('[data-lupa]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.querySelector('img');if(!i)return;
+      cerrar();
+      caja=document.createElement('div');caja.className='lupa';
+      caja.innerHTML='<img src="'+i.getAttribute('src')+'" alt="">';
+      caja.addEventListener('click',cerrar);
+      document.body.appendChild(caja);document.body.style.overflow='hidden';
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')cerrar()});
+
+  /* Barra pegajosa: visible cuando el boton del hero ya paso y la oferta
+     todavia no esta en pantalla. */
+  var pega=document.getElementById('pega'),heroBtn=document.getElementById('cta-hero'),
+      oferta=document.getElementById('offer');
+  /* Con scroll y no con IntersectionObserver: el observer no avisa si un
+     salto (un ancla, un fling) lleva el boton de abajo a arriba de la
+     pantalla sin cruzarla, y la barra quedaba en el estado anterior. */
+  if(pega&&heroBtn&&oferta){
+    var pendiente=false;
+    function pon(){
+      pendiente=false;
+      var h=window.innerHeight,b=heroBtn.getBoundingClientRect(),
+          o=oferta.getBoundingClientRect();
+      var on=b.bottom<0&&!(o.top<h*.85&&o.bottom>h*.15);
+      pega.classList.toggle('on',on);
+      document.body.classList.toggle('con-pega',on);
+    }
+    function pide(){if(!pendiente){pendiente=true;requestAnimationFrame(pon)}}
+    window.addEventListener('scroll',pide,{passive:true});
+    window.addEventListener('resize',pide);
+    pon();
+  }
+})();
+
+/* Pixel: ViewContent al abrir e InitiateCheckout al ir a pagar. El Purchase
+   lo manda el checkout de la app por CAPI con el mismo pixel. */
+(function(){
+  if(typeof fbq!=='function')return;
+  var P={content_ids:['phlebotomy-made-visual'],content_type:'product',
+    content_name:'Phlebotomy Made Visual',value:27.00,currency:'USD'};
+  fbq('track','ViewContent',P);
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-checkout],a[href*="pay.studiofacilebook.com"]');
+    if(!a)return;
+    fbq('track','InitiateCheckout',P);
+  },true);
+})();
+</script>
+</body>
+</html>
