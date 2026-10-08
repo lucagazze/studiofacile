@@ -198,6 +198,18 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/ormoni/cassa"
     },
     {
+      "source": "/it/colorimetria/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/colorimetria/cassa"
+    },
+    {
+      "source": "/it/psicologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/psicologia/cassa"
+    },
+    {
+      "source": "/it/matematica/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/matematica/cassa"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
