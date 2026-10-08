@@ -210,6 +210,18 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/matematica/cassa"
     },
     {
+      "source": "/it/dermatologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/dermatologia/cassa"
+    },
+    {
+      "source": "/it/ciglia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/ciglia/cassa"
+    },
+    {
+      "source": "/it/veterinaria/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/veterinaria/cassa"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
