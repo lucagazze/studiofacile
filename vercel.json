@@ -235,15 +235,15 @@
     },
     {
       "source": "/it/nutrizione/cassa",
-      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/nutrizione-illustrata-kit"
+      "destination": "https://checkout-propio-sepia.vercel.app/it/nutrizione/cassa"
     },
     {
       "source": "/es/colorimetria/pago",
-      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/colorimetria-ilustrada-kit"
+      "destination": "https://checkout-propio-sepia.vercel.app/es/colorimetria/pago"
     },
     {
       "source": "/fr/psychologie/paiement",
-      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/psychologie-illustree-kit"
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/psychologie/paiement"
     },
     {
       "source": "/lp/:path*",

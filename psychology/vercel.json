@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/checkout",
-      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/psychology-made-visual-kit"
+      "destination": "https://checkout-propio-sepia.vercel.app/checkout"
     },
     {
       "source": "/_next/:path*",
