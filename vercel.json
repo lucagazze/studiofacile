@@ -62,6 +62,10 @@
   ],
   "rewrites": [
     {
+      "source": "/es/ecg/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/ecg/pago"
+    },
+    {
       "source": "/es/fisica/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/fisica/pago"
     },
