@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vet Tech Made Visual &mdash; the VTNE topics explained with pictures</title>
+<meta name="description" content="Veterinary technology explained with pictures: 78 illustrated pages on the ten VTNE domains, plus a 150-question practice test and a dosage calculations workbook, free.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#154a4f">
+<link rel="icon" href="cover_book.webp" type="image/webp">
+<link rel="preload" as="image" href="kit.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1f2a5c;--navy-d:#161e45;--navy-2:#2d3a75;
+  --rojo:#c8323f;--rojo-d:#a92533;--rojo-l:#e2525e;
+  --crema:#f7f3e8;--crema-2:#efe8d8;--papel:#fff;
+  --tinta:#1f2a5c;--texto:#323a58;--suave:#5f6683;--linea:#e4ddcc;
+  --azul:#dde9f7;--azul-t:#2c5d9b;
+  --rosa:#f9dfdb;--rosa-t:#b23a3a;
+  --verde:#dcefe1;--verde-t:#2f7a4c;
+  --lila:#e9e1f4;--lila-t:#6a4aa0;
+  --amar:#fcf0d4;--amar-t:#9a6a0b;
+  --si:#2f7a4c;--no:#b3281c;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--crema);color:var(--texto);
+  font:400 17px/1.62 Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--rojo-d)}
+h1,h2,h3{font-family:Inter,system-ui,sans-serif;color:var(--tinta);margin:0;
+  line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0 0 1em}
+svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 16px}
+.estrecha{max-width:760px}
+.sec{padding:60px 0}
+.sec-blanca{background:var(--papel)}
+@media (min-width:900px){.sec{padding:92px 0}}
+
+/* ---- titulos de seccion ------------------------------------------------ */
+/* La pastilla es la de la tapa: «THE TUBES», «THE DRAW»... */
+.chip{display:inline-block;font:800 11.5px/1 Inter,sans-serif;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--navy);background:var(--azul);
+  padding:8px 14px;border-radius:999px;margin-bottom:16px}
+.chip.rosa{background:var(--rosa);color:var(--rosa-t)}
+.chip.verde{background:var(--verde);color:var(--verde-t)}
+.chip.lila{background:var(--lila);color:var(--lila-t)}
+.chip.amar{background:var(--amar);color:var(--amar-t)}
+.titulo{text-align:center;margin:0 auto 34px;max-width:800px}
+.titulo h2{font-size:clamp(28px,6.4vw,44px);font-weight:900}
+.titulo p{margin:14px auto 0;color:var(--suave);font-size:17.5px;max-width:640px}
+.rojo{color:var(--rojo)}
+
+/* ---- boton ------------------------------------------------------------- */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  max-width:520px;margin:0 auto;padding:18px 22px;border-radius:14px;
+  background:var(--rojo);color:#fff;text-decoration:none;text-align:center;
+  font:800 clamp(17px,4.4vw,20px)/1.2 Inter,sans-serif;letter-spacing:-.005em;
+  box-shadow:0 4px 0 var(--rojo-d),0 14px 30px rgba(200,50,63,.28);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease}
+.btn:hover{background:#d23a47;transform:translateY(2px);
+  box-shadow:0 2px 0 var(--rojo-d),0 8px 20px rgba(200,50,63,.25)}
+.btn:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
+.btn svg{width:20px;height:20px;stroke-width:2.6}
+.confia{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;
+  margin:14px 0 0;font-size:14px;color:var(--suave)}
+.confia span{display:inline-flex;align-items:center;gap:6px}
+.confia svg{color:var(--navy)}
+
+/* ---- barra de marca ---------------------------------------------------- */
+.marca{background:var(--navy);color:#fff;text-align:center;padding:9px 16px;
+  font:700 12px/1.3 Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.marca span{opacity:.72;letter-spacing:.06em;text-transform:none;font-weight:500;
+  margin-left:10px}
+
+/* ---- hero -------------------------------------------------------------- */
+/* Fondo crema con las manchas pastel de la tapa. */
+.hero{position:relative;overflow:hidden;padding:26px 0 46px;
+  background:
+    radial-gradient(420px 300px at 92% 8%,rgba(233,225,244,.95),transparent 70%),
+    radial-gradient(380px 280px at 4% 40%,rgba(249,223,219,.85),transparent 70%),
+    radial-gradient(460px 320px at 70% 96%,rgba(221,233,247,.95),transparent 70%),
+    var(--crema)}
+.hero-in{display:grid;gap:20px;align-items:center}
+.hero-txt{text-align:center;order:1}
+.hero-img{order:2;max-width:620px;width:100%;margin:0 auto}
+.hero-pie{order:3}
+.hero .chip{background:#fff;box-shadow:0 2px 10px rgba(31,42,92,.08);margin-bottom:14px}
+.hero h1{font-size:clamp(40px,11vw,70px);font-weight:900;line-height:1;
+  letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--rojo);display:block}
+.hero .bajada{font:600 clamp(17px,4.4vw,21px)/1.4 Inter,sans-serif;color:var(--navy);
+  margin:14px auto 0;max-width:560px}
+.hero .sub{font-size:16px;line-height:1.55;color:var(--suave);margin:10px auto 0;
+  max-width:580px}
+@media (min-width:900px){
+  .hero{padding:48px 0 84px}
+  .hero-in{grid-template-columns:1fr 1.08fr;gap:10px 40px;
+    grid-template-areas:"txt img" "pie img"}
+  .hero-txt{grid-area:txt;text-align:left;align-self:end}
+  .hero-pie{grid-area:pie;align-self:start}
+  .hero-img{grid-area:img;max-width:none}
+  .hero-img img{transform:scale(1.1);transform-origin:center}
+  .hero .bajada,.hero .sub{margin-left:0}
+  .hero .sub{font-size:17.5px}
+  .hero .btn{margin-left:0}
+  .hero .confia{justify-content:flex-start}
+}
+
+/* ---- ventajas (compactas en el celular, para no tapar el kit) --------- */
+.ventajas{list-style:none;margin:6px auto 20px;padding:0;display:grid;gap:8px;
+  max-width:560px;text-align:left}
+.ventajas li{display:flex;gap:12px;align-items:center;padding:10px 12px;
+  border-radius:12px;background:rgba(255,255,255,.78);
+  box-shadow:0 1px 0 rgba(31,42,92,.06)}
+.ventajas i{flex:none;width:34px;height:34px;border-radius:9px;display:grid;
+  place-items:center;font-style:normal;color:var(--navy)}
+.ventajas li:nth-child(1) i{background:var(--azul)}
+.ventajas li:nth-child(2) i{background:var(--rosa);color:var(--rosa-t)}
+.ventajas li:nth-child(3) i{background:var(--verde);color:var(--verde-t)}
+.ventajas i svg{width:18px;height:18px;stroke-width:2.3}
+.ventajas b{display:block;font:800 15px/1.25 Inter,sans-serif;color:var(--navy)}
+.ventajas span{display:block;font-size:13.5px;line-height:1.4;color:var(--suave);
+  margin-top:1px}
+@media (min-width:900px){
+  .ventajas{margin:24px 0 26px;gap:10px}
+  .ventajas li{padding:13px 15px}
+  .ventajas b{font-size:16.5px}
+  .ventajas span{font-size:14.5px}
+}
+
+/* ---- barra de datos ---------------------------------------------------- */
+.datos{background:var(--navy);color:#fff}
+.datos-in{display:grid;grid-template-columns:repeat(3,1fr);max-width:1100px;margin:0 auto}
+.dato{padding:22px 8px;text-align:center;border-right:1px solid rgba(255,255,255,.14)}
+.dato:last-child{border-right:0}
+.dato b{display:block;font:900 clamp(28px,7vw,42px)/1 Inter,sans-serif;
+  letter-spacing:-.03em;color:#fff}
+.dato b small{font-size:.5em;color:var(--rojo-l);font-weight:800}
+.dato span{display:block;margin-top:7px;font-size:12.5px;line-height:1.35;
+  color:rgba(255,255,255,.76)}
+@media (min-width:700px){.dato span{font-size:14px}}
+
+/* ---- carrusel de paginas ----------------------------------------------- */
+.pista{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:6px 4px 18px;scrollbar-width:none;overscroll-behavior-x:contain}
+.pista::-webkit-scrollbar{display:none}
+.hoja{flex:0 0 min(76vw,360px);scroll-snap-align:center;margin:0}
+.hoja button{display:block;width:100%;padding:0;border:0;background:none;
+  cursor:zoom-in;font:inherit;color:inherit;text-align:left}
+.marco{display:block;padding:7px;border-radius:14px;background:#fff;
+  box-shadow:0 14px 34px rgba(31,42,92,.14),0 0 0 1px rgba(31,42,92,.05)}
+.marco img{border-radius:8px}
+.hoja figcaption{margin:12px 4px 0}
+.hoja figcaption small{display:block;font:700 11px/1.3 Inter,sans-serif;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--rojo);margin-bottom:3px}
+.hoja figcaption span{display:block;font:700 15.5px/1.35 Inter,sans-serif;color:var(--navy)}
+.flechas{display:flex;justify-content:center;gap:10px;margin-top:6px}
+.flechas button{width:46px;height:46px;border-radius:50%;cursor:pointer;
+  border:1.5px solid var(--linea);background:#fff;color:var(--navy);
+  display:grid;place-items:center;font-size:20px}
+.flechas button:hover{border-color:var(--navy)}
+.puntos{display:flex;justify-content:center;gap:7px;margin-top:8px}
+.puntos i{width:8px;height:8px;border-radius:50%;background:var(--linea);
+  transition:width .2s ease,background .2s ease}
+.puntos i.on{width:24px;border-radius:4px;background:var(--rojo)}
+.lupa{position:fixed;inset:0;z-index:9999;background:rgba(18,23,48,.94);
+  display:flex;align-items:center;justify-content:center;padding:14px;cursor:zoom-out}
+.lupa img{max-width:100%;max-height:100%;border-radius:6px;
+  box-shadow:0 24px 70px rgba(0,0,0,.5)}
+
+/* ---- tres comprobaciones (p. 3 del libro) ------------------------------ */
+.tres{display:grid;gap:14px;max-width:980px;margin:0 auto}
+@media (min-width:780px){.tres{grid-template-columns:repeat(3,1fr);gap:18px}}
+.check{border-radius:18px;padding:22px 20px 20px;position:relative}
+.check:nth-child(1){background:var(--azul)}
+.check:nth-child(2){background:var(--rosa)}
+.check:nth-child(3){background:var(--verde)}
+.check .n{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;
+  display:grid;place-items:center;font:900 17px/1 Inter,sans-serif;margin-bottom:12px}
+.check h3{font-size:21px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;
+  margin-bottom:6px}
+.check p{margin:0;font-size:15.5px;color:var(--texto)}
+.check .donde{display:inline-block;margin-top:10px;font:800 12.5px/1 Inter,sans-serif;
+  color:var(--navy);background:rgba(255,255,255,.7);padding:6px 10px;border-radius:999px}
+/* La franja navy de abajo de cada pagina del libro. */
+.franja{max-width:980px;margin:18px auto 0;background:var(--navy);color:#fff;
+  border-radius:16px;padding:18px 20px;text-align:center}
+.franja b{display:block;font:900 14px/1.3 Inter,sans-serif;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:4px}
+.franja span{font-size:15px;color:rgba(255,255,255,.86)}
+
+/* ---- comparacion ------------------------------------------------------- */
+.frente{display:grid;gap:16px;max-width:920px;margin:0 auto}
+@media (min-width:820px){.frente{grid-template-columns:1fr 1fr;gap:22px}}
+.lado{border-radius:18px;padding:24px 22px;background:#fff;border:1px solid var(--linea)}
+.lado h3{font-size:20px;font-weight:900;margin-bottom:14px}
+.lado.sin h3{color:var(--suave)}
+.lado.con{border:2px solid var(--navy);box-shadow:0 16px 36px rgba(31,42,92,.12)}
+.lado ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.lado li{display:flex;gap:10px;font-size:15.5px;line-height:1.5;color:var(--texto)}
+.lado li::before{content:"\00d7";font-weight:900;color:var(--no);flex:none;width:18px}
+.lado.con li::before{content:"\2713";color:var(--si)}
+
+/* ---- los tres libros --------------------------------------------------- */
+.vols{display:grid;gap:16px}
+@media (min-width:900px){.vols{grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}}
+/* En el celular la tapa va chica a la izquierda: tres tapas a lo ancho
+   eran 2.000 px de scroll para decir tres cosas. */
+.vol{background:#fff;border-radius:18px;padding:16px;
+  box-shadow:0 12px 30px rgba(31,42,92,.08);display:grid;
+  grid-template-columns:104px 1fr;column-gap:16px;row-gap:6px;align-items:start;
+  border:1px solid var(--linea)}
+.vol img{grid-column:1;grid-row:1 / span 4}
+.vol>:not(img){grid-column:2}
+.vol p{grid-column:1 / -1!important;margin-top:8px!important}
+@media (min-width:520px){.vol{grid-template-columns:150px 1fr}
+  .vol p{grid-column:2!important;margin-top:0!important}}
+@media (min-width:900px){
+  .vol{display:flex;flex-direction:column;gap:12px;padding:18px 18px 22px}
+  .vol p{margin-top:0!important}}
+.vol.principal{border:2px solid var(--rojo)}
+.vol .etiq{align-self:flex-start;justify-self:start;font:800 11.5px/1 Inter,sans-serif;letter-spacing:.12em;
+  text-transform:uppercase;padding:7px 11px;border-radius:999px;
+  background:var(--lila);color:var(--lila-t)}
+.vol.principal .etiq{background:var(--rojo);color:#fff}
+.vol img{border-radius:8px;box-shadow:0 10px 24px rgba(31,42,92,.16)}
+.vol h3{font-size:21px;font-weight:900}
+.vol .pp{font:700 13px/1 Inter,sans-serif;color:var(--rojo);letter-spacing:.02em}
+.vol p{margin:0;font-size:15.5px;color:var(--suave)}
+.vol ul{margin:2px 0 0;padding:0 0 0 18px;font-size:15px;color:var(--texto)}
+.vol li{margin:3px 0}
+
+/* ---- indice ------------------------------------------------------------ */
+.partes{display:grid;gap:12px;max-width:860px;margin:0 auto}
+.parte{border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--linea)}
+.parte summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;
+  padding:16px 16px}
+.parte summary::-webkit-details-marker{display:none}
+.parte .num{flex:none;width:48px;height:48px;border-radius:12px;display:grid;
+  place-items:center;font:900 16px/1 Inter,sans-serif;color:var(--navy)}
+.parte.azul .num{background:var(--azul)}
+.parte.rosa .num{background:var(--rosa)}
+.parte.verde .num{background:var(--verde)}
+.parte.lila .num{background:var(--lila)}
+.parte.amar .num{background:var(--amar)}
+.parte .tt{flex:1;min-width:0}
+.parte .tt small{display:block;font:800 11.5px/1.2 Inter,sans-serif;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--rojo);margin-bottom:3px}
+.parte .tt b{display:block;font:900 18.5px/1.2 Inter,sans-serif;color:var(--navy)}
+.parte .tt span{display:block;font-size:14px;line-height:1.4;color:var(--suave);margin-top:2px}
+.parte summary::after{content:"+";flex:none;font:700 24px/1 Inter,sans-serif;color:var(--navy);
+  width:28px;text-align:center}
+.parte[open] summary::after{content:"\2212"}
+.parte ol{margin:0;padding:4px 18px 18px 80px;font-size:15px;color:var(--texto);
+  display:grid;gap:5px}
+@media (max-width:480px){.parte ol{padding-left:40px}}
+@media (min-width:760px){.parte ol{grid-template-columns:1fr 1fr;column-gap:28px}}
+
+/* ---- examenes ---------------------------------------------------------- */
+.bloques{display:grid;gap:10px;max-width:860px;margin:0 auto}
+@media (min-width:700px){.bloques{grid-template-columns:1fr 1fr}}
+.bloque{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;
+  padding:13px 15px;border:1px solid var(--linea)}
+.bloque .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--navy);
+  color:#fff;display:grid;place-items:center;font:900 15px/1 Inter,sans-serif}
+.bloque b{display:block;font:800 15.5px/1.3 Inter,sans-serif;color:var(--navy)}
+.bloque span{display:block;font-size:13px;color:var(--suave)}
+.siglas{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 26px}
+.siglas span{font:800 13.5px/1 Inter,sans-serif;color:var(--navy);background:#fff;
+  border:1.5px solid var(--navy);border-radius:999px;padding:9px 14px}
+.aviso{max-width:860px;margin:18px auto 0;font-size:13.5px;line-height:1.55;
+  color:var(--suave);text-align:center}
+
+/* ---- como usarlo ------------------------------------------------------- */
+.pasos{display:grid;gap:14px;max-width:980px;margin:0 auto}
+@media (min-width:820px){.pasos{grid-template-columns:repeat(3,1fr);gap:18px}}
+.paso{background:#fff;border-radius:18px;padding:22px 20px;border:1px solid var(--linea)}
+.paso .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;
+  background:var(--rojo);color:#fff;font:900 15px/1 Inter,sans-serif;margin-bottom:12px}
+.paso h3{font-size:19px;font-weight:900;margin-bottom:6px}
+.paso p{margin:0;font-size:15.5px;color:var(--suave)}
+
+/* ---- para quien -------------------------------------------------------- */
+.quien{display:grid;gap:14px;max-width:1000px;margin:0 auto}
+@media (min-width:860px){.quien{grid-template-columns:repeat(3,1fr);gap:18px}}
+.quien div{border-radius:18px;padding:22px 20px}
+.quien div:nth-child(1){background:var(--azul)}
+.quien div:nth-child(2){background:var(--amar)}
+.quien div:nth-child(3){background:var(--lila)}
+.quien h3{font-size:19px;font-weight:900;margin-bottom:8px}
+.quien p{margin:0;font-size:15.5px;color:var(--texto)}
+
+/* ---- oferta ------------------------------------------------------------ */
+.oferta-sec{background:var(--navy);
+  background-image:radial-gradient(600px 380px at 10% 0%,rgba(200,50,63,.25),transparent 65%),
+    radial-gradient(600px 420px at 100% 100%,rgba(233,225,244,.16),transparent 65%)}
+.oferta-sec .titulo h2{color:#fff}
+.oferta-sec .chip{background:rgba(255,255,255,.12);color:#fff}
+.oferta{max-width:600px;margin:0 auto;background:#fff;border-radius:22px;overflow:hidden;
+  box-shadow:0 26px 60px rgba(0,0,0,.35)}
+.oferta-top{background:var(--crema);padding:18px 18px 4px;text-align:center}
+.oferta-top h3{font-size:clamp(20px,5vw,26px);font-weight:900}
+.oferta-img{padding:4px 12px 0;background:var(--crema)}
+.oferta-cuerpo{padding:8px 20px 24px}
+.recibe{list-style:none;margin:0 0 4px;padding:0}
+.recibe li{display:flex;align-items:center;gap:11px;padding:13px 0;
+  border-bottom:1px solid var(--linea);font-size:15.5px;line-height:1.4;color:var(--texto)}
+.recibe li:last-child{border-bottom:0}
+.recibe .tic{flex:none;width:22px;height:22px;border-radius:50%;background:var(--si);
+  color:#fff;display:grid;place-items:center;font-size:12px;font-weight:900}
+.recibe .val{margin-left:auto;padding-left:8px;font:800 12px/1 Inter,sans-serif;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--si);white-space:nowrap}
+.precio{text-align:center;padding:16px 0 18px;border-top:2px dashed var(--linea)}
+.precio span{display:block;font:800 12px/1 Inter,sans-serif;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+.precio b{font:900 clamp(50px,13vw,66px)/1 Inter,sans-serif;color:var(--navy);
+  letter-spacing:-.04em}
+.precio small{display:block;margin-top:6px;font-size:13.5px;color:var(--suave)}
+.chica{text-align:center;font-size:13.5px;color:var(--suave);margin:14px 0 0}
+
+/* ---- garantia ---------------------------------------------------------- */
+.garantia{max-width:760px;margin:0 auto;background:#fff;border:2px dashed var(--navy);
+  border-radius:20px;padding:30px 22px;text-align:center}
+.sello{width:80px;height:80px;margin:0 auto 14px;border-radius:50%;background:var(--verde);
+  color:var(--verde-t);display:grid;place-items:center;
+  font:900 18px/1.05 Inter,sans-serif;text-transform:uppercase}
+.garantia h3{font-size:clamp(21px,5vw,26px);font-weight:900;margin-bottom:12px}
+.garantia p{color:var(--texto);font-size:16px}
+
+/* ---- preguntas --------------------------------------------------------- */
+.faq{max-width:800px;margin:0 auto;display:grid;gap:10px}
+.faq details{background:#fff;border:1px solid var(--linea);border-radius:14px;overflow:hidden}
+.faq details[open]{border-color:var(--navy)}
+.faq summary{cursor:pointer;list-style:none;padding:17px 18px;
+  font:700 16.5px/1.4 Inter,sans-serif;color:var(--navy);display:flex;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;flex:none;font:700 24px/1 Inter,sans-serif;
+  color:var(--rojo)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:0;padding:0 18px 18px;color:var(--texto);font-size:15.5px}
+
+/* ---- cierre ------------------------------------------------------------ */
+.cierre{text-align:center}
+.cierre .grande{font:900 clamp(28px,7vw,40px)/1.12 Inter,sans-serif;letter-spacing:-.03em;
+  color:var(--navy);margin:8px 0 18px}
+.cierre .grande em{font-style:normal;color:var(--rojo)}
+
+/* ---- pie --------------------------------------------------------------- */
+.pie{background:var(--navy-d);color:rgba(255,255,255,.55);padding:34px 0 40px;
+  font-size:12.5px;text-align:center}
+.pie p{margin:0 auto 12px;max-width:720px}
+.pie nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:14px}
+.pie a{color:rgba(255,255,255,.78);text-decoration:none}
+.pie a:hover{color:#fff;text-decoration:underline}
+
+/* ---- barra de compra pegajosa ----------------------------------------- */
+/* Aparece cuando el boton del hero sale de la pantalla y se esconde cuando
+   la caja de la oferta esta a la vista, para no tapar el boton principal. */
+.pega{position:fixed;left:0;right:0;bottom:0;z-index:900;background:#fff;
+  border-top:1px solid var(--linea);box-shadow:0 -8px 26px rgba(31,42,92,.14);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  transform:translateY(110%);transition:transform .25s ease}
+.pega.on{transform:none}
+.pega-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.pega-txt{flex:1;min-width:0;line-height:1.25}
+.pega-txt b{display:block;font:900 15px/1.2 Inter,sans-serif;color:var(--navy);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pega-txt span{display:block;font-size:12.5px;color:var(--suave)}
+.pega .btn{width:auto;flex:none;margin:0;padding:13px 18px;font-size:16px;border-radius:12px;
+  box-shadow:0 3px 0 var(--rojo-d)}
+body.con-pega .pie{padding-bottom:110px}
+:root{--navy:#154a4f;--navy-d:#0e3438;--navy-2:#1f5f65;--tinta:#154a4f;
+  --rojo:#0d7d72;--rojo-d:#0a645c;--rojo-l:#2fae9f;--acento-claro:#8ee3d6}</style>
+</head>
+<body>
+
+<div class="marca">Studio Facile<span>Made Visual</span></div>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <span class="chip">Vet tech study guide &middot; VTNE topics &middot; US edition</span>
+      <h1>Vet Tech <em>Made Visual</em></h1>
+      <p class="bajada">Restraint, lab work, anesthesia and dentistry, explained with pictures.</p>
+      <p class="sub">78 illustrated pages, one topic per page, built on the ten domains of the VTNE. Plus two free bonuses: a 150-question practice test with every answer explained, and a dosage calculations workbook.</p>
+    </div>
+    <div class="hero-img">
+      <img src="kit.webp" alt="The three books: Vet Tech Made Visual, VTNE Practice Test and Dosage Calculations for Vet Techs"
+            width="1300" height="824" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-pie">
+      <ul class="ventajas"><li><i><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></i><div><b>One topic per page</b><span>The drawing carries the idea, the boxes give the facts.</span></div></li><li><i><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></i><div><b>Built on the ten VTNE domains</b><span>From animal care to communication, in the weight the exam gives them.</span></div></li><li><i><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></i><div><b>Three PDFs by email</b><span>Read them on your phone, print what you need.</span></div></li></ul>
+      <a href="https://pay.studiofacilebook.com/vet-tech-made-visual-kit" data-checkout id="cta-hero" class="btn">Get the 3 books &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="confia">
+        <span><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Secure checkout</span>
+        <span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> Instant download</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> 30-day refund policy</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="datos"><div class="datos-in"><div class="dato"><b>78</b><span>illustrated pages,<br>one topic each</span></div><div class="dato"><b>150</b><span>practice questions,<br>answers explained</span></div><div class="dato"><b>15</b><span>dosage calculations,<br>every step shown</span></div></div></section>
+
+<section class="sec sec-blanca" id="inside">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip">Look inside</span>
+      <h2>This Is What a Page <span class="rojo">Actually Looks Like</span></h2>
+      <p>Real pages from the three books. Tap any page to see it full size.</p>
+    </div>
+    <div class="pista" id="pista">
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Restraining a dog safely">
+            <span class="marco"><img src="page_01.webp" alt="Restraining a dog safely" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 7</small><span>Restraining a dog safely</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Hydration, gums and CRT">
+            <span class="marco"><img src="page_02.webp" alt="Hydration, gums and CRT" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 11</small><span>Hydration, gums and CRT</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The white blood cells">
+            <span class="marco"><img src="page_03.webp" alt="The white blood cells" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 23</small><span>The white blood cells</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Endotracheal intubation">
+            <span class="marco"><img src="page_04.webp" alt="Endotracheal intubation" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 43</small><span>Endotracheal intubation</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Teeth and the Triadan system">
+            <span class="marco"><img src="page_05.webp" alt="Teeth and the Triadan system" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 61</small><span>Teeth and the Triadan system</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: CPR: the RECOVER approach">
+            <span class="marco"><img src="page_06.webp" alt="CPR: the RECOVER approach" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 72</small><span>CPR: the RECOVER approach</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: Antiparasitics and the MDR1 gene">
+            <span class="marco"><img src="page_07.webp" alt="Antiparasitics and the MDR1 gene" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 37</small><span>Antiparasitics and the MDR1 gene</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: The VTNE at a glance">
+            <span class="marco"><img src="page_08.webp" alt="The VTNE at a glance" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Vet Tech Made Visual &middot; p. 3</small><span>The VTNE at a glance</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: How to use the practice test">
+            <span class="marco"><img src="page_09.webp" alt="How to use the practice test" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>VTNE Practice Test &middot; p. 3</small><span>How to use the practice test</span></figcaption>
+          </button>
+        </figure>
+        <figure class="hoja">
+          <button type="button" data-lupa aria-label="Enlarge: From mg/kg to mL">
+            <span class="marco"><img src="page_10.webp" alt="From mg/kg to mL" width="900" height="1274" loading="lazy" decoding="async"></span>
+            <figcaption><small>Dosage Calculations for Vet Techs &middot; p. 6</small><span>From mg/kg to mL</span></figcaption>
+          </button>
+        </figure>
+    </div>
+    <div class="puntos" id="puntos"></div>
+    <div class="flechas">
+      <button type="button" id="ant" aria-label="Previous page">&#8592;</button>
+      <button type="button" id="sig" aria-label="Next page">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip rosa">How the book works</span>
+      <h2>Seven Parts, <span class="rojo">Ten Domains</span></h2>
+      <p>The book follows the ten domains of the VTNE content outline and gives each one the pages it needs.</p>
+    </div>
+    <div class="tres"><div class="check"><span class="n">1</span><h3>Care and the lab</h3><p>Physical exam, restraint, nursing, then samples, smears, urinalysis and parasites.</p><span class="donde">Parts I and II</span></div><div class="check"><span class="n">2</span><h3>Drugs and anesthesia</h3><p>Drug classes, labels and laws, the anesthetic plan, monitoring and pain.</p><span class="donde">Parts III and IV</span></div><div class="check"><span class="n">3</span><h3>Surgery, teeth and the ER</h3><p>Asepsis and instruments, dentistry and imaging, triage, shock and CPR.</p><span class="donde">Parts V to VII</span></div></div>
+    <div class="franja"><b>How each page works</b><span>One topic per page. The drawing carries the idea, the boxes give the facts, and the dark strip at the bottom holds the point most often missed. Where sources and clinics differ, the page says which source it follows.</span></div>
+  </div>
+</section>
+
+<section class="sec sec-blanca">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip verde">The difference</span>
+      <h2>A Wall of Notes <span class="rojo">vs. A Page You Understand</span></h2>
+    </div>
+    <div class="frente">
+      <div class="lado sin"><h3>Lecture notes and long chapters</h3><ul><li>Normal values in a list, with no picture of the patient</li><li>Instruments and cells you are supposed to recognize from words</li><li>Dose math you redo from scratch every time</li><li>No clear idea of how much of the exam each topic is worth</li></ul></div>
+      <div class="lado con"><h3>Vet Tech Made Visual</h3><ul><li>The restraint, the cells, the instruments and the teeth, drawn</li><li>One topic per page, from the physical exam to CPR</li><li>A one-page dose method, and a full workbook as a bonus</li><li>Built on the ten VTNE domains, with their weight on the exam</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="books">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip lila">The kit</span>
+      <h2>One Book to Learn It. <span class="rojo">Two to Lock It In.</span></h2>
+      <p>The book teaches. The practice test shows you what to review. The workbook makes the dose math automatic. The two bonuses are free.</p>
+    </div>
+    <div class="vols"><div class="vol principal"><span class="etiq">The book</span><img src="cover_book.webp" alt="Vet Tech Made Visual"  width="640" height="857" loading="lazy" decoding="async"><span class="pp">78 pages &middot; 7 parts</span><h3>Vet Tech Made Visual</h3><p>Animal care and nursing, laboratory procedures, pharmacy and pharmacology, anesthesia and pain, surgical nursing, dentistry and imaging, and emergency care. Two final review pages at the end.</p></div><div class="vol"><span class="etiq">Bonus 1 &middot; Free</span><img src="cover_b1.webp" alt="VTNE Practice Test"  width="640" height="857" loading="lazy" decoding="async"><span class="pp">24 pages &middot; 150 questions</span><h3>VTNE Practice Test</h3><p>150 exam-style questions in five blocks of 30, with the same weight for each VTNE domain as the real exam. An answer sheet to print and an answer key with one line on why, plus what to review if you missed it.</p></div><div class="vol"><span class="etiq">Bonus 2 &middot; Free</span><img src="cover_b2.webp" alt="Dosage Calculations for Vet Techs"  width="640" height="857" loading="lazy" decoding="async"><span class="pp">22 pages &middot; 15 calculations</span><h3>Dosage Calculations for Vet Techs</h3><p>Pounds and kilograms, mg/kg to mL, tablets, percent solutions, dilutions, CRIs, maintenance and deficit fluids, drip rates, insulin, transfusions and energy needs. A worked example and three exercises each, every solution step by step, and a formula sheet.</p></div></div>
+    <div style="margin-top:38px"><a href="https://pay.studiofacilebook.com/vet-tech-made-visual-kit" data-checkout class="btn">Get the kit &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<section class="sec sec-blanca" id="contents">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip amar">What is inside the book</span>
+      <h2>Seven Parts, <span class="rojo">From the Exam Room to the ER</span></h2>
+      <p>The real table of contents. Tap a part to see its pages.</p>
+    </div>
+    <div class="partes">
+      <details class="parte azul" open><summary><span class="num">I</span><span class="tt"><small>Part I &middot; pp. 4&ndash;18</small><b>Animal Care and Nursing</b><span>The exam, safe handling and everyday nursing</span></span></summary>
+        <ol><li>The physical exam, nose to tail</li><li>Normal vital signs</li><li>Restraining a dog safely</li><li>Handling cats with less stress</li><li>Reading fear and stress</li><li>Body condition score</li><li>Hydration, gums and CRT</li><li>Feeding: energy needs</li><li>Placing an IV catheter</li><li>Bandages: the three layers</li><li>Vaccines: core and noncore</li><li>Zoonoses and isolation</li><li>Large animals and exotics</li><li>Clients, records and euthanasia</li></ol></details>
+      <details class="parte rosa"><summary><span class="num">II</span><span class="tt"><small>Part II &middot; pp. 19&ndash;30</small><b>Laboratory Procedures</b><span>From the sample to the microscope</span></span></summary>
+        <ol><li>Blood samples: sites and tubes</li><li>PCV and total protein</li><li>Making a blood smear</li><li>The white blood cells</li><li>Red cells and platelets</li><li>Urinalysis: collection and USG</li><li>Urine sediment</li><li>Fecal exams</li><li>Common parasites and heartworm</li><li>Skin and ear tests</li><li>The microscope</li></ol></details>
+      <details class="parte verde"><summary><span class="num">III</span><span class="tt"><small>Part III &middot; pp. 31&ndash;39</small><b>Pharmacy and Pharmacology</b><span>Drug classes, labels, laws and safe handling</span></span></summary>
+        <ol><li>The prescription and the label</li><li>Controlled substances</li><li>Routes and dosage forms</li><li>Dose calculation: the method</li><li>Antimicrobials</li><li>Antiparasitics and the MDR1 gene</li><li>NSAIDs and corticosteroids</li><li>Storing and handling drugs safely</li></ol></details>
+      <details class="parte lila"><summary><span class="num">IV</span><span class="tt"><small>Part IV &middot; pp. 40&ndash;50</small><b>Anesthesia and Pain Management</b><span>From the pre-anesthetic exam to a comfortable recovery</span></span></summary>
+        <ol><li>The anesthetic plan and ASA status</li><li>Premedication and induction drugs</li><li>Endotracheal intubation</li><li>The anesthesia machine</li><li>Stages and depth of anesthesia</li><li>Monitoring under anesthesia</li><li>Recovery and extubation</li><li>Recognizing pain</li><li>Pain scales</li><li>Multimodal analgesia</li></ol></details>
+      <details class="parte amar"><summary><span class="num">V</span><span class="tt"><small>Part V &middot; pp. 51&ndash;59</small><b>Surgical Nursing</b><span>Asepsis, instruments and the surgical patient</span></span></summary>
+        <ol><li>The sterile field</li><li>Instruments (1): cutting and grasping</li><li>Instruments (2): clamps, needle holders, retractors</li><li>Cleaning and sterilizing</li><li>Preparing the patient</li><li>Scrubbing, gowning and gloving</li><li>Suture materials and needles</li><li>After surgery</li></ol></details>
+      <details class="parte azul"><summary><span class="num">VI</span><span class="tt"><small>Part VI &middot; pp. 60&ndash;68</small><b>Dentistry and Diagnostic Imaging</b><span>Teeth, radiographs and ultrasound</span></span></summary>
+        <ol><li>Teeth and the Triadan system</li><li>Periodontal disease</li><li>The dental cleaning (COHAT)</li><li>Dental radiographs and home care</li><li>Radiation safety</li><li>How a radiograph is made</li><li>Positioning and views</li><li>Ultrasound and contrast studies</li></ol></details>
+      <details class="parte rosa"><summary><span class="num">VII</span><span class="tt"><small>Part VII &middot; pp. 69&ndash;78</small><b>Emergency and Critical Care</b><span>Triage, shock, CPR and the most common emergencies</span></span></summary>
+        <ol><li>Triage: the first look</li><li>Shock and fluid therapy</li><li>CPR: the RECOVER approach</li><li>Blood types and transfusions</li><li>Bloat and the blocked cat</li><li>Common toxins</li><li>Bleeding, fractures and oxygen</li><li>Final review (1): numbers to know</li><li>Final review (2): facts that come back</li></ol></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip">For the VTNE</span>
+      <h2>It Covers the <span class="rojo">Ten Domains</span> of the VTNE</h2>
+      <p>The book is built on the VTNE content outline, and the practice test gives each domain the same weight as the real exam, in five blocks of 30:</p>
+    </div>
+    <div class="siglas"><span>VTNE</span><span>10 domains</span><span>150 questions</span></div>
+    <div class="bloques"><div class="bloque"><span class="n">1</span><div><b>Animal Care and Nursing</b><span>Questions 1&ndash;30</span></div></div><div class="bloque"><span class="n">2</span><div><b>Pharmacy &middot; Pain Management</b><span>Questions 31&ndash;60</span></div></div><div class="bloque"><span class="n">3</span><div><b>Anesthesia &middot; Dentistry</b><span>Questions 61&ndash;90</span></div></div><div class="bloque"><span class="n">4</span><div><b>Surgical Nursing &middot; Emergency Care</b><span>Questions 91&ndash;120</span></div></div><div class="bloque"><span class="n">5</span><div><b>Laboratory &middot; Imaging &middot; Communication</b><span>Questions 121&ndash;150</span></div></div>
+    </div>
+    <p class="aviso">The VTNE is a program of the AAVSB. Studio Facile is not affiliated with or endorsed by the AAVSB, which owns the VTNE. The 150 questions were written for this book: they are not official VTNE questions. The real exam sets its own scoring and passing standard, so check the AAVSB candidate handbook.</p>
+  </div>
+</section>
+
+<section class="sec sec-blanca">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip verde">How you use it</span>
+      <h2>Read It, Keep It Close, <span class="rojo">Test Yourself</span></h2>
+    </div>
+    <div class="pasos"><div class="paso"><span class="n">1</span><h3>Read one part at a time</h3><p>Seven parts that follow the exam domains: care, the lab, pharmacy, anesthesia, surgery, teeth and imaging, and the ER.</p></div><div class="paso"><span class="n">2</span><h3>Practice the math</h3><p>Fifteen calculations, each with a worked example and three exercises, until the units cancel on their own.</p></div><div class="paso"><span class="n">3</span><h3>Take the test one block a day</h3><p>30 questions per block. Aim for at least 24 of 30; the key sends every wrong answer back to its pages in the book.</p></div></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip lila">Is this for you</span>
+      <h2>Who This <span class="rojo">Was Drawn For</span></h2>
+    </div>
+    <div class="quien"><div><h3>You are in a vet tech program</h3><p>Lectures, labs and clinical rotations. Each topic on one illustrated page you can come back to.</p></div><div><h3>Your VTNE is coming up</h3><p>150 practice questions with the weight of each domain, and two final review pages of numbers and facts.</p></div><div><h3>You work in a clinic</h3><p>Assistants and techs who want restraint, lab work, anesthesia monitoring and dose math clear, one page each.</p></div></div>
+  </div>
+</section>
+
+<section class="sec oferta-sec" id="offer">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip">The offer</span>
+      <h2>Everything You Get, <span style="color:var(--acento-claro)">For One Payment</span></h2>
+    </div>
+    <div class="oferta">
+      <div class="oferta-top"><h3>Vet Tech Made Visual &middot; the kit</h3></div>
+      <div class="oferta-img"><img src="kit.webp" alt="The three books"  width="1300" height="824" loading="lazy" decoding="async"></div>
+      <div class="oferta-cuerpo">
+        <ul class="recibe"><li><span class="tic">&#10003;</span>The book: 78 illustrated pages, seven parts</li><li><span class="tic">&#10003;</span>Bonus 1: VTNE Practice Test, 150 questions <span class="val">Free</span></li><li><span class="tic">&#10003;</span>Bonus 2: Dosage Calculations for Vet Techs <span class="val">Free</span></li><li><span class="tic">&#10003;</span>Answer sheet to print, every answer explained <span class="val">Included</span></li><li><span class="tic">&#10003;</span>Print it as often as you want <span class="val">Included</span></li></ul>
+        <div class="precio"><span>One payment</span><b>$27</b><small>No subscription</small></div>
+        <a href="https://pay.studiofacilebook.com/vet-tech-made-visual-kit" data-checkout class="btn">Get the kit &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="confia">
+          <span><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg> Secure checkout</span>
+          <span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> Instant download</span>
+          <span><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg> 30-day refund policy</span>
+        </div>
+        <p class="chica">The PDFs are emailed to you right after checkout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-blanca">
+  <div class="wrap">
+    <div class="garantia">
+      <div class="sello">30<br>days</div>
+      <h3>If something is wrong with it, you get your money back</h3>
+      <p>For 30 days. If a file does not open, if what you received is not what
+        this page describes, if you were charged twice or the download never
+        arrived, write to us and we refund you in full.</p>
+      <p style="margin-bottom:0">One email to
+        <a href="mailto:info@studiofacilebook.com">info@studiofacilebook.com</a> is enough.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="titulo">
+      <span class="chip rosa">Questions</span>
+      <h2>Before You <span class="rojo">Decide</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is this official VTNE material?</summary><p>No. It is an independent illustrated study guide built on the VTNE content outline. The VTNE is a program of the AAVSB, and Studio Facile is not affiliated with or endorsed by the AAVSB. The 150 practice questions were written for this book; they are not official exam questions.</p></details>
+      <details><summary>Does it replace my vet tech program?</summary><p>No. It is not a course, it does not give credit or clinical hours, and it does not replace your program&rsquo;s textbooks. It is the illustrated material that goes with them.</p></details>
+      <details><summary>Does it tell me what dose to give?</summary><p>No. The book covers drug classes and how they are used, and the workbook teaches the calculation with example numbers. The dose is always set by the veterinarian and the product label, and your clinic&rsquo;s protocols come first.</p></details>
+      <details><summary>How do I get it?</summary><p>By email, straight after you buy. Three PDFs you can read on your phone, tablet or computer.</p></details>
+      <details><summary>Can I print it?</summary><p>Yes, as many times as you want, for yourself. The practice test has an answer sheet to print and fill in.</p></details>
+      <details><summary>How many pages is it?</summary><p>The book has 78 pages, the Practice Test 24 and the Dosage Calculations workbook 22.</p></details>
+      <details><summary>Is it a subscription?</summary><p>No. One payment of $27, and the three PDFs are yours.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-blanca cierre">
+  <div class="wrap estrecha">
+    <div class="titulo" style="margin-bottom:10px"><h2>One Last Thing</h2></div>
+    <p>Vet tech work is hands-on, and most of it is easier to remember once you have seen it: the hold, the cell, the instrument, the tooth.</p>
+    <p class="grande">See it.<br>Understand it.<br><em>Do it right.</em></p>
+    <a href="https://pay.studiofacilebook.com/vet-tech-made-visual-kit" data-checkout class="btn">Get the 3 books &mdash; $27 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="confia"><span><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg> All three PDFs by email</span></div>
+  </div>
+</section>
+
+<footer class="pie"><div class="wrap">
+  <nav>
+    <a href="terms">Terms</a>
+    <a href="privacy">Privacy</a>
+    <a href="refund-policy">Refund policy</a>
+    <a href="support">Support</a>
+  </nav>
+  <p>Study material for veterinary technician students and clinic staff. It is not a course, it does not replace your program, the veterinarian, your clinic&rsquo;s protocols or the product label, and it is not affiliated with or endorsed by the AAVSB, which owns the VTNE.</p>
+  <p>Sold and delivered by QUILLSTONE DIGITAL LLC, 1057 NW 136TH AVE, Miami, FL 33182, US
+    &middot; info@studiofacilebook.com</p>
+</div></footer>
+
+<div class="pega" id="pega" aria-hidden="true"><div class="pega-in">
+  <div class="pega-txt"><b>Vet Tech Made Visual</b><span>3 PDFs &middot; one payment of $27</span></div>
+  <a href="https://pay.studiofacilebook.com/vet-tech-made-visual-kit" data-checkout class="btn" tabindex="-1">Get it &mdash; $27</a>
+</div></div>
+
+<script>
+(function(){
+  var pista=document.getElementById('pista');
+  if(pista){
+    var hojas=[].slice.call(pista.children);
+    var puntos=document.getElementById('puntos');
+    hojas.forEach(function(){puntos.appendChild(document.createElement('i'))});
+    function cual(){
+      var c=pista.scrollLeft+pista.clientWidth/2,m=0,d=1e9;
+      hojas.forEach(function(h,i){
+        var x=h.offsetLeft+h.offsetWidth/2;
+        if(Math.abs(x-c)<d){d=Math.abs(x-c);m=i}});
+      return m;
+    }
+    function pinta(){
+      var n=cual();
+      [].forEach.call(puntos.children,function(p,i){p.className=i===n?'on':''});
+    }
+    var t;
+    pista.addEventListener('scroll',function(){
+      clearTimeout(t);t=setTimeout(pinta,80)},{passive:true});
+    function mueve(d){
+      var i=Math.min(hojas.length-1,Math.max(0,cual()+d)),h=hojas[i];
+      pista.scrollTo({left:h.offsetLeft-(pista.clientWidth-h.offsetWidth)/2,
+        behavior:'smooth'});
+    }
+    document.getElementById('ant').onclick=function(){mueve(-1)};
+    document.getElementById('sig').onclick=function(){mueve(1)};
+    pinta();
+  }
+  var caja=null;
+  function cerrar(){if(caja){caja.remove();caja=null;document.body.style.overflow=''}}
+  document.querySelectorAll('[data-lupa]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.querySelector('img');if(!i)return;
+      cerrar();
+      caja=document.createElement('div');caja.className='lupa';
+      caja.innerHTML='<img src="'+i.getAttribute('src')+'" alt="">';
+      caja.addEventListener('click',cerrar);
+      document.body.appendChild(caja);document.body.style.overflow='hidden';
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')cerrar()});
+
+  /* Barra pegajosa: visible cuando el boton del hero ya paso y la oferta
+     todavia no esta en pantalla. */
+  var pega=document.getElementById('pega'),heroBtn=document.getElementById('cta-hero'),
+      oferta=document.getElementById('offer');
+  /* Con scroll y no con IntersectionObserver: el observer no avisa si un
+     salto (un ancla, un fling) lleva el boton de abajo a arriba de la
+     pantalla sin cruzarla, y la barra quedaba en el estado anterior. */
+  if(pega&&heroBtn&&oferta){
+    var pendiente=false;
+    function pon(){
+      pendiente=false;
+      var h=window.innerHeight,b=heroBtn.getBoundingClientRect(),
+          o=oferta.getBoundingClientRect();
+      var on=b.bottom<0&&!(o.top<h*.85&&o.bottom>h*.15);
+      pega.classList.toggle('on',on);
+      document.body.classList.toggle('con-pega',on);
+    }
+    function pide(){if(!pendiente){pendiente=true;requestAnimationFrame(pon)}}
+    window.addEventListener('scroll',pide,{passive:true});
+    window.addEventListener('resize',pide);
+    pon();
+  }
+})();
+
+/* Pixel: ViewContent al abrir e InitiateCheckout al ir a pagar. El Purchase
+   lo manda el checkout de la app por CAPI con el mismo pixel. */
+(function(){
+  if(typeof fbq!=='function')return;
+  var P={content_ids:['vet-tech-made-visual'],content_type:'product',
+    content_name:'Vet Tech Made Visual',value:27.00,currency:'USD'};
+  fbq('track','ViewContent',P);
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-checkout],a[href*="pay.studiofacilebook.com"]');
+    if(!a)return;
+    fbq('track','InitiateCheckout',P);
+  },true);
+})();
+
+(function(){
+  var q=new URLSearchParams(location.search),k=new URLSearchParams();
+  q.forEach(function(v,n){if(/^utm_|^fbclid$|^gclid$/.test(n))k.set(n,v)});
+  var s=k.toString();if(!s)return;
+  document.querySelectorAll('a[data-checkout]').forEach(function(a){
+    a.href+=(a.href.indexOf('?')<0?'?':'&')+s});
+})();
+</script>
+</body>
+</html>
