@@ -1,4 +1,34 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/checkout",
+      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/vet-tech-made-visual-kit"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/_next/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/api/:path*"
+    },
+    {
+      "source": "/gracias",
+      "destination": "https://checkout-propio-sepia.vercel.app/gracias"
+    },
+    {
+      "source": "/oferta/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/oferta/:path*"
+    },
+    {
+      "source": "/d/:path*",
+      "destination": "https://checkout-propio-sepia.vercel.app/d/:path*"
+    },
+    {
+      "source": "/t.js",
+      "destination": "https://checkout-propio-sepia.vercel.app/t.js"
+    }
+  ]
 }
