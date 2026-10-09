@@ -226,6 +226,18 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/veterinaria/cassa"
     },
     {
+      "source": "/it/nutrizione/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/nutrizione-illustrata-kit"
+    },
+    {
+      "source": "/es/colorimetria/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/colorimetria-ilustrada-kit"
+    },
+    {
+      "source": "/fr/psychologie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/c/studiofacilebook/psychologie-illustree-kit"
+    },
+    {
       "source": "/lp/:path*",
       "destination": "https://checkout-propio-sepia.vercel.app/lp/:path*"
     },
