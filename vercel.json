@@ -242,6 +242,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/nutrizione/cassa"
     },
     {
+      "source": "/it/traumatologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/traumatologia/cassa"
+    },
+    {
       "source": "/es/colorimetria/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/colorimetria/pago"
     },
