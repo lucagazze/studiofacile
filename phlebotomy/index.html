@@ -2141,6 +2141,15 @@
 </head>
 <body>
 
+  <!-- BANNER DE LA OFERTA -->
+  <div class="promo" role="status" aria-live="off">
+    <div class="promo-in">
+      <span class="promo-txt">Launch offer &mdash; valid today only</span>
+      <span class="promo-time"><span class="promo-sep" aria-hidden="true">&middot;</span> <span class="promo-clock" id="promoClock"></span></span>
+    </div>
+  </div>
+  <style>@media (max-width: 768px) { .promo-sep { display: none; } }</style>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
@@ -2640,10 +2649,7 @@
       try {
         var oggi = new Date();
         var dataStr = oggi.toLocaleDateString('en-US', {
-          timeZone: 'America/New_York',
-          weekday: 'long',
-          day: 'numeric',
-          month: 'long'
+          month: 'long', day: 'numeric', year: 'numeric'
         });
         if (dataStr) {
           dataStr = dataStr.replace(/(^\w|\s\w)/g, function (m) { return m.toUpperCase(); });
