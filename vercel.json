@@ -62,6 +62,10 @@
   ],
   "rewrites": [
     {
+      "source": "/es/nutricion/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/nutricion/pago"
+    },
+    {
       "source": "/es/ecg/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/ecg/pago"
     },
