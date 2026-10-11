@@ -62,6 +62,34 @@
   ],
   "rewrites": [
     {
+      "source": "/it/elettricista/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/elettricista/cassa"
+    },
+    {
+      "source": "/it/frigorista/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/frigorista/cassa"
+    },
+    {
+      "source": "/it/idraulico/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/idraulico/cassa"
+    },
+    {
+      "source": "/it/meccanico/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/meccanico/cassa"
+    },
+    {
+      "source": "/pl/koloryzacja/platnosc",
+      "destination": "https://checkout-propio-sepia.vercel.app/pl/koloryzacja/platnosc"
+    },
+    {
+      "source": "/br/colorimetria/pagamento",
+      "destination": "https://checkout-propio-sepia.vercel.app/br/colorimetria/pagamento"
+    },
+    {
+      "source": "/nl/haarkleuring/betalen",
+      "destination": "https://checkout-propio-sepia.vercel.app/nl/haarkleuring/betalen"
+    },
+    {
       "source": "/es/hormonas/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/hormonas/pago"
     },
