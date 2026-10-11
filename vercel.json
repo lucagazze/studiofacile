@@ -62,6 +62,38 @@
   ],
   "rewrites": [
     {
+      "source": "/es/hormonas/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/hormonas/pago"
+    },
+    {
+      "source": "/es/psicologia/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/psicologia/pago"
+    },
+    {
+      "source": "/it/trucco/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/trucco/cassa"
+    },
+    {
+      "source": "/it/casa/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/casa/cassa"
+    },
+    {
+      "source": "/it/barbiere/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/barbiere/cassa"
+    },
+    {
+      "source": "/es/barbero/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/barbero/pago"
+    },
+    {
+      "source": "/it/svezzamento/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/svezzamento/cassa"
+    },
+    {
+      "source": "/fr/diversification/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/diversification/paiement"
+    },
+    {
       "source": "/es/nutricion/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/nutricion/pago"
     },
