@@ -8,6 +8,8 @@
 
   var BASE = '/anteprime/';
   var FR = (document.documentElement.lang || '').indexOf('fr') === 0;
+  var CHIUDI = { fr: 'Fermer', en: 'Close', pl: 'Zamknij', pt: 'Fechar', nl: 'Sluiten', es: 'Cerrar', de: 'Schließen' }[
+    (document.documentElement.lang || '').slice(0, 2)] || 'Chiudi';
 
   var LIBRI = {
     emergenza: {
@@ -313,7 +315,7 @@
       '<div class="gal-box">' +
         '<div class="gal-head">' +
           '<div class="gal-tit" id="galTit"></div>' +
-          '<button class="gal-x" type="button" aria-label="' + (FR ? 'Fermer' : 'Chiudi') + '">&times;</button>' +
+          '<button class="gal-x" type="button" aria-label="' + CHIUDI + '">&times;</button>' +
         '</div>' +
         '<div class="gal-body" id="galBody"></div>' +
         '<div class="gal-foot" id="galFoot"></div>' +
