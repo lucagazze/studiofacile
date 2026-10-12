@@ -62,6 +62,22 @@
   ],
   "rewrites": [
     {
+      "source": "/it/pediatria/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/pediatria/cassa"
+    },
+    {
+      "source": "/it/neurologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/neurologia/cassa"
+    },
+    {
+      "source": "/fr/pediatrie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/pediatrie/paiement"
+    },
+    {
+      "source": "/fr/neurologie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/neurologie/paiement"
+    },
+    {
       "source": "/it/elettricista/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/elettricista/cassa"
     },
