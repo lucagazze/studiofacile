@@ -62,6 +62,14 @@
   ],
   "rewrites": [
     {
+      "source": "/it/oss/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/oss/cassa"
+    },
+    {
+      "source": "/it/saldatura/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/saldatura/cassa"
+    },
+    {
       "source": "/it/pediatria/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/pediatria/cassa"
     },
