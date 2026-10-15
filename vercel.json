@@ -122,6 +122,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/nl/haarkleuring/betalen"
     },
     {
+      "source": "/es/tcae/pago",
+      "destination": "https://checkout-propio-sepia.vercel.app/es/tcae/pago"
+    },
+    {
       "source": "/es/hormonas/pago",
       "destination": "https://checkout-propio-sepia.vercel.app/es/hormonas/pago"
     },
