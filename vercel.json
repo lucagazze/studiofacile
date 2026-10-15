@@ -62,6 +62,14 @@
   ],
   "rewrites": [
     {
+      "source": "/it/aso/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/aso/cassa"
+    },
+    {
+      "source": "/it/haccp/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/haccp/cassa"
+    },
+    {
       "source": "/it/oss/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/oss/cassa"
     },
