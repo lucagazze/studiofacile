@@ -70,6 +70,22 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/haccp/cassa"
     },
     {
+      "source": "/it/carrellista/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/carrellista/cassa"
+    },
+    {
+      "source": "/it/toelettatura/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/toelettatura/cassa"
+    },
+    {
+      "source": "/it/massaggio/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/massaggio/cassa"
+    },
+    {
+      "source": "/it/barman/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/barman/cassa"
+    },
+    {
       "source": "/it/oss/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/oss/cassa"
     },
