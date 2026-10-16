@@ -198,6 +198,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/ecg/paiement"
     },
     {
+      "source": "/fr/aide-soignant/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/aide-soignant/paiement"
+    },
+    {
       "source": "/fr/physique/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/physique/paiement"
     },
