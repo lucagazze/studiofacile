@@ -106,6 +106,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/disegno/cassa"
     },
     {
+      "source": "/it/agopuntura/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/agopuntura/cassa"
+    },
+    {
       "source": "/it/oss/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/oss/cassa"
     },
