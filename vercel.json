@@ -86,6 +86,26 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/barman/cassa"
     },
     {
+      "source": "/it/orto/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/orto/cassa"
+    },
+    {
+      "source": "/it/storia-arte/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/storia-arte/cassa"
+    },
+    {
+      "source": "/it/universo/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/universo/cassa"
+    },
+    {
+      "source": "/it/vino/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/vino/cassa"
+    },
+    {
+      "source": "/it/disegno/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/disegno/cassa"
+    },
+    {
       "source": "/it/oss/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/oss/cassa"
     },
