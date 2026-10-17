@@ -242,6 +242,22 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/aide-soignant/paiement"
     },
     {
+      "source": "/fr/electricien/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/electricien/paiement"
+    },
+    {
+      "source": "/fr/haccp/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/haccp/paiement"
+    },
+    {
+      "source": "/fr/frigoriste/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/frigoriste/paiement"
+    },
+    {
+      "source": "/fr/plombier/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/plombier/paiement"
+    },
+    {
       "source": "/fr/physique/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/physique/paiement"
     },
