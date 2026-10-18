@@ -242,6 +242,38 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/aide-soignant/paiement"
     },
     {
+      "source": "/it/soccorritore/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/soccorritore/cassa"
+    },
+    {
+      "source": "/fr/cariste/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/cariste/paiement"
+    },
+    {
+      "source": "/fr/carreleur/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/carreleur/paiement"
+    },
+    {
+      "source": "/fr/barman/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/barman/paiement"
+    },
+    {
+      "source": "/fr/soudeur/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/soudeur/paiement"
+    },
+    {
+      "source": "/fr/secouriste/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/secouriste/paiement"
+    },
+    {
+      "source": "/it/fotovoltaico/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/fotovoltaico/cassa"
+    },
+    {
+      "source": "/it/pasticceria/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/pasticceria/cassa"
+    },
+    {
       "source": "/fr/electricien/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/electricien/paiement"
     },
