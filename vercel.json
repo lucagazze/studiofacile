@@ -130,6 +130,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/formaggi/cassa"
     },
     {
+      "source": "/it/macellaio/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/macellaio/cassa"
+    },
+    {
       "source": "/it/disegno/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/disegno/cassa"
     },
