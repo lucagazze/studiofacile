@@ -110,6 +110,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/profumi/cassa"
     },
     {
+      "source": "/it/formaggi/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/formaggi/cassa"
+    },
+    {
       "source": "/it/disegno/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/disegno/cassa"
     },
