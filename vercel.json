@@ -102,6 +102,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/vino/cassa"
     },
     {
+      "source": "/it/birra/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/birra/cassa"
+    },
+    {
       "source": "/it/disegno/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/disegno/cassa"
     },
