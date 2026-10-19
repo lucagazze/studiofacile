@@ -106,6 +106,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/birra/cassa"
     },
     {
+      "source": "/it/linguaggio-del-corpo/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/linguaggio-del-corpo/cassa"
+    },
+    {
       "source": "/it/profumi/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/profumi/cassa"
     },
