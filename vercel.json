@@ -266,6 +266,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/barman/paiement"
     },
     {
+      "source": "/fr/vin/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/vin/paiement"
+    },
+    {
       "source": "/fr/soudeur/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/soudeur/paiement"
     },
