@@ -110,6 +110,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/nodi/cassa"
     },
     {
+      "source": "/it/stoicismo/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/stoicismo/cassa"
+    },
+    {
       "source": "/it/linguaggio-del-corpo/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/linguaggio-del-corpo/cassa"
     },
