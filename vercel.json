@@ -158,6 +158,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/macellaio/cassa"
     },
     {
+      "source": "/it/mitologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/mitologia/cassa"
+    },
+    {
       "source": "/it/fotografia/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/fotografia/cassa"
     },
