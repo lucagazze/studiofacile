@@ -114,6 +114,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/stoicismo/cassa"
     },
     {
+      "source": "/it/relazioni/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/relazioni/cassa"
+    },
+    {
       "source": "/it/yoga/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/yoga/cassa"
     },
