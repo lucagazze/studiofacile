@@ -130,6 +130,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/moda/cassa"
     },
     {
+      "source": "/it/oftalmologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/oftalmologia/cassa"
+    },
+    {
       "source": "/it/cucito/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/cucito/cassa"
     },
