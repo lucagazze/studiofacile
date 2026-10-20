@@ -122,6 +122,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/yoga/cassa"
     },
     {
+      "source": "/it/moda/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/moda/cassa"
+    },
+    {
       "source": "/it/cucito/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/cucito/cassa"
     },
