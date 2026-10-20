@@ -568,6 +568,10 @@
     {
       "source": "/t.js",
       "destination": "https://checkout-propio-sepia.vercel.app/t.js"
+    },
+    {
+      "source": "/fr/veterinaire/paiement",
+      "destination": "https://pay.studiofacilebook.com/veterinaire-illustre-kit"
     }
   ]
 }
