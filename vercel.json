@@ -126,6 +126,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/cucito/cassa"
     },
     {
+      "source": "/it/falegnameria/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
+    },
+    {
       "source": "/it/linguaggio-del-corpo/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/linguaggio-del-corpo/cassa"
     },
