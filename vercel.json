@@ -302,6 +302,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/vin/paiement"
     },
     {
+      "source": "/fr/univers/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/univers/paiement"
+    },
+    {
       "source": "/fr/soudeur/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/soudeur/paiement"
     },
