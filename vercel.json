@@ -306,6 +306,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/univers/paiement"
     },
     {
+      "source": "/fr/histoire-de-l-art/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/histoire-de-l-art/paiement"
+    },
+    {
       "source": "/fr/soudeur/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/soudeur/paiement"
     },
