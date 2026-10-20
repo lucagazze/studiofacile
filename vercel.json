@@ -326,6 +326,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/vin/paiement"
     },
     {
+      "source": "/fr/acupuncture/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/acupuncture/paiement"
+    },
+    {
       "source": "/fr/univers/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/univers/paiement"
     },
