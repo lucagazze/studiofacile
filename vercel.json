@@ -318,6 +318,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/histoire-de-l-art/paiement"
     },
     {
+      "source": "/fr/photovoltaique/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/photovoltaique/paiement"
+    },
+    {
       "source": "/fr/soudeur/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/soudeur/paiement"
     },
