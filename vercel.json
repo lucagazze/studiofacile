@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/sessuologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/sessuologia/cassa"
+    },
+    {
       "source": "/it/pilates/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/pilates/cassa"
     },
