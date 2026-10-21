@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/logopedia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/logopedia/cassa"
+    },
+    {
       "source": "/it/biologia-marina/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/biologia-marina/cassa"
     },
