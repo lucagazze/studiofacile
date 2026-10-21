@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/pilates/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/pilates/cassa"
+    },
+    {
       "source": "/it/salse/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
