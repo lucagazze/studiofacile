@@ -162,6 +162,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/criminologia/cassa"
     },
     {
+      "source": "/it/psicoanalisi/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/psicoanalisi/cassa"
+    },
+    {
       "source": "/it/pane/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/pane/cassa"
     },
