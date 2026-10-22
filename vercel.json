@@ -422,6 +422,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/acupuncture/paiement"
     },
     {
+      "source": "/fr/maths-enfants/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/maths-enfants/paiement"
+    },
+    {
       "source": "/fr/solfege/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/solfege/paiement"
     },
