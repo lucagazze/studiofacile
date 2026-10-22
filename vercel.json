@@ -434,6 +434,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/boulanger/paiement"
     },
     {
+      "source": "/fr/comptabilite/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/comptabilite/paiement"
+    },
+    {
       "source": "/fr/nutrition/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/nutrition/paiement"
     },
