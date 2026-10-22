@@ -178,6 +178,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
     {
+      "source": "/it/cavallo/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/cavallo/cassa"
+    },
+    {
       "source": "/it/piante/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/piante/cassa"
     },
