@@ -406,6 +406,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/boulanger/paiement"
     },
     {
+      "source": "/fr/bible/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/bible/paiement"
+    },
+    {
       "source": "/fr/univers/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/univers/paiement"
     },
