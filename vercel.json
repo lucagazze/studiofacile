@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/bibbia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/bibbia/cassa"
+    },
+    {
       "source": "/it/sicurezza-lavoro/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/sicurezza-lavoro/cassa"
     },
