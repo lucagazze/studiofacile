@@ -418,6 +418,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/acupuncture/paiement"
     },
     {
+      "source": "/fr/solfege/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/solfege/paiement"
+    },
+    {
       "source": "/fr/hormones/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/hormones/paiement"
     },
