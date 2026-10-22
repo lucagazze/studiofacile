@@ -226,6 +226,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/storia-italia/cassa"
     },
     {
+      "source": "/it/guerre-mondiali/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/guerre-mondiali/cassa"
+    },
+    {
       "source": "/it/economia/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/economia/cassa"
     },
