@@ -194,6 +194,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/piante/cassa"
     },
     {
+      "source": "/it/storia-italia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/storia-italia/cassa"
+    },
+    {
       "source": "/it/economia/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/economia/cassa"
     },
