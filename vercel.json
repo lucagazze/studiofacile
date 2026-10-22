@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/apicoltura/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/apicoltura/cassa"
+    },
+    {
       "source": "/it/evoluzione-umana/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/evoluzione-umana/cassa"
     },
