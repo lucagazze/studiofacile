@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/sicurezza-lavoro/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/sicurezza-lavoro/cassa"
+    },
+    {
       "source": "/it/uccelli/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/uccelli/cassa"
     },
