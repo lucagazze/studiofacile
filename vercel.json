@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/sogni/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/sogni/cassa"
+    },
+    {
       "source": "/it/bibbia/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/bibbia/cassa"
     },
