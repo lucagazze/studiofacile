@@ -418,6 +418,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/acupuncture/paiement"
     },
     {
+      "source": "/fr/ophtalmologie/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/ophtalmologie/paiement"
+    },
+    {
       "source": "/fr/boulanger/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/boulanger/paiement"
     },
