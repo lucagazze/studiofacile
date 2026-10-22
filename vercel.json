@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/pane/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/pane/cassa"
+    },
+    {
       "source": "/it/pizza/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/pizza/cassa"
     },
