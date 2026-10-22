@@ -166,6 +166,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
     {
+      "source": "/it/piante/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/piante/cassa"
+    },
+    {
       "source": "/it/economia/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/economia/cassa"
     },
