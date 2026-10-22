@@ -390,6 +390,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/acupuncture/paiement"
     },
     {
+      "source": "/fr/boulanger/paiement",
+      "destination": "https://checkout-propio-sepia.vercel.app/fr/boulanger/paiement"
+    },
+    {
       "source": "/fr/univers/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/univers/paiement"
     },
