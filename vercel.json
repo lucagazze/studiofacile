@@ -142,6 +142,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/falegnameria/cassa"
     },
     {
+      "source": "/it/uccelli/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/uccelli/cassa"
+    },
+    {
       "source": "/it/tatuatore/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/tatuatore/cassa"
     },
