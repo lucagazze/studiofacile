@@ -514,6 +514,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/boulanger/paiement"
     },
     {
+      "source": "/gr/psyktikos/pliromi",
+      "destination": "https://checkout-propio-sepia.vercel.app/gr/psyktikos/pliromi"
+    },
+    {
+      "source": "/gr/ecg/pliromi",
+      "destination": "https://checkout-propio-sepia.vercel.app/gr/ecg/pliromi"
+    },
+    {
       "source": "/fr/astrologie/paiement",
       "destination": "https://checkout-propio-sepia.vercel.app/fr/astrologie/paiement"
     },
