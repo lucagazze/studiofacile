@@ -202,6 +202,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
     {
+      "source": "/it/manutentore-verde/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/manutentore-verde/cassa"
+    },
+    {
       "source": "/it/funghi/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/funghi/cassa"
     },
