@@ -202,6 +202,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
     {
+      "source": "/it/riflessologia/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/riflessologia/cassa"
+    },
+    {
+      "source": "/it/cioccolato/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/cioccolato/cassa"
+    },
+    {
       "source": "/it/manutentore-verde/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/manutentore-verde/cassa"
     },
