@@ -518,6 +518,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/fr/astrologie/paiement"
     },
     {
+      "source": "/pt/frigorista/pagamento",
+      "destination": "https://checkout-propio-sepia.vercel.app/pt/frigorista/pagamento"
+    },
+    {
+      "source": "/pt/ecg/pagamento",
+      "destination": "https://checkout-propio-sepia.vercel.app/pt/ecg/pagamento"
+    },
+    {
       "source": "/tr/klima/odeme",
       "destination": "https://checkout-propio-sepia.vercel.app/tr/klima/odeme"
     },
