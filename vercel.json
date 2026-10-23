@@ -226,6 +226,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/olio/cassa"
     },
     {
+      "source": "/it/dietetica-sportiva/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/dietetica-sportiva/cassa"
+    },
+    {
       "source": "/it/lis/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/lis/cassa"
     },
