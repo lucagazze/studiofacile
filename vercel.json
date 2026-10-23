@@ -382,6 +382,14 @@
       "destination": "https://checkout-propio-sepia.vercel.app/pl/koloryzacja/platnosc"
     },
     {
+      "source": "/pl/chlodnictwo/platnosc",
+      "destination": "https://checkout-propio-sepia.vercel.app/pl/chlodnictwo/platnosc"
+    },
+    {
+      "source": "/pl/ekg/platnosc",
+      "destination": "https://checkout-propio-sepia.vercel.app/pl/ekg/platnosc"
+    },
+    {
       "source": "/br/colorimetria/pagamento",
       "destination": "https://checkout-propio-sepia.vercel.app/br/colorimetria/pagamento"
     },
