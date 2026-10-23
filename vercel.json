@@ -202,6 +202,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
     {
+      "source": "/it/trucco-halloween/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/trucco-halloween/cassa"
+    },
+    {
       "source": "/it/restauro-mobili/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/restauro-mobili/cassa"
     },
