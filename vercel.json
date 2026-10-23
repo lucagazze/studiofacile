@@ -202,6 +202,10 @@
       "destination": "https://checkout-propio-sepia.vercel.app/it/salse/cassa"
     },
     {
+      "source": "/it/ceramica/cassa",
+      "destination": "https://checkout-propio-sepia.vercel.app/it/ceramica/cassa"
+    },
+    {
       "source": "/it/patente-b/cassa",
       "destination": "https://checkout-propio-sepia.vercel.app/it/patente-b/cassa"
     },
